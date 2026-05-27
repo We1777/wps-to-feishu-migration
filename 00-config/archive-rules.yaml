@@ -1,0 +1,129 @@
+# 财政部电子凭证归档规则
+# 依据：第79号令、财会〔2020〕6号、财会〔2024〕11号、DA/T 94-2022、财会〔2025〕9号
+
+retention_periods:
+  永久:
+    years: -1  # -1 表示永久保管
+    categories:
+      - name: 年度财务报告
+        description: 含审计报告
+        keywords: ["年度财务报告", "年报", "审计报告", "annual_report", "audit_report"]
+        extensions: [".pdf", ".ofd"]
+      - name: 档案管理清册
+        description: 会计档案保管清册、销毁清册
+        keywords: ["保管清册", "销毁清册", "档案清册"]
+        extensions: [".pdf", ".xlsx", ".csv"]
+
+  30年:
+    years: 30
+    categories:
+      - name: 会计凭证
+        description: 原始凭证、记账凭证、汇总凭证
+        keywords: ["原始凭证", "记账凭证", "汇总凭证", "凭证", "voucher", "会计电子档案", "核算管理"]
+        extensions: [".pdf", ".ofd", ".xml"]
+        subfolder_by: month  # 按月归档
+      - name: 会计账簿
+        description: 总账、明细账、日记账、辅助账簿
+        keywords: ["总账", "明细账", "日记账", "辅助账", "ledger", "journal"]
+        extensions: [".pdf", ".xlsx"]
+        subtypes:
+          - 总账
+          - 明细账
+          - 日记账
+          - 辅助账簿
+      - name: 会计档案移交清册
+        keywords: ["移交清册"]
+        extensions: [".pdf", ".xlsx"]
+
+  10年:
+    years: 10
+    categories:
+      - name: 期间财务报告
+        description: 月度/季度/半年度财务报告
+        keywords: ["月度报告", "季度报告", "半年度报告", "月报", "季报", "半年报"]
+        extensions: [".pdf", ".xlsx"]
+      - name: 银行对账单
+        keywords: ["银行对账单", "bank_statement", "对账单"]
+        extensions: [".pdf"]
+        subfolder_by: month
+      - name: 银行余额调节表
+        keywords: ["余额调节表", "调节表", "reconciliation"]
+        extensions: [".pdf", ".xlsx"]
+      - name: 纳税申报表
+        keywords: ["纳税申报", "税务申报", "增值税申报", "企业所得税", "tax_return", "收入管理"]
+        extensions: [".pdf", ".xml"]
+        subfolder_by: month
+
+  5年:
+    years: 5
+    start_from: disposal  # 报废清理后起算
+    categories:
+      - name: 固定资产卡片
+        keywords: ["固定资产卡片", "固定资产", "asset_card"]
+        extensions: [".pdf", ".xlsx"]
+
+non_accounting:
+  categories:
+    - name: 合同
+      keywords: ["合同", "协议", "contract", "agreement"]
+    - name: 行政文件
+      keywords: ["行政", "通知", "制度", "规定"]
+    - name: 人事资料
+      keywords: ["人事", "薪资", "社保", "公积金"]
+    - name: 其他
+      keywords: []
+
+naming_convention:
+  rename: false  # 不重命名任何文件，保留原始文件名
+  note: 仅按归档规则分类到正确目录，不修改文件名
+
+allowed_formats:
+  accounting:
+    preferred: [".pdf", ".ofd", ".xml"]
+    acceptable: [".xlsx", ".csv"]
+    rejected: [".doc", ".docx", ".wps", ".ppt", ".pptx", ".jpg", ".png"]
+  general:
+    preferred: [".pdf"]
+    acceptable: [".xlsx", ".docx", ".pptx", ".csv"]
+
+four_properties:
+  authenticity:
+    method: md5
+    description: 文件哈希校验，确保传输过程未被篡改
+  integrity:
+    checks:
+      - file_count_match
+      - metadata_completeness
+    description: 源端与目标端文件数量比对，元数据字段完整性校验
+  usability:
+    format_check: true
+    description: 确保文件为通用可读格式（PDF/OFD/XML），非私有格式
+  security:
+    encryption: false
+    access_control: true
+    description: 飞书云盘权限分级，禁用外部分享链接
+
+staging_directory_template:
+  会计档案:
+    永久:
+      年度财务报告: "{year}/"
+      档案管理清册: ""
+    30年:
+      会计凭证: "{year}/{month:02d}/"
+      会计账簿:
+        总账: "{year}/"
+        明细账: "{year}/"
+        日记账: "{year}/"
+      会计档案移交清册: ""
+    10年:
+      期间财务报告: "{year}/"
+      银行对账单: "{year}/{month:02d}/"
+      银行余额调节表: "{year}/"
+      纳税申报表: "{year}/{month:02d}/"
+    5年:
+      固定资产卡片: ""
+  非会计档案:
+    合同: "{year}/"
+    行政文件: "{year}/"
+    人事资料: "{year}/"
+    其他: ""

@@ -1,0 +1,15 @@
+# 中转区原文件（体积大、敏感）
+02-downloads/
+
+# 临时文件
+*.tmp
+*.bak
+__pycache__/
+.DS_Store
+
+# 敏感配置（含API token）
+00-config/source-account.json
+00-config/target-space.json
+
+# 日志中的错误重试队列
+04-upload-logs/error-retry-queue.txt

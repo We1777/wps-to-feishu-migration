@@ -1,0 +1,27 @@
+{
+  "_comment": "飞书云盘目标端配置 — 请填入实际值",
+  "feishu": {
+    "app_id": "",
+    "app_secret": "",
+    "user_access_token": "",
+    "space_id": ""
+  },
+  "root_folders": {
+    "会计档案": {
+      "folder_token": "",
+      "description": "会计档案根目录"
+    },
+    "非会计档案": {
+      "folder_token": "",
+      "description": "非会计档案根目录"
+    }
+  },
+  "upload_settings": {
+    "batch_size": 20,
+    "retry_max": 3,
+    "retry_delay_seconds": 5,
+    "skip_duplicates": true,
+    "external_share_disabled": true
+  },
+  "notes": "folder_token在飞书云盘创建文件夹后从URL中获取，user_access_token通过飞书开放平台OAuth获取"
+}

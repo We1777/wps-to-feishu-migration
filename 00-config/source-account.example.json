@@ -1,0 +1,68 @@
+{
+  "_comment": "WPS云盘源端配置 — 请根据实际目录结构修改source_paths",
+  "wps_account": {
+    "email": "",
+    "team_name": ""
+  },
+  "source_paths": [
+    {
+      "wps_path": "80.1 北京磐沄科技有限公司 会计电子档案",
+      "target_category": "会计凭证",
+      "entity": "北京磐沄",
+      "batch": "batch-01",
+      "note": "默认归入会计凭证，子目录按关键词细分"
+    },
+    {
+      "wps_path": "80.2 北京磐旭科技有限公司 会计电子档案",
+      "target_category": "会计凭证",
+      "entity": "北京磐旭",
+      "batch": "batch-01",
+      "note": "默认归入会计凭证，子目录按关键词细分"
+    },
+    {
+      "wps_path": "80.3 上海磐晓科技有限公司 会计电子档案",
+      "target_category": "会计凭证",
+      "entity": "上海磐晓",
+      "batch": "batch-01",
+      "note": "默认归入会计凭证，子目录按关键词细分"
+    },
+    {
+      "wps_path": "1.0 核算管理",
+      "target_category": "会计凭证",
+      "batch": "batch-02",
+      "note": "如含账簿/报表类文件，脚本会按关键词细分"
+    },
+    {
+      "wps_path": "2.0 收入管理",
+      "target_category": "纳税申报表",
+      "batch": "batch-02",
+      "note": "收入相关，默认归纳税申报，可按实际内容调整"
+    },
+    {
+      "wps_path": "0.0 公司用小程序",
+      "target_category": "其他",
+      "batch": "batch-03"
+    },
+    {
+      "wps_path": "0.1 Monthly Sharing",
+      "target_category": "其他",
+      "batch": "batch-03"
+    },
+    {
+      "wps_path": "0.2 Sharing Material",
+      "target_category": "其他",
+      "batch": "batch-03"
+    },
+    {
+      "wps_path": "3.0 APAC Issues",
+      "target_category": "行政文件",
+      "batch": "batch-03"
+    },
+    {
+      "wps_path": "4.0 FIN Agent",
+      "target_category": "行政文件",
+      "batch": "batch-03"
+    }
+  ],
+  "notes": "target_category为默认分类，脚本会优先用文件名/路径中的关键词匹配archive-rules.yaml中的更精确分类"
+}
