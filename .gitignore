@@ -1,5 +1,6 @@
 # 中转区原文件（体积大、敏感）
-02-downloads/
+02-downloads/*
+!02-downloads/.gitkeep
 
 # 临时文件
 *.tmp
