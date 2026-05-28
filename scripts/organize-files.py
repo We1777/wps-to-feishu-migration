@@ -139,9 +139,9 @@ def determine_subtype(filename: str, subtypes: list) -> str | None:
 def build_target_path(match: dict, year: int, month: int | None, entity: str | None = None) -> Path:
     if match["type"] == "会计档案":
         if entity:
-            base = STAGING_DIR / "会计档案" / entity / match["period"] / match["category"]
+            base = STAGING_DIR / "会计档案" / entity / match["category"]
         else:
-            base = STAGING_DIR / "会计档案" / match["period"] / match["category"]
+            base = STAGING_DIR / "会计档案" / match["category"]
 
         if match.get("subtypes"):
             subtype = match.get("_subtype", match["subtypes"][0])
