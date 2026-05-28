@@ -24,6 +24,23 @@ def load_config() -> dict:
         return json.load(f)
 
 
+def get_tenant_access_token() -> str:
+    app_id = os.environ.get("FEISHU_APP_ID", "")
+    app_secret = os.environ.get("FEISHU_APP_SECRET", "")
+    if not app_id or not app_secret:
+        print("错误：请设置环境变量 FEISHU_APP_ID 和 FEISHU_APP_SECRET")
+        return ""
+    resp = requests.post(
+        f"{FEISHU_BASE}/auth/v3/tenant_access_token/internal",
+        json={"app_id": app_id, "app_secret": app_secret},
+    )
+    data = resp.json()
+    if data.get("code") == 0:
+        return data["tenant_access_token"]
+    print(f"错误：获取tenant_access_token失败: {data.get('msg', resp.text)}")
+    return ""
+
+
 def get_headers(token: str) -> dict:
     return {"Authorization": f"Bearer {token}"}
 
@@ -96,13 +113,12 @@ def md5_hash(filepath: Path) -> str:
 
 def run_upload():
     config = load_config()
-    feishu = config["feishu"]
-    token = feishu["user_access_token"]
     root_folders = config["root_folders"]
     settings = config["upload_settings"]
 
+    token = get_tenant_access_token()
     if not token:
-        print("错误：请在target-space.json中配置user_access_token")
+        print("错误：无法获取飞书access_token，请检查环境变量 FEISHU_APP_ID 和 FEISHU_APP_SECRET")
         return
 
     date_str = datetime.now().strftime("%Y%m%d")

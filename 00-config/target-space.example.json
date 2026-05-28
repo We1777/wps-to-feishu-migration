@@ -1,15 +1,9 @@
 {
-  "_comment": "飞书云盘目标端配置 — 请填入实际值",
-  "feishu": {
-    "app_id": "",
-    "app_secret": "",
-    "user_access_token": "",
-    "space_id": ""
-  },
+  "_comment": "飞书云盘目标端配置 — 凭证通过环境变量读取，此文件只配置目标文件夹和上传参数",
   "root_folders": {
     "会计档案": {
       "folder_token": "",
-      "description": "会计档案根目录"
+      "description": "会计档案根目录 — 在飞书云盘创建文件夹后从URL中获取token"
     },
     "非会计档案": {
       "folder_token": "",
@@ -23,5 +17,5 @@
     "skip_duplicates": true,
     "external_share_disabled": true
   },
-  "notes": "folder_token在飞书云盘创建文件夹后从URL中获取，user_access_token通过飞书开放平台OAuth获取"
+  "notes": "凭证从环境变量读取：FEISHU_APP_ID 和 FEISHU_APP_SECRET。folder_token在飞书云盘创建文件夹后从URL中获取。"
 }
