@@ -13,6 +13,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = PROJECT_ROOT / "00-config" / "archive-rules.yaml"
 SOURCE_CONFIG_PATH = PROJECT_ROOT / "00-config" / "source-account.json"
+TARGET_CONFIG_PATH = PROJECT_ROOT / "00-config" / "target-space.json"
 DOWNLOADS_DIR = PROJECT_ROOT / "02-downloads"
 STAGING_DIR = PROJECT_ROOT / "03-staging"
 UNCLASSIFIED_DIR = STAGING_DIR / "待分类"
@@ -159,6 +160,19 @@ def build_target_path(match: dict, year: int, month: int | None, entity: str | N
         return base
 
 
+def load_direct_prefixes() -> list[str]:
+    if not TARGET_CONFIG_PATH.exists():
+        return []
+    with open(TARGET_CONFIG_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return [m["source_prefix"] for m in data.get("direct_mappings", [])]
+
+
+def is_direct_upload_path(filepath: Path, prefixes: list[str]) -> bool:
+    rel_str = str(filepath.relative_to(DOWNLOADS_DIR)).lower()
+    return any(p.lower() in rel_str for p in prefixes)
+
+
 def organize():
     if not DOWNLOADS_DIR.exists():
         print(f"错误：下载目录不存在 {DOWNLOADS_DIR}")
@@ -166,8 +180,9 @@ def organize():
 
     rules = load_rules()
     mappings = load_source_mappings()
+    direct_prefixes = load_direct_prefixes()
     log_entries = []
-    stats = {"classified": 0, "unclassified": 0, "format_warning": 0}
+    stats = {"classified": 0, "unclassified": 0, "format_warning": 0, "direct_skipped": 0}
 
     accounting_formats = rules.get("allowed_formats", {}).get("accounting", {})
     rejected_exts = set(accounting_formats.get("rejected", []))
@@ -178,6 +193,11 @@ def organize():
                 continue
 
             src = Path(root) / fname
+
+            if direct_prefixes and is_direct_upload_path(src, direct_prefixes):
+                stats["direct_skipped"] += 1
+                continue
+
             ext = src.suffix.lower()
             year, month = extract_year_month(fname, src)
 
@@ -231,6 +251,8 @@ def organize():
     print(f"整理完成：")
     print(f"  已分类：{stats['classified']} 个文件")
     print(f"  待人工分类：{stats['unclassified']} 个文件")
+    if stats["direct_skipped"]:
+        print(f"  直传跳过：{stats['direct_skipped']} 个文件（由upload脚本直传处理）")
     print(f"  格式警告：{stats['format_warning']} 个文件")
     print(f"  整理日志：{LOG_PATH}")
 

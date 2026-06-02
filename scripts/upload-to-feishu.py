@@ -111,6 +111,108 @@ def md5_hash(filepath: Path) -> str:
     return h.hexdigest()
 
 
+def match_direct_region(filepath: Path, downloads_dir: Path, direct_mappings: list) -> tuple[str | None, Path | None]:
+    """检查文件是否匹配直传规则，返回 (folder_token, 相对于地区根目录的路径)"""
+    rel_str = str(filepath.relative_to(downloads_dir))
+    for mapping in direct_mappings:
+        prefix = mapping["source_prefix"]
+        if prefix.lower() not in rel_str.lower():
+            continue
+        for rule in mapping["region_rules"]:
+            for kw in rule["keywords"]:
+                if kw.lower() in rel_str.lower():
+                    rel_parts = filepath.relative_to(downloads_dir).parts
+                    region_idx = None
+                    for i, part in enumerate(rel_parts):
+                        if any(k.lower() in part.lower() for k in rule["keywords"]):
+                            region_idx = i
+                            break
+                    if region_idx is not None:
+                        sub_parts = rel_parts[region_idx + 1:]
+                        sub_rel = Path(*sub_parts) if sub_parts else Path(".")
+                        return rule["folder_token"], sub_rel
+                    return rule["folder_token"], Path(".")
+    return None, None
+
+
+def run_direct_upload(token: str, config: dict, log_entries: list, errors: list, stats: dict):
+    """直传模式：从02-downloads中匹配APAC集团HKG/SGP文件，直传到指定飞书文件夹"""
+    direct_mappings = config.get("direct_mappings", [])
+    if not direct_mappings:
+        return
+
+    downloads_dir = PROJECT_ROOT / "02-downloads"
+    if not downloads_dir.exists():
+        return
+
+    settings = config["upload_settings"]
+    processed = set()
+
+    for root, _, filenames in os.walk(downloads_dir):
+        for fname in filenames:
+            if fname.startswith("."):
+                continue
+
+            src = Path(root) / fname
+            folder_token, sub_rel = match_direct_region(src, downloads_dir, direct_mappings)
+            if not folder_token:
+                continue
+
+            src_key = str(src)
+            if src_key in processed:
+                continue
+            processed.add(src_key)
+
+            rel_dir = sub_rel.parent if sub_rel != Path(".") else Path(".")
+            if rel_dir != Path("."):
+                target_token = ensure_folder_path(token, folder_token, rel_dir)
+            else:
+                target_token = folder_token
+
+            if not target_token:
+                entry = {
+                    "源路径": f"[直传] {src.relative_to(downloads_dir)}",
+                    "状态": "失败",
+                    "目标URL": "",
+                    "文件token": "",
+                    "MD5": "",
+                    "时间": datetime.now().isoformat(),
+                    "错误": "无法创建目标文件夹",
+                }
+                log_entries.append(entry)
+                errors.append(f"[直传] {src.relative_to(downloads_dir)}")
+                stats["failed"] += 1
+                continue
+
+            result = None
+            for attempt in range(settings.get("retry_max", 3)):
+                result = upload_file(token, target_token, src)
+                if result["status"] == "success":
+                    break
+                time.sleep(settings.get("retry_delay_seconds", 5))
+
+            file_md5 = md5_hash(src)
+            entry = {
+                "源路径": f"[直传] {src.relative_to(downloads_dir)}",
+                "状态": result["status"],
+                "目标URL": "",
+                "文件token": result.get("file_token", ""),
+                "MD5": file_md5,
+                "时间": datetime.now().isoformat(),
+                "错误": result.get("error", ""),
+            }
+            log_entries.append(entry)
+
+            if result["status"] == "success":
+                stats["success"] += 1
+            else:
+                stats["failed"] += 1
+                errors.append(f"[直传] {src.relative_to(downloads_dir)}")
+
+    if processed:
+        print(f"  直传文件数：{len(processed)}")
+
+
 def run_upload():
     config = load_config()
     root_folders = config["root_folders"]
@@ -128,6 +230,8 @@ def run_upload():
     log_entries = []
     errors = []
     stats = {"success": 0, "failed": 0, "skipped": 0}
+
+    direct_mappings = config.get("direct_mappings", [])
 
     for top_dir in ["会计档案", "非会计档案"]:
         top_path = STAGING_DIR / top_dir
@@ -188,6 +292,8 @@ def run_upload():
                 else:
                     stats["failed"] += 1
                     errors.append(str(src.relative_to(STAGING_DIR)))
+
+    run_direct_upload(token, config, log_entries, errors, stats)
 
     with open(log_path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=["源路径", "状态", "目标URL", "文件token", "MD5", "时间", "错误"])
