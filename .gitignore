@@ -8,9 +8,8 @@
 __pycache__/
 .DS_Store
 
-# 敏感配置（含API token）
+# 敏感配置（含WPS账户信息）
 00-config/source-account.json
-00-config/target-space.json
 
 # 日志中的错误重试队列
 04-upload-logs/error-retry-queue.txt
