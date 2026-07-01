@@ -149,14 +149,14 @@ def build_target_path(match: dict, year: int, month: int | None, entity: str | N
             base = base / subtype
 
         if match.get("subfolder_by") == "month" and month:
-            return base / str(year) / f"{month:02d}"
+            return base / f"FY-{year}" / f"{month:02d}"
         elif year:
-            return base / str(year)
+            return base / f"FY-{year}"
         return base
     else:
         base = STAGING_DIR / "非会计档案" / match["category"]
         if year:
-            return base / str(year)
+            return base / f"FY-{year}"
         return base
 
 
@@ -165,7 +165,10 @@ def load_direct_prefixes() -> list[str]:
         return []
     with open(TARGET_CONFIG_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
-    return [m["source_prefix"] for m in data.get("direct_mappings", [])]
+    prefixes = [m["source_prefix"] for m in data.get("direct_mappings", [])]
+    if not prefixes:
+        prefixes = [r["source_prefix"] for r in data.get("routes", [])]
+    return prefixes
 
 
 def is_direct_upload_path(filepath: Path, prefixes: list[str]) -> bool:

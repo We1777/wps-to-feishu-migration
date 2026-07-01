@@ -219,8 +219,13 @@ def compare():
     if not token:
         return
 
-    print(f"并发扫描飞书云盘（{MAX_WORKERS}线程）...")
-    feishu_files = list_feishu_files_concurrent(token, config["root_folders"])
+    root_folders = config.get("root_folders", {})
+    if not root_folders:
+        print("错误：target-space.json 中缺少 root_folders 配置")
+        return
+
+    print(f"并发扫描飞书云盘（{MAX_WORKERS}线程，{len(root_folders)}个根目录）...")
+    feishu_files = list_feishu_files_concurrent(token, root_folders)
     scan_time = time.time() - start_time
     print(f"  飞书端文件总数：{len(feishu_files)}（扫描耗时 {scan_time:.0f}秒）")
 
