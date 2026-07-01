@@ -34,9 +34,8 @@ wps-to-feishu-migration/
 
 ### 阶段一：准备
 
-1. 填写 `00-config/source-account.json`（WPS源路径映射）
-2. 填写 `00-config/target-space.json`（飞书云盘空间ID、folder_token）
-3. 确认 `00-config/archive-rules.yaml` 归档规则无需调整
+1. 填写 `00-config/target-space.json`（飞书云盘空间ID、folder_token）
+2. 确认 `00-config/archive-rules.yaml` 归档规则无需调整
 
 ### 阶段二：下载（人工）
 
@@ -50,44 +49,29 @@ wps-to-feishu-migration/
    ```
    生成 `01-source-audit/scan-report.csv`，记录全量文件清单与MD5
 
-### 阶段四：分类整理
+### 阶段四：校验
 
-6. 运行自动分类：
-   ```bash
-   python scripts/organize-files.py
-   ```
-   文件按归档规则自动分类到 `03-staging/`，无法识别的进入 `03-staging/待分类/`
-
-7. **人工复核**：检查 `03-staging/待分类/` 中的文件，手动移入正确目录
-
-### 阶段五：校验
-
-8. 运行发票校验（如有XML/OFD发票）：
-   ```bash
-   python scripts/validate-invoice.py
-   ```
-
-9. 运行完整性校验：
+6. 运行完整性校验：
    ```bash
    python scripts/verify-migration.py
    ```
    确保源端与staging端文件数量、哈希一致
 
-### 阶段六：上传
+### 阶段五：上传
 
-10. 运行飞书上传：
+7. 运行飞书上传：
     ```bash
     python scripts/upload-to-feishu.py
     ```
     上传日志记录在 `04-upload-logs/`，失败文件进入 `error-retry-queue.txt`
 
-11. **人工处理**：检查上传失败文件，排查原因后重传
+8. **人工处理**：检查上传失败文件，排查原因后重传
 
-### 阶段七：清理
+### 阶段六：清理
 
-12. 确认飞书云盘文件完整后，设置飞书权限（禁用外部分享）
-13. WPS云盘保留30天过渡期后清理
-14. 填写 `06-docs/archive-certificate.md` 归档合格证明
+9. 确认飞书云盘文件完整后，设置飞书权限（禁用外部分享）
+10. WPS云盘保留30天过渡期后清理
+11. 填写 `06-docs/archive-certificate.md` 归档合格证明
 
 ## 依赖
 
@@ -102,8 +86,6 @@ pip install pyyaml requests
 | 填写配置文件 | 人工 |
 | WPS云盘下载 | 人工 |
 | 源端扫描 | 脚本 |
-| 分类整理 | 脚本 + 人工复核待分类文件 |
-| 发票校验 | 脚本 |
 | 完整性校验 | 脚本 |
 | 飞书上传 | 脚本 + 人工处理失败文件 |
 | 权限设置 | 人工 |
