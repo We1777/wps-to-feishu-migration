@@ -83,6 +83,29 @@ def walk(token: str, area: str, folder_token: str, prefix: tuple, path_map: dict
         walk(token, area, c["token"], levels, path_map)
 
 
+# 已知的「Base 路径 ← 云盘实际路径」别名（drive 里被改名/挪走，Base 未同步）。
+# 每条: tree 路径前缀 tuple -> 云盘实际路径前缀 tuple。匹配失败时按前缀重写再试。
+PREFIX_ALIASES = [
+    # C4 顶层在云盘实为「…（已清算）」
+    (("归档库", "C4_北京磐曜科技有限公司"),
+     ("归档库", "C4_北京磐曜科技有限公司（已清算）")),
+    # 银行电子回单 已从 工作台/收件箱 挪到 归档库/0_CHN汇总
+    (("工作台", "📥 收件箱", "银行电子回单"),
+     ("归档库", "0_CHN汇总", "银行电子回单")),
+]
+
+
+def resolve_key(k: tuple, path_map: dict):
+    if k in path_map:
+        return path_map[k]
+    for src, dst in PREFIX_ALIASES:
+        if k[:len(src)] == src:
+            alt = dst + k[len(src):]
+            if alt in path_map:
+                return path_map[alt]
+    return None
+
+
 def build_key(entry: dict) -> tuple:
     levels = tuple(entry.get(f"level{i}", "") for i in range(1, 7)
                    if entry.get(f"level{i}", ""))
@@ -91,6 +114,7 @@ def build_key(entry: dict) -> tuple:
 
 def main():
     apply = "--apply" in sys.argv
+    locate = [a for a in sys.argv[1:] if not a.startswith("--")]  # 传 token 则只定位
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     roots = cfg["root_folders"]  # {name: {folder_token, ...}}
     token = get_token()
@@ -104,6 +128,13 @@ def main():
         walk(token, area, ft, tuple(), path_map)
     print(f"云盘共抓到 {len(path_map)} 个文件夹路径")
 
+    if locate:
+        tok2path = {v: k for k, v in path_map.items()}
+        for tk in locate:
+            k = tok2path.get(tk)
+            print(f"\n[定位] {tk} => " + (" / ".join(k) if k else "未在4个根下找到"))
+        return
+
     tree = json.loads(PREVIEW_PATH.read_text(encoding="utf-8"))
     hit, still_missing, already = 0, [], 0
     for e in tree:
@@ -113,8 +144,9 @@ def main():
             already += 1
             continue
         k = build_key(e)
-        if k in path_map:
-            e["token"] = path_map[k]
+        tk = resolve_key(k, path_map)
+        if tk:
+            e["token"] = tk
             hit += 1
         else:
             still_missing.append(" / ".join(k))
