@@ -10,6 +10,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DOWNLOADS_DIR = PROJECT_ROOT / "02-downloads"
 REPORT_PATH = PROJECT_ROOT / "01-source-audit" / "scan-report.csv"
+FOLDER_SUMMARY_PATH = PROJECT_ROOT / "01-source-audit" / "folder-summary.csv"
 
 
 def md5_hash(filepath: Path) -> str:
@@ -52,6 +53,8 @@ def scan_downloads():
     print(f"扫描完成：共 {len(files)} 个文件")
     print(f"报告已保存至：{REPORT_PATH}")
 
+    write_folder_summary(files)
+
     ext_stats = {}
     for f in files:
         ext = f["扩展名"] or "(无扩展名)"
@@ -59,6 +62,57 @@ def scan_downloads():
     print("\n文件类型统计：")
     for ext, count in sorted(ext_stats.items(), key=lambda x: -x[1]):
         print(f"  {ext}: {count}")
+
+
+def write_folder_summary(files):
+    """产出文件夹层级汇总：每层目录的直接/递归文件数与大小。"""
+    # direct[dir] = 直接文件；recursive[dir] = 含所有子孙文件（累加到每个祖先目录）
+    direct_count, direct_size = {}, {}
+    recur_count, recur_size = {}, {}
+
+    def touch(store_c, store_s, key, size):
+        store_c[key] = store_c.get(key, 0) + 1
+        store_s[key] = store_s.get(key, 0) + size
+
+    for f in files:
+        rel = Path(f["相对路径"])
+        size = f["大小_字节"]
+        parent = rel.parent  # 相对 DOWNLOADS_DIR，root 表示为 "."
+        touch(direct_count, direct_size, parent, size)
+        # 累加到该文件的每一层祖先目录（含 root "."）
+        ancestors = list(rel.parents)  # 已含 Path(".")
+        for anc in ancestors:
+            touch(recur_count, recur_size, anc, size)
+
+    all_dirs = set(direct_count) | set(recur_count)
+
+    def dir_label(p):
+        return "(根目录)" if str(p) == "." else str(p)
+
+    def depth(p):
+        return 0 if str(p) == "." else len(p.parts)
+
+    rows = []
+    for d in sorted(all_dirs, key=lambda p: (depth(p), str(p))):
+        rows.append({
+            "文件夹": dir_label(d),
+            "层级": depth(d),
+            "直接文件数": direct_count.get(d, 0),
+            "递归文件数": recur_count.get(d, 0),
+            "直接大小_字节": direct_size.get(d, 0),
+            "直接大小_可读": format_size(direct_size.get(d, 0)),
+            "递归大小_字节": recur_size.get(d, 0),
+            "递归大小_可读": format_size(recur_size.get(d, 0)),
+        })
+
+    fieldnames = ["文件夹", "层级", "直接文件数", "递归文件数",
+                  "直接大小_字节", "直接大小_可读", "递归大小_字节", "递归大小_可读"]
+    with open(FOLDER_SUMMARY_PATH, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(f"文件夹层级汇总已保存至：{FOLDER_SUMMARY_PATH}（共 {len(rows)} 层目录）")
 
 
 def format_size(size_bytes: int) -> str:

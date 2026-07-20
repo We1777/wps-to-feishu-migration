@@ -123,11 +123,34 @@ def inspect(token: str):
     for t in tables:
         fields = list_fields(token, t["table_id"])
         recs = fetch_records(token, t["table_id"])
+        names = [f["field_name"] for f in fields]
         print(f"\n=== 表「{t['name']}」 字段 {len(fields)} 个 / 记录 {len(recs)} 条 ===")
-        print("  字段：" + ", ".join(f["field_name"] for f in fields))
-        for r in recs[:3]:
-            row = {k: cell_text(v) for k, v in r.get("fields", {}).items()}
-            print("  样本：" + json.dumps(row, ensure_ascii=False))
+        print("  字段：" + ", ".join(names))
+        # 每字段非空计数
+        print("  非空计数：")
+        for n in names:
+            cnt = sum(1 for r in recs if cell_text(r.get("fields", {}).get(n)))
+            print(f"    {n}: {cnt}")
+        # 列8 / 字段 1 非空样本（判断是否含 token/notes）
+        for probe in ["列8", "字段 1"]:
+            hits = [r for r in recs if cell_text(r.get("fields", {}).get(probe))]
+            print(f"  「{probe}」非空样本（前5/{len(hits)}）：")
+            for r in hits[:5]:
+                row = {k: cell_text(v) for k, v in r.get("fields", {}).items() if cell_text(v)}
+                print("    " + json.dumps(row, ensure_ascii=False))
+        # 含 WPS 源路径 的样本
+        wps_field = "WPS 源路径(空置则无源路径）"
+        wps_rows = [r for r in recs if cell_text(r.get("fields", {}).get(wps_field))]
+        print(f"  含 WPS 源路径 行数：{len(wps_rows)}；样本前3：")
+        for r in wps_rows[:3]:
+            row = {k: cell_text(v) for k, v in r.get("fields", {}).items() if cell_text(v)}
+            print("    " + json.dumps(row, ensure_ascii=False))
+        # 六级目录非空样本
+        deep = [r for r in recs if cell_text(r.get("fields", {}).get("六级目录"))]
+        print(f"  六级目录非空行数：{len(deep)}；样本前3：")
+        for r in deep[:3]:
+            row = {k: cell_text(v) for k, v in r.get("fields", {}).items() if cell_text(v)}
+            print("    " + json.dumps(row, ensure_ascii=False))
 
 
 def main():

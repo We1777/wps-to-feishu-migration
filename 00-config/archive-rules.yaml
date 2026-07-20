@@ -18,8 +18,8 @@ retention_periods:
     years: 30
     categories:
       - name: 会计凭证
-        description: 原始凭证、记账凭证、汇总凭证
-        keywords: ["原始凭证", "记账凭证", "汇总凭证", "凭证", "voucher", "会计电子档案", "核算管理"]
+        description: 会计凭证（含记账凭证）
+        keywords: ["会计凭证", "记账凭证", "汇总凭证", "凭证", "voucher", "会计电子档案", "核算管理"]
         extensions: [".pdf", ".ofd", ".xml"]
         subfolder_by: month  # 按月归档
       - name: 会计账簿

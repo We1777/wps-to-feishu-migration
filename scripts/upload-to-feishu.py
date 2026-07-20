@@ -4,7 +4,7 @@
   4-5.  1.1 APAC集团 → HKG/SGP 地区文件夹
   6-11. 集团框架外主体 → CHN归档/收件箱（按公司+子类分流）
   12-14.美国公司/Token → USA工作台文件夹
-  15.   2.0 收入管理 → 按公司分流到原始凭证/其他会计资料
+  15.   2.0 收入管理 → 按公司分流到会计凭证/其他会计资料
   16-19.知识库直传（公司用小程序/Sharing/Issues/Agent）
 """
 
@@ -347,12 +347,12 @@ def classify_file(rel_parts: tuple[str, ...], config: dict) -> tuple[str, str, P
                         after = remaining
 
                     if cat == "c. 会计凭证":
-                        orig_token = tokens.get("c. 会计凭证/原始凭证")
-                        if orig_token:
+                        cat_token = tokens.get("c. 会计凭证")
+                        if cat_token:
                             fy = extract_fiscal_year(remaining)
                             fy_key = f"FY-{fy}" if fy else None
-                            fy_token = tokens.get(f"c. 会计凭证/原始凭证/{fy_key}") if fy_key else None
-                            base_token = fy_token or orig_token
+                            fy_token = tokens.get(f"c. 会计凭证/{fy_key}") if fy_key else None
+                            base_token = fy_token or cat_token
                             sub_cat = detect_voucher_subcategory(remaining)
                             sub_parts = []
                             if not fy_token and fy_key:
@@ -481,15 +481,13 @@ def classify_file(rel_parts: tuple[str, ...], config: dict) -> tuple[str, str, P
             if entity:
                 tokens = config.get("entity_subfolder_tokens", {}).get(entity, {})
                 default_sub = route.get("default_subfolder", "c. 会计凭证")
-                sub_prefix = route.get("default_sub_prefix")
-                orig_token = tokens.get(f"{default_sub}/{sub_prefix}") if sub_prefix else None
-                ft = orig_token or tokens.get(default_sub, "")
+                ft = tokens.get(default_sub, "")
                 after = remaining[eidx + 1:]
-                if orig_token:
+                if ft and default_sub == "c. 会计凭证":
                     fy = extract_fiscal_year(remaining + after)
                     fy_key = f"FY-{fy}" if fy else None
-                    fy_token = tokens.get(f"{default_sub}/{sub_prefix}/{fy_key}") if fy_key else None
-                    base_token = fy_token or orig_token
+                    fy_token = tokens.get(f"{default_sub}/{fy_key}") if fy_key else None
+                    base_token = fy_token or ft
                     sub_cat = detect_voucher_subcategory(remaining + after)
                     sub_parts = []
                     if not fy_token and fy_key:
@@ -499,7 +497,7 @@ def classify_file(rel_parts: tuple[str, ...], config: dict) -> tuple[str, str, P
                     sub = Path(*sub_parts) if sub_parts else Path(".")
                     return label, base_token, sub
                 else:
-                    sub_parts = ([sub_prefix] if sub_prefix else []) + list(after)
+                    sub_parts = list(after)
                     sub_parts = [p for p in sub_parts if p]
                     sub = Path(*sub_parts) if sub_parts else Path(".")
                 return label, ft, sub
@@ -622,8 +620,6 @@ def run_upload(dry_run: bool = False, source_prefix: str | None = None, limit: i
                     "源路径": str(rel),
                     "路由": label,
                     "状态": "dry-run",
-                    "文件token": "",
-                    "MD5": "",
                     "时间": datetime.now().isoformat(),
                     "目标folder_token": folder_token,
                     "子路径": str(sub_path),
