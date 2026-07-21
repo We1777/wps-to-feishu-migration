@@ -20,6 +20,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = PROJECT_ROOT / "00-config" / "target-space.json"
 PREVIEW_PATH = PROJECT_ROOT / "00-config" / "feishu-folder-tree.preview.json"
+# 断点缓存：把云盘遍历结果(path→token)落盘，下次 --resume 直接读，跳过全量遍历。
+CACHE_PATH = PROJECT_ROOT / "04-upload-logs" / "token-scan-cache.json"
 FEISHU_BASE = "https://open.feishu.cn/open-apis"
 MAX_RETRIES = 3
 RETRY_DELAY = 2
@@ -106,27 +108,89 @@ def resolve_key(k: tuple, path_map: dict):
     return None
 
 
+def save_cache(path_map: dict):
+    """把 path_map 落盘为断点缓存。key(tuple) 序列化为 list。"""
+    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "saved_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "count": len(path_map),
+        "paths": [{"key": list(k), "token": v} for k, v in path_map.items()],
+    }
+    CACHE_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2),
+                          encoding="utf-8")
+    print(f"已保存断点缓存 {CACHE_PATH.name}（{len(path_map)} 条，{payload['saved_at']}）")
+
+
+def load_cache() -> dict:
+    """读断点缓存，还原成 path_map(tuple→token)。缓存不存在则报错退出。"""
+    if not CACHE_PATH.exists():
+        sys.exit(f"错误：无断点缓存 {CACHE_PATH.name}，请先做一次全量遍历（不带 --resume）")
+    payload = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+    path_map = {tuple(p["key"]): p["token"] for p in payload.get("paths", [])}
+    print(f"读入断点缓存 {CACHE_PATH.name}（{len(path_map)} 条，存于 {payload.get('saved_at')}）")
+    return path_map
+
+
 def build_key(entry: dict) -> tuple:
     levels = tuple(entry.get(f"level{i}", "") for i in range(1, 7)
                    if entry.get(f"level{i}", ""))
     return (entry["area"],) + levels
 
 
+def parse_args(argv: list):
+    """解析参数。返回 (apply, resume, rescan_areas, locate_tokens)。
+    --rescan <area> 可重复；剩余非 -- 参数视为要定位的 token。"""
+    apply = resume = False
+    rescan, locate = [], []
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--apply":
+            apply = True
+        elif a == "--resume":
+            resume = True
+        elif a == "--rescan":
+            i += 1
+            if i >= len(argv):
+                sys.exit("错误：--rescan 后需跟一个 area 名（如 归档库）")
+            rescan.append(argv[i])
+        elif a.startswith("--"):
+            sys.exit(f"错误：未知参数 {a}")
+        else:
+            locate.append(a)
+        i += 1
+    return apply, resume, rescan, locate
+
+
 def main():
-    apply = "--apply" in sys.argv
-    locate = [a for a in sys.argv[1:] if not a.startswith("--")]  # 传 token 则只定位
+    apply, resume, rescan_areas, locate = parse_args(sys.argv[1:])
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     roots = cfg["root_folders"]  # {name: {folder_token, ...}}
-    token = get_token()
+    for a in rescan_areas:
+        if a not in roots:
+            sys.exit(f"错误：--rescan 的 area『{a}』不在根文件夹中，可选：{list(roots)}")
 
-    path_map = {}
-    for area, meta in roots.items():
-        ft = meta["folder_token"]
-        # 根文件夹本身也可作为 area 顶层
-        path_map[(area,)] = ft
+    # 决定要遍历哪些根：--resume 时只遍历 --rescan 指定的分支，其余从缓存读；
+    # 否则全量遍历 4 个根。
+    if resume:
+        path_map = load_cache()
+        walk_areas = rescan_areas  # 只重爬问题分支，可为空(纯读缓存)
+    else:
+        path_map = {}
+        walk_areas = list(roots)  # 全量
+
+    token = get_token() if walk_areas else None
+    for area in walk_areas:
+        ft = roots[area]["folder_token"]
+        path_map[(area,)] = ft  # 根文件夹本身也可作为 area 顶层
         print(f"遍历根文件夹 {area} ({ft}) ...")
         walk(token, area, ft, tuple(), path_map)
-    print(f"云盘共抓到 {len(path_map)} 个文件夹路径")
+    print(f"当前 path_map 共 {len(path_map)} 个文件夹路径"
+          + ("（含缓存）" if resume else ""))
+
+    # 遍历过云盘就刷新断点缓存（纯读缓存续跑则不覆盖）
+    if walk_areas or not resume:
+        save_cache(path_map)
 
     if locate:
         tok2path = {v: k for k, v in path_map.items()}
