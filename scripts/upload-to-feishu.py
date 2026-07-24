@@ -70,7 +70,8 @@ def get_tenant_access_token() -> str:
     if not app_id or not app_secret:
         print("错误：请设置环境变量 FEISHU_APP_ID 和 FEISHU_APP_SECRET")
         return ""
-    resp = requests.post(
+    resp = feishu_request(
+        "POST",
         f"{FEISHU_BASE}/auth/v3/tenant_access_token/internal",
         json={"app_id": app_id, "app_secret": app_secret},
     )
@@ -83,6 +84,78 @@ def get_tenant_access_token() -> str:
 
 def get_headers(token: str) -> dict:
     return {"Authorization": f"Bearer {token}"}
+
+
+# ---- 限流 + 429/频控指数退避（upload 与 move 共用同一道闸）----
+_last_call_ts = 0.0
+_min_interval = 0.25          # ≤4 QPS，留缓冲；configure_rate_limit 可覆盖
+_rate_limit_retry_max = 5     # 被限流后的最大重试次数
+_rate_limit_base_delay = 5.0  # 无 Retry-After 头时的指数退避基数（秒）
+
+# 飞书接口层频控错误码（HTTP 429 之外，body 里返回的限流 code）
+FEISHU_RATE_LIMIT_CODES = {99991400}
+
+
+def configure_rate_limit(settings: dict) -> None:
+    """从 upload_settings 读取限流参数（可选），否则用默认值。"""
+    global _min_interval, _rate_limit_retry_max, _rate_limit_base_delay
+    qps = settings.get("max_qps", 4)
+    if qps and qps > 0:
+        _min_interval = 1.0 / qps
+    _rate_limit_retry_max = settings.get("rate_limit_retry_max", 5)
+    _rate_limit_base_delay = settings.get("retry_delay_seconds", 5)
+
+
+def _throttle() -> None:
+    """调用间主动限速：保证相邻两次 API 调用间隔 ≥ _min_interval，从源头压在阈值下。"""
+    global _last_call_ts
+    wait = _min_interval - (time.monotonic() - _last_call_ts)
+    if wait > 0:
+        time.sleep(wait)
+    _last_call_ts = time.monotonic()
+
+
+def _rewind_files(files) -> None:
+    """退避重试前把文件体指针复位到 0，避免二次请求读到空内容。"""
+    if not files:
+        return
+    for v in files.values():
+        fobj = v[1] if isinstance(v, (list, tuple)) and len(v) > 1 else v
+        if hasattr(fobj, "seek"):
+            try:
+                fobj.seek(0)
+            except (OSError, ValueError):
+                pass
+
+
+def feishu_request(method: str, url: str, **kwargs) -> "requests.Response":
+    """统一的飞书 API 调用入口：调用间限流（≤max_qps）+ HTTP 429/频控码指数退避。
+    命中限流时优先读 Retry-After 头，否则按 base*2^n 退避；非限流响应原样返回，
+    调用方沿用原有的 code==0 判断与业务重试逻辑。"""
+    attempt = 0
+    while True:
+        _throttle()
+        _rewind_files(kwargs.get("files"))
+        resp = requests.request(method, url, **kwargs)
+
+        limited = resp.status_code == 429
+        if not limited and resp.status_code < 400:
+            try:
+                limited = resp.json().get("code") in FEISHU_RATE_LIMIT_CODES
+            except ValueError:
+                limited = False
+
+        if not limited or attempt >= _rate_limit_retry_max:
+            return resp
+
+        retry_after = resp.headers.get("Retry-After", "")
+        if retry_after.isdigit():
+            delay = float(retry_after)
+        else:
+            delay = _rate_limit_base_delay * (2 ** attempt)
+        print(f"  触发飞书频控（{resp.status_code}），{delay:.0f}s 后重试…")
+        time.sleep(delay)
+        attempt += 1
 
 
 folder_list_cache: dict[str, list] = {}
@@ -98,7 +171,7 @@ def list_folder_cached(token: str, folder_token: str) -> list:
         params = {"folder_token": folder_token, "page_size": 200}
         if page_token:
             params["page_token"] = page_token
-        resp = requests.get(url, headers=get_headers(token), params=params)
+        resp = feishu_request("GET", url, headers=get_headers(token), params=params)
         data = resp.json()
         if data.get("code") != 0:
             break
@@ -110,16 +183,40 @@ def list_folder_cached(token: str, folder_token: str) -> list:
     return all_files
 
 
+def list_folder_live(token: str, folder_token: str) -> list:
+    """绕过缓存、实时 GET 父夹子项后回填缓存。用于建夹前复查，规避飞书
+    read-after-write 延迟（刚建的夹尚未进列表）。"""
+    folder_list_cache.pop(folder_token, None)
+    return list_folder_cached(token, folder_token)
+
+
 def create_folder(token: str, parent_token: str, name: str) -> str | None:
+    """幂等建夹，根治「re-list 未见刚建夹 → 重复建同名夹」竞态：
+    1) 建前实时复查父夹——若已有同名子夹（含上一次 create 因 read-after-write 延迟
+       尚未进缓存、或跨 run/进程已建的情况），直接复用其 token，绝不重复创建；
+    2) 确无同名才创建；成功后把新夹并入父夹缓存，后续同 run 查找直接命中、不再 re-list，
+       从源头消除延迟窗口。"""
+    # 1) 建前实时复查，命中同名夹即复用
+    for item in list_folder_live(token, parent_token):
+        if item.get("name") == name and item.get("type") == "folder":
+            return item["token"]
+    # 2) 确无 → 创建
     url = f"{FEISHU_BASE}/drive/v1/files/create_folder"
-    resp = requests.post(url, headers=get_headers(token), json={
+    resp = feishu_request("POST", url, headers=get_headers(token), json={
         "name": name,
         "folder_token": parent_token,
     })
     data = resp.json()
     if data.get("code") == 0:
-        folder_list_cache.pop(parent_token, None)
-        return data["data"]["token"]
+        new_token = data["data"]["token"]
+        # 把新夹并入父夹缓存，避免下一个文件 re-list 时因延迟看不到而重复建
+        entry = {"name": name, "type": "folder", "token": new_token}
+        cache = folder_list_cache.get(parent_token)
+        if cache is not None:
+            cache.append(entry)
+        else:
+            folder_list_cache[parent_token] = [entry]
+        return new_token
     print(f"  创建文件夹失败 [{name}]: {data.get('msg', resp.text)}")
     return None
 
@@ -147,7 +244,7 @@ def upload_file(token: str, folder_token: str, filepath: Path) -> dict:
     url = f"{FEISHU_BASE}/drive/v1/files/upload_all"
     file_size = filepath.stat().st_size
     with open(filepath, "rb") as f:
-        resp = requests.post(url, headers=get_headers(token), data={
+        resp = feishu_request("POST", url, headers=get_headers(token), data={
             "file_name": filepath.name,
             "parent_type": "explorer",
             "parent_node": folder_token,
@@ -239,6 +336,10 @@ def classify_by_mapping(rel_parts: tuple[str, ...], config: dict) -> tuple[str, 
     rel_str = "/".join(rel_parts)
     for entry in _folder_mapping:
         wps_src = entry["wps_source"]
+        # base 表个别行（如 99.0 待上传GDrive资料）带 "财务部/" 根前缀，
+        # 而 staging 实际相对路径已剥离该层，剥前缀对齐后再比对。
+        if wps_src.startswith("财务部/"):
+            wps_src = wps_src[len("财务部/"):]
         if rel_str.lower().startswith(wps_src.lower()):
             feishu_path = entry["feishu_path"]
             remaining = rel_str[len(wps_src):].lstrip("/")
@@ -263,6 +364,27 @@ def classify_by_mapping(rel_parts: tuple[str, ...], config: dict) -> tuple[str, 
                     else:
                         sub_parts = remaining.split("/") if remaining else []
                         sub_parts = [p for p in sub_parts if p]
+                    sub = Path(*sub_parts) if sub_parts else Path(".")
+                    return f"精确映射({entity})", root_token, sub
+
+            # 归档库 下的 APAC 境外实体（H1_ 香港 / S1_ 新加坡）走各自独立 token 表，
+            # 结构与 C1-C9 不同，不在 entity_subfolder_tokens 内。
+            region_entity_maps = {"H1": "hkg_subfolder_tokens", "S1": "sgp_subfolder_tokens"}
+            for ent_prefix, cfg_key in region_entity_maps.items():
+                if entity.startswith(ent_prefix):
+                    ent_data = config.get(cfg_key, {})
+                    root_token = ent_data.get("root", "")
+                    subfolder_path = "/".join(feishu_path[2:])
+                    for path_key in sorted(ent_data.keys(), key=len, reverse=True):
+                        if path_key != "root" and subfolder_path.startswith(path_key):
+                            root_token = ent_data[path_key]
+                            subfolder_path = subfolder_path[len(path_key):].lstrip("/")
+                            break
+                    if subfolder_path:
+                        sub_parts = subfolder_path.split("/") + (remaining.split("/") if remaining else [])
+                    else:
+                        sub_parts = remaining.split("/") if remaining else []
+                    sub_parts = [p for p in sub_parts if p]
                     sub = Path(*sub_parts) if sub_parts else Path(".")
                     return f"精确映射({entity})", root_token, sub
 
@@ -555,6 +677,7 @@ def upload_with_retry(token: str, folder_token: str, filepath: Path, settings: d
 def run_upload(dry_run: bool = False, source_prefix: str | None = None, limit: int | None = None):
     config = load_config()
     settings = config["upload_settings"]
+    configure_rate_limit(settings)
 
     if not dry_run:
         token = get_tenant_access_token()

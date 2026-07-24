@@ -208,6 +208,9 @@ def reconstruct(records: list):
 
         if area:
             cur_area = area
+            # 新区域块边界：清空上一区域残留的继承层级，避免区域锚点行
+            # （只填区域、层级为空）错误继承上一区域的深层目录形成幽灵节点
+            cur_levels = ["", "", "", "", "", ""]
         # 找本行设置的最深层级
         set_idx = [i for i, v in enumerate(row_levels) if v]
         if set_idx:
@@ -225,7 +228,9 @@ def reconstruct(records: list):
         if not cur_area and not any(cur_levels) and not wps:
             continue  # 完全空行，跳过
 
-        levels_now = [cur_levels[i] for i in range(depth)] if set_idx else [v for v in cur_levels if v]
+        # 无论哪条分支都剔除中间空层级段（如 "银行电子回单//Aspire"）：
+        # 某些行只设最深层而跳过中间列，idx_range 会往空隙写入空串，位置切片会保留成幽灵空层。
+        levels_now = [cur_levels[i] for i in range(depth) if cur_levels[i]] if set_idx else [v for v in cur_levels if v]
         nodes.append({
             "area": cur_area,
             "levels": levels_now,
@@ -330,11 +335,28 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--inspect", action="store_true", help="打印表结构与样本")
     ap.add_argument("--apply", action="store_true", help="直接覆盖正式配置（默认写 .preview）")
+    ap.add_argument("--dump-raw", metavar="OUT", help="按视图顺序导出原始记录到 JSON（只读诊断用）")
     args = ap.parse_args()
 
     token = get_token()
     if args.inspect:
         inspect(token)
+        return
+    if args.dump_raw:
+        view_id = default_view_id(token)
+        records = fetch_records_ordered(token, view_id)
+        rows = []
+        for idx, r in enumerate(records):
+            f = r.get("fields", {})
+            rows.append({
+                "i": idx,
+                "area": cell_text(f.get(AREA_F)),
+                "levels": [cell_text(f.get(L)) for L in LEVELS_F],
+                "wps": cell_text(f.get(WPS_F)),
+                "note": cell_text(f.get(NOTE_F)),
+            })
+        Path(args.dump_raw).write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"已导出 {len(rows)} 条原始记录 → {args.dump_raw}")
         return
     generate(token, apply=args.apply)
 
