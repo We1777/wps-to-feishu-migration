@@ -306,7 +306,20 @@ def main():
     elif args.validate_tokens:
         cmd_validate_tokens(token)
     elif args.merge:
-        cmd_merge(token, args.merge[0], args.merge[1], args.dry_run)
+        # live 合并会移动/删除/建夹，须与其它写进程（移动/合并）互斥，防并发重复夹。
+        # dry-run 只读，免锁。
+        lock_fp = None
+        if not args.dry_run:
+            try:
+                lock_fp = U.acquire_write_lock(label="cleanup-duplicates-merge")
+            except U.WriteLockHeld as e:
+                print(f"已有飞书写进程在跑（{e}），拒绝并发启动以防重复夹。"
+                      f"\n请等它结束或确认无残留进程后再跑。")
+                return
+        try:
+            cmd_merge(token, args.merge[0], args.merge[1], args.dry_run)
+        finally:
+            U.release_write_lock(lock_fp)
     else:
         ap.print_help()
 

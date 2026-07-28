@@ -13,6 +13,7 @@ import sys
 import csv
 import json
 import time
+import fcntl
 import hashlib
 import argparse
 import requests
@@ -49,6 +50,48 @@ VOUCHER_SUBCATEGORY_KEYWORDS = {
     "g. 税局回单 - 纳税回单": ["纳税", "完税", "印花税", "税费", "税局", "TAXPYMT", "TAXCLMX"],
     "h. 第三方回单": ["第三方", "银行手续费", "手续费", "BANKBLL"],
 }
+
+
+# ── 跨进程排他写锁 ──────────────────────────────────────────────────────────
+# 重复夹的根因是「两个写进程并发跑」：分段重跑时上一段进程尚未结束（或刚建的夹
+# 还在飞书 read-after-write 延迟窗口内未进列表），另一段进程的 create_folder 建前
+# 复查看不到 → 又建一个同名夹。create_folder 现已幂等，唯一残余风险就是并发。
+# 用 flock 排他锁把所有「建夹/移动/合并」进程串行化：同一时刻只允许一个写进程。
+# flock 在进程退出/崩溃时由内核自动释放，不会留下需手工清理的残留锁。
+WRITE_LOCK_PATH = UPLOAD_LOG_DIR / ".feishu-write.lock"
+
+
+class WriteLockHeld(Exception):
+    """另一个飞书写进程（移动/合并）正持有排他锁，本进程应拒绝启动而非并发。"""
+
+
+def acquire_write_lock(label: str = ""):
+    """获取跨进程排他写锁。成功返回已加锁的文件对象（须在结束时 release_write_lock）；
+    已被占用则抛 WriteLockHeld，异常里带持锁者信息（pid/label/时间）。"""
+    UPLOAD_LOG_DIR.mkdir(parents=True, exist_ok=True)
+    fp = open(WRITE_LOCK_PATH, "a+")
+    try:
+        fcntl.flock(fp.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        fp.seek(0)
+        holder = fp.read().strip() or "(未知)"
+        fp.close()
+        raise WriteLockHeld(holder)
+    # 拿到锁 → 覆盖写入本进程信息，供并发者知道是谁在跑
+    fp.seek(0)
+    fp.truncate()
+    fp.write(f"pid={os.getpid()} label={label} at={datetime.now().isoformat()}\n")
+    fp.flush()
+    return fp
+
+
+def release_write_lock(fp) -> None:
+    if fp is None:
+        return
+    try:
+        fcntl.flock(fp.fileno(), fcntl.LOCK_UN)
+    finally:
+        fp.close()
 
 
 def load_config() -> dict:

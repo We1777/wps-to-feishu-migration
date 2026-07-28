@@ -192,6 +192,17 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
             print("提示：dry-run 需要飞书凭证才能读取 staging 结构")
             return
 
+    # 排他写锁：live 移动会建目标子夹，必须与其它建夹/移动/合并进程互斥，
+    # 杜绝并发进程 read-after-write 各自建同名夹的重复夹根因。dry-run 只读免锁。
+    lock_fp = None
+    if not dry_run:
+        try:
+            lock_fp = U.acquire_write_lock(label="move-within-feishu")
+        except U.WriteLockHeld as e:
+            print(f"已有飞书写进程在跑（{e}），拒绝并发启动以防重复夹。"
+                  f"\n请等它结束或确认无残留进程后再跑。")
+            return
+
     mode_label = "dry-run 模拟" if dry_run else "移动"
     print(f"模式：{mode_label}")
     print(f"staging 文件夹：{staging_token}")
@@ -348,17 +359,34 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "时间": datetime.now().isoformat(), "错误": err,
             })
 
+    # 每行补「源文件夹」（源路径去掉文件名那一层，可读路径）
+    for e in log_entries:
+        src_dir = "/".join(e["源路径"].split("/")[:-1])
+        e["源文件夹"] = src_dir if src_dir else "(staging根)"
+
     # 写日志
     UPLOAD_LOG_DIR.mkdir(parents=True, exist_ok=True)
     date_str = datetime.now().strftime("%Y%m%d")
     suffix = "-dryrun" if dry_run else ""
     log_path = UPLOAD_LOG_DIR / f"move-report-{date_str}{suffix}.csv"
-    fieldnames = ["源路径", "路由", "状态", "文件token", "源folder_token",
+    fieldnames = ["源路径", "源文件夹", "路由", "状态", "文件token", "源folder_token",
                   "目标folder_token", "子路径", "目标末级子文件夹", "时间", "错误"]
     with open(log_path, "w", newline="", encoding="utf-8-sig") as fp:
         writer = csv.DictWriter(fp, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(log_entries)
+
+    # 源文件夹汇总：每个源文件夹一行 + 文件数，随主报告一并产出
+    folder_counts: dict[tuple[str, str], int] = {}
+    for e in log_entries:
+        key = (e["源文件夹"], e.get("源folder_token", ""))
+        folder_counts[key] = folder_counts.get(key, 0) + 1
+    summary_path = UPLOAD_LOG_DIR / f"move-report-{date_str}{suffix}-source-folders.csv"
+    with open(summary_path, "w", newline="", encoding="utf-8-sig") as fp:
+        w = csv.writer(fp)
+        w.writerow(["源文件夹路径", "文件数", "源folder_token"])
+        for (p, tok), n in sorted(folder_counts.items()):
+            w.writerow([p, n, tok])
 
     failed = stats.pop("failed", 0)
     skip_dup = stats.pop("skip_dup", 0)
@@ -374,7 +402,11 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
     print(f"  fallback 保留原位：{skip_fallback}")
     if not dry_run:
         print(f"  失败：{failed}")
+    print(f"  源文件夹总数：{len(folder_counts)}")
     print(f"  日志：{log_path}")
+    print(f"  源文件夹汇总：{summary_path}")
+
+    U.release_write_lock(lock_fp)
 
 
 def run_undo(report_csv: str, dry_run: bool = False,
