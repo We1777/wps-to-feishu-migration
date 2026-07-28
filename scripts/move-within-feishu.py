@@ -364,9 +364,9 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
         src_dir = "/".join(e["源路径"].split("/")[:-1])
         e["源文件夹"] = src_dir if src_dir else "(staging根)"
 
-    # 写日志
+    # 写日志（文件名带到秒的时间戳：同一天跑多批时各批报告独立留存，不互相覆盖）
     UPLOAD_LOG_DIR.mkdir(parents=True, exist_ok=True)
-    date_str = datetime.now().strftime("%Y%m%d")
+    date_str = datetime.now().strftime("%Y%m%d-%H%M%S")
     suffix = "-dryrun" if dry_run else ""
     log_path = UPLOAD_LOG_DIR / f"move-report-{date_str}{suffix}.csv"
     fieldnames = ["源路径", "源文件夹", "路由", "状态", "文件token", "源folder_token",
@@ -549,7 +549,7 @@ def run_undo(report_csv: str, dry_run: bool = False,
             stats["failed"] += 1
 
     UPLOAD_LOG_DIR.mkdir(parents=True, exist_ok=True)
-    date_str = datetime.now().strftime("%Y%m%d")
+    date_str = datetime.now().strftime("%Y%m%d-%H%M%S")
     suffix = "-dryrun" if dry_run else ""
     log_path = UPLOAD_LOG_DIR / f"undo-report-{date_str}{suffix}.csv"
     fieldnames = ["源路径", "状态", "从folder_token", "回folder_token", "时间", "错误"]
