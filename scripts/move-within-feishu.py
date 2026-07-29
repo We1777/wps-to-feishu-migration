@@ -20,7 +20,9 @@
 import os
 import sys
 import csv
+import json
 import time
+import hashlib
 import argparse
 import importlib.util
 from datetime import datetime
@@ -158,6 +160,46 @@ def build_token_path_map(config: dict) -> dict[str, str]:
     return m
 
 
+# ── 断点续跑（checkpoint/resume）────────────────────────────────────────────
+# live 移动逐条把处理结果追加写入断点日志（JSONL，每行 flush+fsync 落盘）。
+# 进程中断后重跑同一批（同 staging + 同前缀 → 同一断点文件）：
+#   1) 已处理文件（success / 各类跳过）直接跳过，不重复移动、不重复对目标夹查重；
+#   2) 之前各段的处理记录并入最终对账 CSV，报告覆盖整批、不丢行；
+#   3) 「失败」行不算已处理，续跑时自动重试。
+# 正常跑完出完 CSV 后断点文件即删除；--fresh 可放弃断点从头重跑。
+# 注意：续跑仍重新遍历 staging 现状（不用快照），已被人工挪走的文件天然不在
+# 遍历结果里，绝不会按旧 token 把人工挪过的文件再搬一次。
+CKPT_DONE_STATUSES = {"success", "跳过-同名", "跳过-fallback保留原位", "跳过-无目标"}
+
+
+def checkpoint_path(staging_token: str, source_prefix: str | None) -> Path:
+    key = f"{staging_token}|{(source_prefix or '').lower()}"
+    digest = hashlib.md5(key.encode("utf-8")).hexdigest()[:10]
+    return UPLOAD_LOG_DIR / f"move-checkpoint-{digest}.jsonl"
+
+
+def load_checkpoint(path: Path) -> list[dict]:
+    """读断点日志，返回已处理（done 状态）的条目；失败/未知状态行丢弃 → 续跑重试。
+    中断瞬间可能留下半行 JSON，解析失败的行直接忽略（该文件会被重新处理，幂等）。"""
+    entries: list[dict] = []
+    if not path.exists():
+        return entries
+    with open(path, encoding="utf-8") as fp:
+        for line in fp:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("_meta"):
+                continue
+            if rec.get("状态") in CKPT_DONE_STATUSES:
+                entries.append(rec)
+    return entries
+
+
 def move_file(token: str, file_token: str, dest_folder_token: str) -> dict:
     """飞书云盘内移动文件到目标文件夹。"""
     url = f"{FEISHU_BASE}/drive/v1/files/{file_token}/move"
@@ -172,7 +214,9 @@ def move_file(token: str, file_token: str, dest_folder_token: str) -> dict:
 
 
 def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
-             source_prefix: str | None = None, limit: int | None = None):
+             source_prefix: str | None = None, limit: int | None = None,
+             fresh: bool = False) -> bool:
+    """执行迁移；返回 True=本批正常跑完（供监督器判断退出码），False=启动失败早退。"""
     config = U.load_config()
     settings = config.get("upload_settings", {})
     U.configure_rate_limit(settings)
@@ -184,13 +228,13 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
     if not dry_run:
         token = U.get_tenant_access_token()
         if not token:
-            return
+            return False
     else:
         # dry-run 也需要 token 才能读取 staging 结构（只读 GET）
         token = U.get_tenant_access_token()
         if not token:
             print("提示：dry-run 需要飞书凭证才能读取 staging 结构")
-            return
+            return False
 
     # 排他写锁：live 移动会建目标子夹，必须与其它建夹/移动/合并进程互斥，
     # 杜绝并发进程 read-after-write 各自建同名夹的重复夹根因。dry-run 只读免锁。
@@ -201,7 +245,38 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
         except U.WriteLockHeld as e:
             print(f"已有飞书写进程在跑（{e}），拒绝并发启动以防重复夹。"
                   f"\n请等它结束或确认无残留进程后再跑。")
+            return False
+
+    # 断点续跑：live 模式打开断点日志，加载上次未跑完批次的已处理记录
+    ckpt_fp = None
+    prev_entries: list[dict] = []
+    done_tokens: set[str] = set()
+    if not dry_run:
+        ckpt = checkpoint_path(staging_token, source_prefix)
+        if fresh and ckpt.exists():
+            ckpt.unlink()
+            print("--fresh：已放弃上次断点，从头重跑")
+        prev_entries = load_checkpoint(ckpt)
+        done_tokens = {e.get("文件token", "") for e in prev_entries if e.get("文件token")}
+        is_new_ckpt = not ckpt.exists()
+        ckpt_fp = open(ckpt, "a", encoding="utf-8")
+        if is_new_ckpt:
+            ckpt_fp.write(json.dumps({
+                "_meta": 1, "staging": staging_token, "prefix": source_prefix or "",
+                "started": datetime.now().isoformat(),
+            }, ensure_ascii=False) + "\n")
+            ckpt_fp.flush()
+        if prev_entries:
+            print(f"断点续跑：检测到上次未跑完的批次，已处理 {len(prev_entries)} 个文件"
+                  f"将直接跳过，从断点继续（如需从头重跑请加 --fresh）")
+
+    def journal(entry: dict) -> None:
+        """逐条落盘断点日志（flush+fsync），进程随时被杀都不丢已写记录。dry-run 无操作。"""
+        if ckpt_fp is None:
             return
+        ckpt_fp.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        ckpt_fp.flush()
+        os.fsync(ckpt_fp.fileno())
 
     mode_label = "dry-run 模拟" if dry_run else "移动"
     print(f"模式：{mode_label}")
@@ -252,6 +327,12 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
         if limit and processed >= limit:
             break
 
+        # 断点续跑：上次已处理（含 success/各类跳过）的文件直接跳过，
+        # 其记录已在 prev_entries 里、会并入最终 CSV，此处不重复记行
+        if f["file_token"] in done_tokens:
+            stats["skip_ckpt"] = stats.get("skip_ckpt", 0) + 1
+            continue
+
         label, folder_token, sub_path = U.classify_file(rel_parts, config)
         if label == "fallback":
             # fallback 文件不移动，保留在原位置不动
@@ -261,6 +342,7 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "文件token": f["file_token"], "源folder_token": f["src_folder_token"],
                 "目标folder_token": "", "时间": datetime.now().isoformat(), "错误": "",
             })
+            journal(log_entries[-1])
             stats["skip_fallback"] = stats.get("skip_fallback", 0) + 1
             continue
         if not folder_token:
@@ -270,6 +352,7 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "文件token": f["file_token"], "源folder_token": f["src_folder_token"],
                 "目标folder_token": "", "时间": datetime.now().isoformat(), "错误": "",
             })
+            journal(log_entries[-1])
             stats["skip_no_target"] = stats.get("skip_no_target", 0) + 1
             continue
 
@@ -312,6 +395,7 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "目标末级子文件夹": leaf_folder,
                 "时间": datetime.now().isoformat(), "错误": "无法创建目标文件夹",
             })
+            journal(log_entries[-1])
             stats["failed"] = stats.get("failed", 0) + 1
             continue
 
@@ -325,6 +409,7 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "目标末级子文件夹": leaf_folder,
                 "时间": datetime.now().isoformat(), "错误": "",
             })
+            journal(log_entries[-1])
             stats["skip_dup"] = stats.get("skip_dup", 0) + 1
             continue
 
@@ -347,6 +432,7 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "目标末级子文件夹": leaf_folder,
                 "时间": datetime.now().isoformat(), "错误": "",
             })
+            journal(log_entries[-1])
         else:
             err = result.get("error", "unknown") if result else "unknown"
             print(f"  失败: {rel_str} — {err}")
@@ -358,9 +444,13 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
                 "目标末级子文件夹": leaf_folder,
                 "时间": datetime.now().isoformat(), "错误": err,
             })
+            journal(log_entries[-1])
+
+    # 断点续跑：上次各段已处理的记录并入本次报告，整批一份 CSV、不丢行
+    all_entries = prev_entries + log_entries
 
     # 每行补「源文件夹」（源路径去掉文件名那一层，可读路径）
-    for e in log_entries:
+    for e in all_entries:
         src_dir = "/".join(e["源路径"].split("/")[:-1])
         e["源文件夹"] = src_dir if src_dir else "(staging根)"
 
@@ -374,11 +464,11 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
     with open(log_path, "w", newline="", encoding="utf-8-sig") as fp:
         writer = csv.DictWriter(fp, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
-        writer.writerows(log_entries)
+        writer.writerows(all_entries)
 
     # 源文件夹汇总：每个源文件夹一行 + 文件数，随主报告一并产出
     folder_counts: dict[tuple[str, str], int] = {}
-    for e in log_entries:
+    for e in all_entries:
         key = (e["源文件夹"], e.get("源folder_token", ""))
         folder_counts[key] = folder_counts.get(key, 0) + 1
     summary_path = UPLOAD_LOG_DIR / f"move-report-{date_str}{suffix}-source-folders.csv"
@@ -392,11 +482,15 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
     skip_dup = stats.pop("skip_dup", 0)
     skip_no_target = stats.pop("skip_no_target", 0)
     skip_fallback = stats.pop("skip_fallback", 0)
+    skip_ckpt = stats.pop("skip_ckpt", 0)
     total_ok = sum(stats.values())
     detail = " / ".join(f"{k} {v}" for k, v in sorted(stats.items()) if v > 0)
 
     print(f"\n{mode_label}完成：")
     print(f"  处理：{total_ok}（{detail}）")
+    if prev_entries:
+        print(f"  断点续跑沿用（上次已处理并入报告）：{len(prev_entries)}"
+              f"，其中本次扫描仍在源夹被跳过：{skip_ckpt}")
     print(f"  同名跳过：{skip_dup}")
     print(f"  无目标跳过：{skip_no_target}")
     print(f"  fallback 保留原位：{skip_fallback}")
@@ -406,7 +500,17 @@ def run_move(dry_run: bool = False, staging_token: str = DEFAULT_STAGING_TOKEN,
     print(f"  日志：{log_path}")
     print(f"  源文件夹汇总：{summary_path}")
 
+    # 本批正常跑完：断点日志使命结束，删除（对账以 CSV 报告留底）。
+    # 有失败行时保留断点文件，重跑可只补失败的那些。
+    if ckpt_fp is not None:
+        ckpt_fp.close()
+        if failed == 0:
+            checkpoint_path(staging_token, source_prefix).unlink(missing_ok=True)
+        else:
+            print(f"  有 {failed} 个失败：断点文件保留，重跑同一命令将只重试失败文件")
+
     U.release_write_lock(lock_fp)
+    return True
 
 
 def run_undo(report_csv: str, dry_run: bool = False,
@@ -578,12 +682,16 @@ def main():
                         help="最多处理 N 个文件")
     parser.add_argument("--undo", type=str, default=None, metavar="MOVE_REPORT_CSV",
                         help="撤回模式：读一份 move-report CSV，把 success 行移回原源夹")
+    parser.add_argument("--fresh", action="store_true",
+                        help="放弃已有断点，从头重跑（默认自动断点续跑）")
     args = parser.parse_args()
     if args.undo:
         run_undo(report_csv=args.undo, dry_run=args.dry_run, staging_token=args.staging)
     else:
-        run_move(dry_run=args.dry_run, staging_token=args.staging,
-                 source_prefix=args.source_prefix, limit=args.limit)
+        ok = run_move(dry_run=args.dry_run, staging_token=args.staging,
+                      source_prefix=args.source_prefix, limit=args.limit,
+                      fresh=args.fresh)
+        sys.exit(0 if ok else 1)
 
 
 if __name__ == "__main__":
