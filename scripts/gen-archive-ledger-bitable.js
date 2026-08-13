@@ -231,9 +231,11 @@ async function verify() {
   const APP = cfg.app_token, T = cfg.table_ids;
   const listFields = async (k) => (await api('GET', `/bitable/v1/apps/${APP}/tables/${T[k]}/fields`)).data.items || [];
   const count = async (k) => {
-    let r = await api('GET', `/bitable/v1/apps/${APP}/tables/${T[k]}/records?page_size=100`);
-    let n = (r.data.items || []).length, pt = r.data.next_page_token, more = r.data.has_more;
-    while (more) { r = await api('GET', `/bitable/v1/apps/${APP}/tables/${T[k]}/records?page_size=100&page_token=${pt}`); n += (r.data.items || []).length; more = r.data.has_more; pt = r.data.next_page_token; }
+    let r = await api('GET', `/bitable/v1/apps/${APP}/tables/${T[k]}/records?page_size=1`);
+    if (!r || r.code !== 0) return `ERR ${r && r.code}:${r && r.msg}`;
+    if (typeof r.data.total === 'number') return r.data.total;
+    let n = (r.data.items || []).length, pt = r.data.page_token || r.data.next_page_token, more = r.data.has_more;
+    while (more) { r = await api('GET', `/bitable/v1/apps/${APP}/tables/${T[k]}/records?page_size=100&page_token=${pt}`); if (!r || r.code !== 0) break; n += (r.data.items || []).length; more = r.data.has_more; pt = r.data.page_token || r.data.next_page_token; await new Promise(z => setTimeout(z, 300)); }
     return n;
   };
   console.log('=== verify ===');
