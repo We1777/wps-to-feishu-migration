@@ -1,0 +1,7572 @@
+[
+{
+"name": "202405 磐沄 社保完税证明 158,934.49.pdf",
+"token": "RBDHbarkXowy7fxllC5cNL4anOb",
+"path": "FY-2024/f. 税局回单 - 人资相关/05-2024/202405 磐沄 社保完税证明 158,934.49.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202405 磐沄 社保完税证明 15,095.03.pdf",
+"token": "FSffb4X7VoTB20x7gLgcPcoynZe",
+"path": "FY-2024/f. 税局回单 - 人资相关/05-2024/202405 磐沄 社保完税证明 15,095.03.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202405 磐沄 公积金缴纳证明 112,852.pdf",
+"token": "Q76RbTjgpozOXIxyFLxcmlnYnod",
+"path": "FY-2024/f. 税局回单 - 人资相关/05-2024/202405 磐沄 公积金缴纳证明 112,852.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202405 磐沄 代扣代缴个人所得税完税凭证 25,758.69.png",
+"token": "QuXfbeWbBozq5JxRZCjcNQ3Nndb",
+"path": "FY-2024/f. 税局回单 - 人资相关/05-2024/202405 磐沄 代扣代缴个人所得税完税凭证 25,758.69.png",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202406 磐沄 社保完税证明 148,783.10.pdf",
+"token": "BKMGbPrzFoRbXdxA1Upc65IBnze",
+"path": "FY-2024/f. 税局回单 - 人资相关/06-2024/202406 磐沄 社保完税证明 148,783.10.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202406 磐沄 社保完税证明 13,393.58.pdf",
+"token": "TkjUb6INyoYlifxHKJCcv0b7nBd",
+"path": "FY-2024/f. 税局回单 - 人资相关/06-2024/202406 磐沄 社保完税证明 13,393.58.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202406 磐沄 公积金缴纳证明 99,628.pdf",
+"token": "YGMAbXj9Ko0Ui1xNAiHcB2ainNd",
+"path": "FY-2024/f. 税局回单 - 人资相关/06-2024/202406 磐沄 公积金缴纳证明 99,628.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202406 磐沄 代扣代缴个人所得税完税凭证 85,280.36.png",
+"token": "NDG8bbRETo9IyOxG1YwcOoMdnff",
+"path": "FY-2024/f. 税局回单 - 人资相关/06-2024/202406 磐沄 代扣代缴个人所得税完税凭证 85,280.36.png",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202407 磐沄 社保完税证明 147,815.57.pdf",
+"token": "OdJUbrK1EoA3Otx1RaucjBNjnGg",
+"path": "FY-2024/f. 税局回单 - 人资相关/07-2024/202407 磐沄 社保完税证明 147,815.57.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202407 磐沄 社保完税证明 14,036.41.pdf",
+"token": "NeuEbtBNboWWw9xn1lRcxKn9nKv",
+"path": "FY-2024/f. 税局回单 - 人资相关/07-2024/202407 磐沄 社保完税证明 14,036.41.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202407 磐沄 公积金缴纳证明 104,958.pdf",
+"token": "ElW4bxnwMofnQux5Bs4clFu2nSg",
+"path": "FY-2024/f. 税局回单 - 人资相关/07-2024/202407 磐沄 公积金缴纳证明 104,958.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202407 磐沄 代扣代缴个人所得税完税凭证 44,071.39.png",
+"token": "IiSFb5cYGovWGkxiO42ckzzRnfh",
+"path": "FY-2024/f. 税局回单 - 人资相关/07-2024/202407 磐沄 代扣代缴个人所得税完税凭证 44,071.39.png",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202408 磐沄 社保完税证明 120,217.18.pdf",
+"token": "L16dboeEmoGOGcxye9FcAYD5nvb",
+"path": "FY-2024/f. 税局回单 - 人资相关/08-2024/202408 磐沄 社保完税证明 120,217.18.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202408 磐沄 社保完税证明 11,414.54.pdf",
+"token": "SXtibZnI7ovBzoxGhHdc6oK4nof",
+"path": "FY-2024/f. 税局回单 - 人资相关/08-2024/202408 磐沄 社保完税证明 11,414.54.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202408 磐沄 公积金缴纳证明 85,362.pdf",
+"token": "UfLSbMRgqoGVjCxFi8McMPFEnrd",
+"path": "FY-2024/f. 税局回单 - 人资相关/08-2024/202408 磐沄 公积金缴纳证明 85,362.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202408 磐沄 代扣代缴个人所得税完税证明 39,229.67.png",
+"token": "JX5ObuT5xoyKNBx28S0cgUeTnqb",
+"path": "FY-2024/f. 税局回单 - 人资相关/08-2024/202408 磐沄 代扣代缴个人所得税完税证明 39,229.67.png",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202409 磐沄 社保完税证明 120,217.18.pdf",
+"token": "AGDLbZLJwojnYdxuyuAcLlbUnxh",
+"path": "FY-2024/f. 税局回单 - 人资相关/09-2024/202409 磐沄 社保完税证明 120,217.18.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202409 磐沄 社保完税证明 11,414.54.pdf",
+"token": "U3sqb4JYXoJQ40xwLu9ckFwInTe",
+"path": "FY-2024/f. 税局回单 - 人资相关/09-2024/202409 磐沄 社保完税证明 11,414.54.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202409 磐沄 公积金缴纳证明 85,362.pdf",
+"token": "G9ibbD0KGosfWUx7wCecUI4snJh",
+"path": "FY-2024/f. 税局回单 - 人资相关/09-2024/202409 磐沄 公积金缴纳证明 85,362.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202409 磐沄 代扣代缴个人所得税完税证明 40,442.81.png",
+"token": "WAXzbfSD3ojGEQxjwBAcwHafnoc",
+"path": "FY-2024/f. 税局回单 - 人资相关/09-2024/202409 磐沄 代扣代缴个人所得税完税证明 40,442.81.png",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202410 磐沄 社保完税证明 11,414.54.pdf",
+"token": "C3XLbPocRofOQexRZ7Tcu726nWf",
+"path": "FY-2024/f. 税局回单 - 人资相关/10-2024/202410 磐沄 社保完税证明 11,414.54.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-11",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202410 磐沄 社保完税凭证 120,217.18.pdf",
+"token": "WdwTbqZ2yoSOyWx9rnYcg3LTnsd",
+"path": "FY-2024/f. 税局回单 - 人资相关/10-2024/202410 磐沄 社保完税凭证 120,217.18.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-11",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202410 磐沄 公积金缴纳证明 85,362.pdf",
+"token": "WjcgbXE77oDFFSxOe9bce05Qnuc",
+"path": "FY-2024/f. 税局回单 - 人资相关/10-2024/202410 磐沄 公积金缴纳证明 85,362.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202410 磐沄 代扣代缴个人所得税完税证明 46,824.59.png",
+"token": "Kas2bf0cao9iyNxvKb1cVqIwnDf",
+"path": "FY-2024/f. 税局回单 - 人资相关/10-2024/202410 磐沄 代扣代缴个人所得税完税证明 46,824.59.png",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202411 磐沄 社保完税证明 11,414.54.pdf",
+"token": "PfxGbmw3bof9zexv8RVclrJBnPe",
+"path": "FY-2024/f. 税局回单 - 人资相关/11-2024/202411 磐沄 社保完税证明 11,414.54.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202411 磐沄 社保完税凭证 120,217.18.pdf",
+"token": "JhqHbHYEBozPOXxVz4tcfglnn2b",
+"path": "FY-2024/f. 税局回单 - 人资相关/11-2024/202411 磐沄 社保完税凭证 120,217.18.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202411 磐沄 公积金缴纳证明 85,362.pdf",
+"token": "KYzubbu7RoQ4mpxzOF5cpeODnhf",
+"path": "FY-2024/f. 税局回单 - 人资相关/11-2024/202411 磐沄 公积金缴纳证明 85,362.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "202411 磐沄 代扣代缴个人所得税完税证明 46,071.61.png",
+"token": "X7s4bDLJdohNoIxvvXKcegu6nRe",
+"path": "FY-2024/f. 税局回单 - 人资相关/11-2024/202411 磐沄 代扣代缴个人所得税完税证明 46,071.61.png",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 账单 融科物业 202501租赁款 126,900.pdf",
+"token": "I12JbcefYotRNfxOf9EcMwdgnyc",
+"path": "FY-2024/a. 对公付款 - 账单/20241206 账单 融科物业 202501租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 账单 联通北分 202411网络费 5,135.pdf",
+"token": "Az7cbv75CoudsLxZKuYcsavlnEW",
+"path": "FY-2024/a. 对公付款 - 账单/20241206 账单 联通北分 202411网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 账单 第一太平 202412物业账单款 9,516.98.pdf",
+"token": "NtmVboBE8oyMTSxz413cDSQtnEb",
+"path": "FY-2024/a. 对公付款 - 账单/20241206 账单 第一太平 202412物业账单款 9,516.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241107 账单 融科物业 202412租赁款 126,900.pdf",
+"token": "WsWgbO3ILoWhwnxwdzRcfPWEnfc",
+"path": "FY-2024/a. 对公付款 - 账单/20241107 账单 融科物业 202412租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241107 账单 第一太平 202411物业账单款 9,278.7.pdf",
+"token": "Jq1qbQofuotrpVxXHxycmCKjnOd",
+"path": "FY-2024/a. 对公付款 - 账单/20241107 账单 第一太平 202411物业账单款 9,278.7.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241105 账单 联通北分 202410_网络通讯费 5,136.76.pdf",
+"token": "Ip2mby9NPoFWAdxsEnucdVNTnRb",
+"path": "FY-2024/a. 对公付款 - 账单/20241105 账单 联通北分 202410_网络通讯费 5,136.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241012 账单 融科物业 租赁款 126,900.pdf",
+"token": "AAcVbzUmDoinoSxnfM5cl5DfnYc",
+"path": "FY-2024/a. 对公付款 - 账单/20241012 账单 融科物业 租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241012 账单 第一太平 物业账单款 9,453.58.pdf",
+"token": "IdfubYOAKoYQiKxvGjCcLxQZnAc",
+"path": "FY-2024/a. 对公付款 - 账单/20241012 账单 第一太平 物业账单款 9,453.58.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240920 账单 海问律所 劳动法咨询及员工承诺函起草.pdf",
+"token": "SiC2b2WERouZVzxjxBmcJAk7nYd",
+"path": "FY-2024/a. 对公付款 - 账单/20240920 账单 海问律所 劳动法咨询及员工承诺函起草.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-20",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 账单 北京联通 网络费 5,135.pdf",
+"token": "Fym5bSIf7oUU8OxIrPWcpTjHnhd",
+"path": "FY-2024/a. 对公付款 - 账单/20240910 账单 北京联通 网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240906 账单 融科物业 租赁款 126,900.pdf",
+"token": "Ime9bWCQmoRM4oxQPXEc7K0cnyg",
+"path": "FY-2024/a. 对公付款 - 账单/20240906 账单 融科物业 租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-17",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240906 账单 第一太平 物业账单款 9,580.37.pdf",
+"token": "K48nbNptZo4pY7x9YNAczizDnnT",
+"path": "FY-2024/a. 对公付款 - 账单/20240906 账单 第一太平 物业账单款 9,580.37.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240807 账单 第一太平 物业账单款 9,747.60.pdf",
+"token": "V3UZbewicog9wGxhV3ichwBNndh",
+"path": "FY-2024/a. 对公付款 - 账单/20240807 账单 第一太平 物业账单款 9,747.60.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240806 账单 北京联通 通讯费 5,135.22.pdf",
+"token": "I62WbHOQFozx7TxR5EOc14lHnnp",
+"path": "FY-2024/a. 对公付款 - 账单/20240806 账单 北京联通 通讯费 5,135.22.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240705 账单 融科物业 房租款 126,900.pdf",
+"token": "OoWNbJvzHoncyHxV9GEcZShOn3d",
+"path": "FY-2024/a. 对公付款 - 账单/20240705 账单 融科物业 房租款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240705 账单 第一太平 物业账单款  9,484.19.pdf",
+"token": "E2fKb1whFomsWExppMEc5S8Vn16",
+"path": "FY-2024/a. 对公付款 - 账单/20240705 账单 第一太平 物业账单款  9,484.19.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 磐沄 团体保险保费缴纳通知书 16,134.pdf",
+"token": "N3dxb7omRoaY9Hxpe1ZcgJlBn3B",
+"path": "FY-2024/a. 对公付款 - 账单/20240703 磐沄 团体保险保费缴纳通知书 16,134.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 磐沄 友邦团体员工福利保险投保单 16,134.pdf",
+"token": "SyeUbArogoA0NlxAgOxcNiKonid",
+"path": "FY-2024/a. 对公付款 - 账单/20240703 磐沄 友邦团体员工福利保险投保单 16,134.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240607 账单 融科物业 房租款 126,900.pdf",
+"token": "YWb6b3PqJozcQvxJhN5cABGen0g",
+"path": "FY-2024/a. 对公付款 - 账单/20240607 账单 融科物业 房租款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240607 账单 第一太平 物业账单款 9,496.21.pdf",
+"token": "KNFRbSGs4oe0wMxO9IwcyczAnHg",
+"path": "FY-2024/a. 对公付款 - 账单/20240607 账单 第一太平 物业账单款 9,496.21.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240606 账单 北京联通 通讯费 5,135.pdf",
+"token": "N9Khbi37voLF88xt5ffcIPEEn2X",
+"path": "FY-2024/a. 对公付款 - 账单/20240606 账单 北京联通 通讯费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-31",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 付款申请单 109 华诚邦友 202412保洁费 2,500.pdf",
+"token": "VQ3sbrDzWoPumex7O8Vcpy46n0g",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241227 付款申请单 109 华诚邦友 202412保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241208 付款申请单 112 融科物业 202501办公室租赁款 126,900.pdf",
+"token": "B1ZpbfxfaoKHlaxcScWc9FWknTf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241208 付款申请单 112 融科物业 202501办公室租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241208 付款申请单 111 第一太平 202412物业账单款 9,516.98.pdf",
+"token": "KadEbj5KXoLlRZxKskXcctpmn3d",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241208 付款申请单 111 第一太平 202412物业账单款 9,516.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241207 付款申请单 110 联通北分 202411办公司网络费 5,135.pdf",
+"token": "G5zjbVjeUo7Q25x4550cUnVXnfG",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241207 付款申请单 110 联通北分 202411办公司网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241201 付款申请单 108 第一太平 202411福利餐费 6,810.pdf",
+"token": "M2sVbAoGeoeye6x5krRcASumnge",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241201 付款申请单 108 第一太平 202411福利餐费 6,810.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241121 付款申请单 107 磐曜科技 资金拆借款 440,000.pdf",
+"token": "VANMbJR5roElpDxdSEFc9slAnae",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241121 付款申请单 107 磐曜科技 资金拆借款 440,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-2",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241109 付款申请单 106 第一太平 202411物业账单款 9,278.70.pdf",
+"token": "Gibqbg5PGoaASxxZ42Ocv1DHnQe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241109 付款申请单 106 第一太平 202411物业账单款 9,278.70.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 付款申请单 104 万巢众创空间 202411工商代理服务费 1,600.pdf",
+"token": "Xi4KbZt7PoeYeMxg7PdcnZKsnAe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241106 付款申请单 104 万巢众创空间 202411工商代理服务费 1,600.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 付款申请单 103 上海百旺金赋 202411工商代理服务费 3,000.pdf",
+"token": "BhP9bqjyLoTxLYxeRP8cDnh2nNf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241106 付款申请单 103 上海百旺金赋 202411工商代理服务费 3,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-17",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 付款申请单 099 华诚邦友 202411_办公室保洁费 2,500.pdf",
+"token": "FyRcbweDyoJdHPxHaD2cnO4KnRe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241106 付款申请单 099 华诚邦友 202411_办公室保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241101 付款申请单 102 第一太平 202410福利餐费 6,020.pdf",
+"token": "NTK8b7naxoGpBDxRVG4chq6RnAh",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241101 付款申请单 102 第一太平 202410福利餐费 6,020.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241101 付款申请单 101 联通北分 202410网络费 5,136.76.pdf",
+"token": "CCK2bR3S1o5xoIx4zOMcbO0mnvb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241101 付款申请单 101 联通北分 202410网络费 5,136.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 付款申请单 098 磐曜科技流动性支持款 440,000.pdf",
+"token": "Kt4cboAI0ooNjRxQvIYcWrsgnQf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241021 付款申请单 098 磐曜科技流动性支持款 440,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 付款申请单 097 202410_物业账单款 9,453.58.pdf",
+"token": "QYmJbBuN2oum3uxYotncEZJbn0f",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241021 付款申请单 097 202410_物业账单款 9,453.58.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-20",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 付款申请单 096 202411_办公室租赁款 126,900.pdf",
+"token": "SxbVbc44xovqGcxwGiHcL0SHnXd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241021 付款申请单 096 202411_办公室租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 付款申请单 092 202409员工福利餐费 6,050.pdf",
+"token": "A8d9bxCKBo6wJPxMYMhcwa85nTb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241010 付款申请单 092 202409员工福利餐费 6,050.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-5",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 付款申请单 091 联通北分 202409办公室网络费 5.135.55.pdf",
+"token": "O5M0bL0YMoUpX5xwknbcglqOnyd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241010 付款申请单 091 联通北分 202409办公室网络费 5.135.55.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-6",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241009 付款申请单 090 华诚邦友 202410办公室保洁费 2,500.pdf",
+"token": "BQM5bSW2uozHDdxxCMhcVBYenRe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241009 付款申请单 090 华诚邦友 202410办公室保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-7",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241008 付款申请单 095 海问律所 律师费 3,710.pdf",
+"token": "SzZLb79d5oMS2Vx5tHQc8nRwnme",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241008 付款申请单 095 海问律所 律师费 3,710.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-22",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241008 付款申请单 094 盛攀园林 2024Q3_绿植费 1,500.pdf",
+"token": "SmJlbXx2Ro6cjbxvdnucckvSnDb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20241008 付款申请单 094 盛攀园林 2024Q3_绿植费 1,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-19",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240926 付款申请单 093 中和呈达 直饮机滤芯费 2,090.pdf",
+"token": "OYuubruhOouAyQxd3HpcFk06ncf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240926 付款申请单 093 中和呈达 直饮机滤芯费 2,090.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240918 付款申请单 086 一家文旅 团建费 7,800.pdf",
+"token": "UFJNbENyuowGE9xkgGncKka9njh",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240918 付款申请单 086 一家文旅 团建费 7,800.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240911 付款申请单 085 华诚邦友 202409保洁费 2,500.pdf",
+"token": "EqjebWqZlo98Y7xJjsAcLXDun3c",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240911 付款申请单 085 华诚邦友 202409保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 付款申请单 087 磐曜科技 资金拆借款 420,000.pdf",
+"token": "Hitvb5vJHoNFzLxqY9IceMi4nrf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240910 付款申请单 087 磐曜科技 资金拆借款 420,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-1",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240909 付款申请单 084 联通北分 202408网络费 5,135.pdf",
+"token": "VKpRbp5CSoD3jxxqSdscfttMnOe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240909 付款申请单 084 联通北分 202408网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240906 付款申请单 083 第一太平 202408物业账单款 9,580.37.pdf",
+"token": "RRD5bN20uoeb8ZxcjqXcf565nMe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240906 付款申请单 083 第一太平 202408物业账单款 9,580.37.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240906 付款申请单 082 融科物业 202410办公室租赁款 126,900.pdf",
+"token": "ByGrbkdr8ors4IxlOkOcGW6vn9b",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240906 付款申请单 082 融科物业 202410办公室租赁款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240905 付款申请单 081 第一太平 202408福利餐费 7,030.pdf",
+"token": "JSUAbDkjKoOF4rxBMclcsXeGnce",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240905 付款申请单 081 第一太平 202408福利餐费 7,030.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240827 付款申请单 075 磐曜流动性支持款 400,000.pdf",
+"token": "Q40CbIpE7oq37Exhn9QcNjwZnle",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240827 付款申请单 075 磐曜流动性支持款 400,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 付款申请单 074 团建费 44,625.pdf",
+"token": "IK3PblYPro30FRxtltlcTU3wnxe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240826 付款申请单 074 团建费 44,625.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 付款申请单 073 聚餐费 8,146.pdf",
+"token": "N7elb7Fe5oMa0Rx9esjcK0iunJf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240826 付款申请单 073 聚餐费 8,146.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240816 付款申请单 080 磐曜流动性支持款 50,000.pdf",
+"token": "Hp9qbNXtDoXzh4x4uA1cqOEYnWg",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240816 付款申请单 080 磐曜流动性支持款 50,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240812 付款申请单 072 维修费 500.pdf",
+"token": "OWSNbzJZ4oyQnnxnunecEzZLn6c",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240812 付款申请单 072 维修费 500.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240807 付款申请单 079 办公室租金 126,900.pdf",
+"token": "Vr6Ub9drBom6KZxvehqcLzrKnfd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240807 付款申请单 079 办公室租金 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240807 付款申请单 078 办公室物业水电 网络费 9,747.6.pdf",
+"token": "DXz8b61v4oX8bZxVBWMcrhuXnKf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240807 付款申请单 078 办公室物业水电 网络费 9,747.6.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240806 付款申请单 077 办公室网络费 5,135.22.pdf",
+"token": "DmrIbW0jpoAsV2xL52WcGlgQnoh",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240806 付款申请单 077 办公室网络费 5,135.22.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240805 付款申请单 071 202408保洁费 2,500.pdf",
+"token": "GZjsb5cPboWAX4xHCaacI1Vin4g",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240805 付款申请单 071 202408保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 付款申请单 076 员工福利餐费 7,370.pdf",
+"token": "K7MqbjGw2oBRbpx8afNcDOt3ndd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240731 付款申请单 076 员工福利餐费 7,370.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-17",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240717 付款申请单 070 办公家具采购 3,014.pdf",
+"token": "F1h9bsojio6g7gxnib2cq5Utnob",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240717 付款申请单 070 办公家具采购 3,014.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 069 腾讯云账号 1,200.pdf",
+"token": "UdtCb1ZanoDOW9xMbtvctiNIn3f",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 069 腾讯云账号 1,200.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 068 磐曜流动性支持款 480,000.pdf",
+"token": "L9Pabe0peoTx2kx1lCbcEhkenAd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 068 磐曜流动性支持款 480,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-27",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 067 招聘服务费 拉勾网 16,500.pdf",
+"token": "NnvPbr2psoVXAOxcH7zcXxvMn03",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 067 招聘服务费 拉勾网 16,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 066 招聘服务费-Boss直聘 15,208.pdf",
+"token": "C3qsbo9Y5oZYSSxkdpCcZFcinmg",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 066 招聘服务费-Boss直聘 15,208.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 065 招聘服务费-实习僧 1,600.pdf",
+"token": "Y5kvbOT4aoITOdx9WS6cduYynBb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 065 招聘服务费-实习僧 1,600.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 付款申请单 064 招聘服务费-猎聘网 19,800.pdf",
+"token": "LXCcbBYflosTIYxlow6cY3xhnvc",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240716 付款申请单 064 招聘服务费-猎聘网 19,800.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240706 付款申请单 056 办公室网络费 5,135.pdf",
+"token": "O7wcbj2KronMBzx9TiacLAOTnFb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240706 付款申请单 056 办公室网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240705 付款申请单 055 物业水电网络费 9,484.19.pdf",
+"token": "FMfsbTuvootVExxCmsGc1vXan4H",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240705 付款申请单 055 物业水电网络费 9,484.19.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240705 付款申请单 054 办公室租金 126,900.pdf",
+"token": "EwQWbTd7Vo8EqQxbywucjtntnEe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240705 付款申请单 054 办公室租金 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240704 付款申请单 053 绿植费 1,500.pdf",
+"token": "GQrUbL548oHlcqxclzJc5Q0Unyd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240704 付款申请单 053 绿植费 1,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240701 付款申请单 052 办公室保洁费 2,500.pdf",
+"token": "WRCbb7425olr7PxGSJXc6HLSnvW",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240701 付款申请单 052 办公室保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240701 付款申请单 051 保险费 16,134.pdf",
+"token": "Gw2pbDFHSol8d8xOqphcOOhOnWd",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240701 付款申请单 051 保险费 16,134.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240701 付款申请单 050 磐曜流动性支持款 127,000.pdf",
+"token": "RX6SbMDk7oeSCAxrXtrck3knnhb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240701 付款申请单 050 磐曜流动性支持款 127,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 付款申请单 049 员工福利餐费 7,940.pdf",
+"token": "GEQ0bs8kNorTUexujORciXaGnwf",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240630 付款申请单 049 员工福利餐费 7,940.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240622 付款申请单 048 办公室网络费 5,135.pdf",
+"token": "BJWbb8Xkio3fJRx79nHcxNf1n6b",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240622 付款申请单 048 办公室网络费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240622 付款申请单 047 办公室保洁费 2,500.pdf",
+"token": "W8OLbOLUioS2mDx46B0c32kcnwD",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240622 付款申请单 047 办公室保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240622 付款申请单 046 物业水电网络费 9,496.21.pdf",
+"token": "ShL9b8Jugotc3mx8CTYcJOTQnJb",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240622 付款申请单 046 物业水电网络费 9,496.21.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240622 付款申请单 045 办公室租金 126,900.pdf",
+"token": "AzrfbKhkaoiSLtxiK9Ecb4hOnCe",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240622 付款申请单 045 办公室租金 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240613 付款申请单 044 苹果电脑款 39,998.pdf",
+"token": "AFrlbnJVFo1W8DxhN2pcOfnHn5d",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240613 付款申请单 044 苹果电脑款 39,998.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240611 付款申请单 043 员工福利餐费 9,070.pdf",
+"token": "K719b3XGPoaR3IxRZUmcWQe4ngV",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240611 付款申请单 043 员工福利餐费 9,070.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240610 付款申请单 042 磐曜流动性支持款 380,000.pdf",
+"token": "Sn6xbkxiNoEaklxX9Vace9rmnoU",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240610 付款申请单 042 磐曜流动性支持款 380,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240515 付款申请单 039 磐曜科技流动性支持款 350,000.pdf",
+"token": "N1yKbqSOToGIhXxeIz7cp4nhnlh",
+"path": "FY-2024/e. 内部凭证/i. 付款申请单/20240515 付款申请单 039 磐曜科技流动性支持款 350,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 费用报销单 061 赵萌 办公室采购 2,185.04.pdf",
+"token": "Ha1ubGgS6otlmuxEOiNc6geln1g",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241227 费用报销单 061 赵萌 办公室采购 2,185.04.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 费用报销单 060 赵萌 滴滴交通费 1,884.19.pdf",
+"token": "QPfvbKfsCo5z7WxhlPCccy3ZnMg",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241227 费用报销单 060 赵萌 滴滴交通费 1,884.19.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241119 费用报销单 059 蔡文炜 快递费 11.44.pdf",
+"token": "YWW9bM9FNo5spFxaOhicnuhenhz",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241119 费用报销单 059 蔡文炜 快递费 11.44.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241118 费用报销单 058 赵萌 办公室采购 2,527.98.pdf",
+"token": "K2zibDcUGoYMYUxYsUQcr6jCnkb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241118 费用报销单 058 赵萌 办公室采购 2,527.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 费用报销单 057 赵萌 交通费 3,283.51.pdf",
+"token": "AqujbB3tlo06PixSVIncnSUjnkc",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241106 费用报销单 057 赵萌 交通费 3,283.51.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 费用报销单 056 赵萌 团建活动费 32,350.92.pdf",
+"token": "QCQObw25IoSAuCxU2eUclDDMnRd",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241021 费用报销单 056 赵萌 团建活动费 32,350.92.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241019 费用报销单 055 曹阳 招聘网站服务费 88.pdf",
+"token": "F0wYbnNwaow532xoiSTcM82Nnfb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241019 费用报销单 055 曹阳 招聘网站服务费 88.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-15",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241019 费用报销单 054 蔡文炜 快递费 28.4.pdf",
+"token": "A4hgbffytonNzMx4hFOcSYGUn8b",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241019 费用报销单 054 蔡文炜 快递费 28.4.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241018 费用报销单 053 赵萌 行政费 2,086.04.pdf",
+"token": "T1gabMMBLoLzmXx4qmocjTkMnb8",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241018 费用报销单 053 赵萌 行政费 2,086.04.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241018 费用报销单 052 赵萌 滴滴交通费 1,459.25.pdf",
+"token": "WpPdb8SufoU8Uxxb76zcxd4Enpd",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241018 费用报销单 052 赵萌 滴滴交通费 1,459.25.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241016 费用报销单 051 赵萌 2024Q3_2723通讯费 312.25.pdf",
+"token": "Vvatbr0pEoXkdOxRz3nc6QYBnWc",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241016 费用报销单 051 赵萌 2024Q3_2723通讯费 312.25.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241016 费用报销单 050 赵萌 2024Q3_6210通讯费 58.5.pdf",
+"token": "Xw5ZbM1lFoQJ1Uxe2CpcDDUwnZd",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241016 费用报销单 050 赵萌 2024Q3_6210通讯费 58.5.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241016 费用报销单 049 赵萌 2024Q3_2703通讯费 82.pdf",
+"token": "WRyibSYPhoXFZ8x68F0chOVAnbn",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20241016 费用报销单 049 赵萌 2024Q3_2703通讯费 82.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240920 费用报销单 048 赵萌 滴滴交通费 4,138.7.pdf",
+"token": "RzVubvbbsoDIXexVmbccjchNnHb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240920 费用报销单 048 赵萌 滴滴交通费 4,138.7.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240920 报销单 047 赵萌 行政部费 3,548.33.pdf",
+"token": "BWBEbku1WoZyUBxPh4lcQp3ZnAd",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240920 报销单 047 赵萌 行政部费 3,548.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240827 报销单 046 蔡文炜 快递费 13.pdf",
+"token": "VjmIbpdGioqvlKxFwyacTs1inqh",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240827 报销单 046 蔡文炜 快递费 13.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 报销单 045 赵萌 交通费 1,534.33.pdf",
+"token": "YD3Bbf6htotUrdxOeoXcegqJnoe",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240826 报销单 045 赵萌 交通费 1,534.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 报销单 044 赵萌 办公室采购 6,039.33.pdf",
+"token": "CnIdbjk7no7Wy4x3SWgcAXz9nIg",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240826 报销单 044 赵萌 办公室采购 6,039.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240715 报销单 043 赵萌 交通费 1,467.36.pdf",
+"token": "GPkibHBVnoGymyxCdebc6vqDnkb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240715 报销单 043 赵萌 交通费 1,467.36.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 报销单 042 赵萌 公司手机号费用 204.pdf",
+"token": "UDoQbc8OkoKOPrxP0J8cBUMMntb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240703 报销单 042 赵萌 公司手机号费用 204.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 报销单 041 赵萌 招聘手机号费用 685.14.pdf",
+"token": "LGLYbMIW6oXpZsxXkkTc4jz4nhc",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240703 报销单 041 赵萌 招聘手机号费用 685.14.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 报销单 040 蔡文炜 快递费 13.30.pdf",
+"token": "FqsgbPciOoHC9sxIuzLcG1Xin2e",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240630 报销单 040 蔡文炜 快递费 13.30.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 报销单 039 关姗 办公室采购 6,903.09.pdf",
+"token": "T9Bpbd7LxoujU9xWyuFc9F2Inad",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240630 报销单 039 关姗 办公室采购 6,903.09.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240621 报销单 038 关姗 办公电脑采购 11,348.10.pdf",
+"token": "Yk4ibOQQAoR1Sjxpx65cTEXunze",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240621 报销单 038 关姗 办公电脑采购 11,348.10.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240531 报销单 037 赵萌 交通费 1,855.87.pdf",
+"token": "WSRRb9vGJofvstxtOyUcd6tJnqb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240531 报销单 037 赵萌 交通费 1,855.87.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240531 报销单 036 关姗 办公用品采购 6,650.24.pdf",
+"token": "Cbw6bVV0HofKMCxdkywck8DvnSc",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240531 报销单 036 关姗 办公用品采购 6,650.24.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240531 报销单 035 关姗 信息技术服务费 750.pdf",
+"token": "Wqj9bmThHok4EGxILtmc5JfQnKe",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240531 报销单 035 关姗 信息技术服务费 750.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240508 报销单 033 卢地 员工福利餐费 1,000.pdf",
+"token": "CCxjbjxz6o75r4xEh6pcyDjpnwb",
+"path": "FY-2024/e. 内部凭证/ii. 费用报销单/20240508 报销单 033 卢地 员工福利餐费 1,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 差旅报销单 007 赵萌 上海办公室考察 2,674.90.pdf",
+"token": "KPj3bvrAZoJvNJxpIjFcdfrdnBg",
+"path": "FY-2024/e. 内部凭证/iii. 差旅报销单/20240826 差旅报销单 007 赵萌 上海办公室考察 2,674.90.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-16",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 差旅报销单 006 卢地 CARV节点运行项目差旅费 13,441.63.pdf",
+"token": "WfXhbuHgcoBK30xSOSgcUdhXnJh",
+"path": "FY-2024/e. 内部凭证/iii. 差旅报销单/20240815 差旅报销单 006 卢地 CARV节点运行项目差旅费 13,441.63.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240715 差旅报销单 005 卢地 Consensus_2024 1,041.76.pdf",
+"token": "RJXmbyAekomH0Ex5HydcXyj0nCf",
+"path": "FY-2024/e. 内部凭证/iii. 差旅报销单/20240715 差旅报销单 005 卢地 Consensus_2024 1,041.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240715 差旅报销单 004 惠思琪 Consensus_2024 605.63.pdf",
+"token": "WYOkb1WKcoZIVuxr6TxcCsCQnde",
+"path": "FY-2024/e. 内部凭证/iii. 差旅报销单/20240715 差旅报销单 004 惠思琪 Consensus_2024 605.63.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 备用金申请单 行政部赵萌 30,000.pdf",
+"token": "VyUxbhYmOo44zmxM6JXcsGYxnMd",
+"path": "FY-2024/e. 内部凭证/iv. 备用金申请单/20240826 备用金申请单 行政部赵萌 30,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 预付费用摊销明细表 6,168.16.pdf",
+"token": "Xm5cb3GJfoyQ9IxD2EXcTkJMnEd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 预付费用摊销明细表 6,168.16.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-27",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 费用摊销明细表 嘉仁康健 招聘体检费 1,280.00.pdf",
+"token": "JNHObEHFlo4ruIx3dgucglpxnFe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 费用摊销明细表 嘉仁康健 招聘体检费 1,280.00.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-27",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 福利保险费原值精算表 16.079.26.pdf",
+"token": "UltFbBXXMoF4q3xs7ikc73zVnne",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 福利保险费原值精算表 16.079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 福利保险费余额精算表 1,054.60.pdf",
+"token": "MenlbLAj5oEFT5xc6iSceBNvn6e",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 福利保险费余额精算表 1,054.60.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"token": "TxKlbJVFKowdAUxsdA3czQEHnng",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-31",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 暂估费用计提明细表（数电票） 334,699.36.pdf",
+"token": "X92ibKx7Toru2MxOBMgcloG3nxe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 暂估费用计提明细表（数电票） 334,699.36.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-32",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 暂估费用计提明细表 8,042.83.pdf",
+"token": "TdaDbD5IkoOTOYxFIewcsbNnnRb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 暂估费用计提明细表 8,042.83.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-35",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 人力成本计算表 537,127.77_卢地邮件确认.pdf",
+"token": "QAVfbyEHQoMakQxYjsQcw4OHnTe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 人力成本计算表 537,127.77_卢地邮件确认.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-36",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241231 人力成本计算表 537,127.77.pdf",
+"token": "YATjbDbfsonyD0xUT6VcEkshnW2",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241231 人力成本计算表 537,127.77.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-36",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 预付费用摊销明细表 4,888.16.pdf",
+"token": "VS2ebNU9GoPVMexpjV0co1lgnSb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 预付费用摊销明细表 4,888.16.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-27",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 福利保险费原值精算表 16.079.26_赵萌+关姗确认.pdf",
+"token": "WQVvbSok2o3zKQxOA1ncnLk5nfb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 福利保险费原值精算表 16.079.26_赵萌+关姗确认.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-29",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 福利保险费原值精算表 16.079.26.pdf",
+"token": "VpgibZgI2o4x07xX3y2cPZUrnMd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 福利保险费原值精算表 16.079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-29",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 福利保险费余额精算表 1,020.58.pdf",
+"token": "Ambpb4ouzoC5omxcQbKcmT0tnkd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 福利保险费余额精算表 1,020.58.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-29",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 磐沄员工福利餐费明细表 6,810.pdf",
+"token": "LgsAbQulLoSdBAxZZ4ZclHYYnFb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 磐沄员工福利餐费明细表 6,810.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-33、转-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"token": "PparbNMAuonN2pxrpVDcy8jrn8b",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-31",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 暂估费用计提明细表（数电票） 307,933.27_赵萌确认邮件.pdf",
+"token": "IFUqb0iLXohPYWxwgNXcHvPXnoh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 暂估费用计提明细表（数电票） 307,933.27_赵萌确认邮件.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-32",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 暂估费用计提明细表（数电票） 307,933.27.pdf",
+"token": "SfrKb7iS7of7R4xQKSpcaudNnWh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 暂估费用计提明细表（数电票） 307,933.27.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-32",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 暂估费用计提明细表 7,473.98.pdf",
+"token": "PpZMbjv21oDhQoxrHLwcB20mnqf",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 暂估费用计提明细表 7,473.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-30",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 人力成本计算表 518,664.69_卢地邮件确认.pdf",
+"token": "Db1MbSOlkoQ3oWxF0Z8cPoSen3b",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 人力成本计算表 518,664.69_卢地邮件确认.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-34",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241130 人力成本计算表 518,664.69.pdf",
+"token": "H1WdbDvIVoZBvixycLjcX500nce",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241130 人力成本计算表 518,664.69.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-34",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 预付费用摊销明细表 4,888.16.pdf",
+"token": "IYE7bAl6ZoCcJ0xPnRnceUlVnTd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 预付费用摊销明细表 4,888.16.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-48",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 福利保险费原值精算表 16.079.26.pdf",
+"token": "EyfbbRmcRoBRTjxwcXscOl8On6f",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 福利保险费原值精算表 16.079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-49",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 福利保险费余额精算表 1,054.60.pdf",
+"token": "QdylbEAldoDDRTxev6hcjH2ente",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 福利保险费余额精算表 1,054.60.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-49",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 磐沄员工福利餐费明细表 6,020.pdf",
+"token": "GdLebiXw0oQFjmx0OyKcobZ3nFh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 磐沄员工福利餐费明细表 6,020.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-56、转-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"token": "UGjsbRRBJoOGqbxYBtQcl8Kznqc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 暂估费用计提明细表（非数电票） 110,940.66.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-53",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 暂估费用计提明细表（数电票） 228,790.89.pdf",
+"token": "ZUFQbEgU7oxlZkxmt7rcNfjun1b",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 暂估费用计提明细表（数电票） 228,790.89.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-54",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 暂估费用计提明细表 6,737.46.pdf",
+"token": "KoDjbNdZYosAUjx1FLXcvgbOnSc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 暂估费用计提明细表 6,737.46.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-52",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241031 人力成本计算表 553,927.39.pdf",
+"token": "Ld3lb3Lcboyz5gx59C6cOgABned",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20241031 人力成本计算表 553,927.39.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-55",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 预付费用摊销明细表 18,792.33.pdf",
+"token": "NKrqbelaSooXmdxUwDTcbjPRnNd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 预付费用摊销明细表 18,792.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-30",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 福利保险费原值精算表 16.079.26.pdf",
+"token": "H00bbt2gtodilExD9C8cLr2nnPd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 福利保险费原值精算表 16.079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-31",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 福利保险费余额精算表 1,020.58.pdf",
+"token": "Eta8bcXFnoh7M8xXDiRchJ8AnOA",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 福利保险费余额精算表 1,020.58.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-31",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 磐沄员工福利餐费明细表 6,050.pdf",
+"token": "BaY1b9dqYoVadvxGosZcyl7Zngp",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 磐沄员工福利餐费明细表 6,050.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-16、转-35",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 暂估费用计提明细表（非数电票） 卢地确认邮件.pdf",
+"token": "UdNMbqVe1o3rO9xtAcRceZ0tnSc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 暂估费用计提明细表（非数电票） 卢地确认邮件.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 暂估费用计提明细表（非数电票） 114,694.66.pdf",
+"token": "DKYXbMi9EoLKj1xEanicwaibnwb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 暂估费用计提明细表（非数电票） 114,694.66.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-37",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 暂估费用计提明细表（数电票） 189,279.76.pdf",
+"token": "SlLbbIVMgoIE5Dx7O2DcTEoQnLe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 暂估费用计提明细表（数电票） 189,279.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 暂估费用计提明细表 7,001.30.pdf",
+"token": "Y2zBb23WIoh0Fvxjeigch7hBnsd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 暂估费用计提明细表 7,001.30.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-36",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 人力成本计算表 卢地确认邮件.pdf",
+"token": "KKecbbXObosEYdxKVPVcIpVsnrb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 人力成本计算表 卢地确认邮件.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-29",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240930 人力成本计算表 518,173.31.pdf",
+"token": "MQhob24WQofE6NxDL2HccbRUnEb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240930 人力成本计算表 518,173.31.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-29",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 预付费用摊销明细表 4,842.33.pdf",
+"token": "M5EZblxWaoUGjjx0avLcy5qench",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 预付费用摊销明细表 4,842.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-33",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 福利保险费原值余额表 16,079.26.pdf",
+"token": "TjECbvJpmoSjCkxPELSci46znDh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 福利保险费原值余额表 16,079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-34",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 福利保险费余额精算表 1,054.60.pdf",
+"token": "SOJ4b7pVZoaexqxdd9rceowSnxh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 福利保险费余额精算表 1,054.60.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-34",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 磐沄员工福利餐费明细表 7,030.pdf",
+"token": "GzKvblY4GoCSVfxynSkcCIhnnMc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 磐沄员工福利餐费明细表 7,030.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-40、转-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 暂估费用计提明细表（非数电票） 112,561.69.pdf",
+"token": "D0lJb1zHXobChQxuCbScN1LnnEc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 暂估费用计提明细表（非数电票） 112,561.69.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-37",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 暂估费用计提明细表（数电票） 105,656.87.pdf",
+"token": "TLikbBfPmotjiJxzPdkcspZInNz",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 暂估费用计提明细表（数电票） 105,656.87.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 暂估费用计提明细表 7,537.37.pdf",
+"token": "OvF0brQ9JoUgmWxgs0wcbSqlnzg",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 暂估费用计提明细表 7,537.37.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-36",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240831 人力成本计算表 515,284.16.pdf",
+"token": "PgBqbTTKDoB7hJxvMd3cP52ZnTh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240831 人力成本计算表 515,284.16.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-41",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 预付费用摊销明细表 3,946.42.pdf",
+"token": "Bi7ybJvHGoquEOxGm0YcGrynnzb",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 预付费用摊销明细表 3,946.42.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-44",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 福利保险费原值余额表 16,079.26.pdf",
+"token": "SKTxbdYs5ocuKAx0mBycn7VCnUg",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 福利保险费原值余额表 16,079.26.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-46",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 福利保险费余额精算表 1,007.27.pdf",
+"token": "Smxgb7suaoDx7LxBAXQcFrGVnvh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 福利保险费余额精算表 1,007.27.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-46",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 磐沄员工福利餐费明细表 7,370.pdf",
+"token": "G81fbtwzjoW31txM6cnc5TRNnfh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 磐沄员工福利餐费明细表 7,370.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-11、转-51",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 暂估费用计提明细表（非数电票） 88,064.93.pdf",
+"token": "US0Ubnn0pohX0lxvNDgc4YZCnzc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 暂估费用计提明细表（非数电票） 88,064.93.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-48",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 暂估费用计提明细表（数电票） 35,907.81.pdf",
+"token": "OMMHblEK1oD8ofxCn9bc5wqhnPe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 暂估费用计提明细表（数电票） 35,907.81.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-49",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 暂估费用计提明细表 7,204.82.pdf",
+"token": "BOsZbDYJFoysHSxFy51cu9uOnzf",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 暂估费用计提明细表 7,204.82.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-43",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 商业保险费汇总明细表 16,134.pdf",
+"token": "F73jbLIwEovW6Nx7AwJcRoWbneg",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 商业保险费汇总明细表 16,134.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 人力成本计算表 卢地复核确认.pdf",
+"token": "D5HmbkQqMokb8pxBcLWcUa80nNd",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 人力成本计算表 卢地复核确认.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-50",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240731 人力成本计算表 628,838.84.pdf",
+"token": "NpzobPs98oFfSBxURhocpjG7nMh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240731 人力成本计算表 628,838.84.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-50",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240712 说明 人力资源部关于Boss直聘执行情况的说明.pdf",
+"token": "L0sUbwGAzoNTa3x58YScF5fVn2d",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240712 说明 人力资源部关于Boss直聘执行情况的说明.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-33",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240709 关联方借款利息增值税及其附加计算表 2,213.08.pdf",
+"token": "YgVDbqNTLoQJsnx8OyTcdE79npe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240709 关联方借款利息增值税及其附加计算表 2,213.08.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-6、转-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 预付费用摊销明细表 5,653.15.pdf",
+"token": "NnpibdJlNoZ2KkxSSxAcEvFznCe",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 预付费用摊销明细表 5,653.15.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-34",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 预付体检费使用表.pdf",
+"token": "ECJEbq1ftoG9pPxb4ydccEOXnHf",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 预付体检费使用表.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-34",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 磐沄员工福利餐费明细表 7,940.pdf",
+"token": "Hp0Fbq67IoddC4xJUvicQscCnle",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 磐沄员工福利餐费明细表 7,940.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-14、转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 暂估费用计提明细表 88,064.93.pdf",
+"token": "B48PbYBlToElRrxV5svcMps6nCf",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 暂估费用计提明细表 88,064.93.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-40",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 暂估费用计提明细表 7,941.19.pdf",
+"token": "XiDYbJkMmoLddXx6RoIcj81Xnfc",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 暂估费用计提明细表 7,941.19.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-39",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 暂估费用计提明细表 36,653.98.pdf",
+"token": "JYxkbrSP5oQrn2xe9y9ckq1vnwh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 暂估费用计提明细表 36,653.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-41",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 人力成本计算表 623,385.76.pdf",
+"token": "BucYbL5WbogQM5xUY6fcMyrYnwh",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 人力成本计算表 623,385.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-42",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240630 FY2023奖金计算表 605,879.23.pdf",
+"token": "ZPvLbWLLDo8iDuxz23IcYoMEn1E",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240630 FY2023奖金计算表 605,879.23.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-43",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240531 磐沄员工福利餐费明细表 9,070.pdf",
+"token": "R2zdbtKxwogm6bxlb1ocwYb6n2g",
+"path": "FY-2024/e. 内部凭证/v. 其他自制凭证/20240531 磐沄员工福利餐费明细表 9,070.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-31、转-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240621 物流单 京东 ThinkBook电脑物流记录.png",
+"token": "TMRmbXX05onWjLxz8yocCKzQnce",
+"path": "FY-2024/e. 内部凭证/vi. 其他外部凭证/20240621 物流单 京东 ThinkBook电脑物流记录.png",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240618 收货单 苹果电子 MacBook电脑.pdf",
+"token": "QEA4bKyGToHKW4xE0gRcIvuInig",
+"path": "FY-2024/e. 内部凭证/vi. 其他外部凭证/20240618 收货单 苹果电子 MacBook电脑.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240515 报价单 苹果电子 电脑采购款 39,998.pdf",
+"token": "X7ZEb9OqPo5dTcxDIzwcWFSOnkb",
+"path": "FY-2024/e. 内部凭证/vi. 其他外部凭证/20240515 报价单 苹果电子 电脑采购款 39,998.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240912 报告 海南团建总结报告.pdf",
+"token": "RMjCb0eOMoo4Qix99WacxlxmnRf",
+"path": "FY-2024/e. 内部凭证/vii. 报告/20240912 报告 海南团建总结报告.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-28",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240826 报告 团建计划报告.pdf",
+"token": "LRVmb3aUMoqBFBxLG1Kc53MMnXf",
+"path": "FY-2024/e. 内部凭证/vii. 报告/20240826 报告 团建计划报告.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-28",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 SD 195.53.pdf",
+"token": "Sq1ubcJuDo1r5cxx9JOcOdYTnUe",
+"path": "FY-2024/g. 税局回单 - 纳税回单/20241227 SD 195.53.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 SD 59.16.pdf",
+"token": "HdVJbgvqmov3SKxiYLHcDbwEnAd",
+"path": "FY-2024/g. 税局回单 - 纳税回单/20241106 SD 59.16.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241028 SD 78.77.pdf",
+"token": "Bl0obJpVjogoa9x4YMMcP710nGd",
+"path": "FY-2024/g. 税局回单 - 纳税回单/20241028 SD 78.77.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "付-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-27-2024 广发银行北分 金融服务费 31.5.pdf",
+"token": "AxJ7bq6yYoZim0xPfbDcg45vnXb",
+"path": "FY-2024/b. 国内发票/12-27-2024 广发银行北分 金融服务费 31.5.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-22",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-27-2024 北京磐曜科技 商务咨询费 287,000.pdf",
+"token": "IMAQb9pGBobqx3xVuwYcZXtgnk6",
+"path": "FY-2024/b. 国内发票/12-27-2024 北京磐曜科技 商务咨询费 287,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-23-2024 联通北分 202411网络通讯费 5,135.pdf",
+"token": "TBQHbkmuuopfYSxMGWhcoqr8nzC",
+"path": "FY-2024/b. 国内发票/12-23-2024 联通北分 202411网络通讯费 5,135.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 第一太平 202412_物业款 9,497.98.pdf",
+"token": "Or5MbGoL9oxp0BxKSTachzLYnah",
+"path": "FY-2024/b. 国内发票/12-10-2024 第一太平 202412_物业款 9,497.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 第一太平 202411_水费 8.4.pdf",
+"token": "FfVBbDVaioRrG6xaJutcIbd7ndh",
+"path": "FY-2024/b. 国内发票/12-10-2024 第一太平 202411_水费 8.4.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 第一太平 202411_水费 10.6.pdf",
+"token": "ENBKbnRB6osDDbxjF0fcbtopnId",
+"path": "FY-2024/b. 国内发票/12-10-2024 第一太平 202411_水费 10.6.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 滴滴出行 交通费 749.88.pdf",
+"token": "QXYqbfwWLo9BnQxtoK2c4Hw2nUb",
+"path": "FY-2024/b. 国内发票/12-10-2024 滴滴出行 交通费 749.88.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 滴滴出行 交通费 68.9.pdf",
+"token": "MkyTbXUFQoHActx9U90cMiExndb",
+"path": "FY-2024/b. 国内发票/12-10-2024 滴滴出行 交通费 68.9.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 滴滴出行 交通费 1,065.41.pdf",
+"token": "VQ0ub38d4oyTnuxihHici6P4n0c",
+"path": "FY-2024/b. 国内发票/12-10-2024 滴滴出行 交通费 1,065.41.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-10-2024 北京腾讯云计算 技术服务费 200.pdf",
+"token": "VYsSbgJvYoab5exJhrDcEpyDnGh",
+"path": "FY-2024/b. 国内发票/12-10-2024 北京腾讯云计算 技术服务费 200.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-09-2024 融科物业 2025_1房租款 126,900.pdf",
+"token": "PnvubzL5DoyLU2x6MoIcIexqnkd",
+"path": "FY-2024/b. 国内发票/12-09-2024 融科物业 2025_1房租款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-04-2024 北京福记祥云餐饮 餐饮费 2,000.pdf",
+"token": "PD2NbUalLo6Ps9xo97sc7tvCnaT",
+"path": "FY-2024/b. 国内发票/12-04-2024 北京福记祥云餐饮 餐饮费 2,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-04-2024 北京福记祥云餐饮 红冲24112000000200079882 -2,000.pdf",
+"token": "Joi9bWmN4oAACUxfCVNcEurmnnd",
+"path": "FY-2024/b. 国内发票/12-04-2024 北京福记祥云餐饮 红冲24112000000200079882 -2,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-04-2024 北京知味湘 餐饮费 6,020.pdf",
+"token": "K3JCbSY8pou9MRx5339cTuQundf",
+"path": "FY-2024/b. 国内发票/12-04-2024 北京知味湘 餐饮费 6,020.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-01-2024 北京华诚邦友 保洁费 2,500.pdf",
+"token": "EDiob16oMoZUobxeUkFcuFYanWd",
+"path": "FY-2024/b. 国内发票/12-01-2024 北京华诚邦友 保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-29-2024 广发银行北分 金融服务费 37.8.pdf",
+"token": "Qx1wb8ZpCo6udBx3ijIcMXDwnUh",
+"path": "FY-2024/b. 国内发票/11-29-2024 广发银行北分 金融服务费 37.8.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-24",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-28-2024 北京万巢众创空间 红冲24112000000190344943 -1,600.pdf",
+"token": "Y4DbbHi63oZ8BAx5Qtlc1j1ynhd",
+"path": "FY-2024/b. 国内发票/11-28-2024 北京万巢众创空间 红冲24112000000190344943 -1,600.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-26-2024 北京京东 饮用水采购费 64.pdf",
+"token": "SfDKbyFU9oPhVexpliCcFufwnyb",
+"path": "FY-2024/b. 国内发票/11-26-2024 北京京东 饮用水采购费 64.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-26-2024 北京京东 办公用品采购费 41.04.pdf",
+"token": "ZL0kbxbgooK209xiKu3cxRuunBf",
+"path": "FY-2024/b. 国内发票/11-26-2024 北京京东 办公用品采购费 41.04.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-26-2024 北京京东 办公室零食费 66.pdf",
+"token": "NErrbQQGAoPf56xRQWrcSKx2nFg",
+"path": "FY-2024/b. 国内发票/11-26-2024 北京京东 办公室零食费 66.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-25-2024 北京万巢众创空间 服务费 1,600.pdf",
+"token": "OkWXb5OsLolUEexsj1ZcZ4Zynkb",
+"path": "FY-2024/b. 国内发票/11-25-2024 北京万巢众创空间 服务费 1,600.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-22-2024 北京沃尔玛 办公室零食费 308.6.pdf",
+"token": "D6khb8JHToIvuRxHpZKcRCZcnhe",
+"path": "FY-2024/b. 国内发票/11-22-2024 北京沃尔玛 办公室零食费 308.6.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-20-2024 北京顺丰 物流费 11.44.pdf",
+"token": "ZgiXb3cmOo597CxAqcmcVaKKnSg",
+"path": "FY-2024/b. 国内发票/11-20-2024 北京顺丰 物流费 11.44.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-19-2024 上海赫程国际旅行社 红冲24317000000984860230 -6,507.42.pdf",
+"token": "CaWWbihkzoeHeMxafNLcsQnDnkh",
+"path": "FY-2024/b. 国内发票/11-19-2024 上海赫程国际旅行社 红冲24317000000984860230 -6,507.42.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-19-2024 上海赫程国际旅行社 住宿费 6,507.42.pdf",
+"token": "QpzMbqn3MoPnm6xHDKtcs9KCncw",
+"path": "FY-2024/b. 国内发票/11-19-2024 上海赫程国际旅行社 住宿费 6,507.42.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-19-2024 上海携程 红冲24317000000974594726 -853.pdf",
+"token": "PumVbxqOIoblxJxTdHEchns5n6g",
+"path": "FY-2024/b. 国内发票/11-19-2024 上海携程 红冲24317000000974594726 -853.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海百旺金赋 红冲24312000000358723244 -3,000.pdf",
+"token": "Ddbtb2BC7oJmdTxLj4xcKs47n7b",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海百旺金赋 红冲24312000000358723244 -3,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海百旺金赋 红冲24312000000345907726 -3,000.pdf",
+"token": "SxN9bSZJroSU9dxPX5ocFEyUnBd",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海百旺金赋 红冲24312000000345907726 -3,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海百旺金赋 工商代理费 3,000.pdf",
+"token": "LTVvb3PEOolVjVx7PpHcxyVknXg",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海百旺金赋 工商代理费 3,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海百旺金赋 工商代理费 3,000 (2).pdf",
+"token": "IZhmbOyl3o5amUxEBB6czT7Dngc",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海百旺金赋 工商代理费 3,000 (2).pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150966 -791.pdf",
+"token": "GFTgbGB7eoQ6nWx4gs7ctIsOnPb",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150966 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150955 -791.pdf",
+"token": "GlrHb6GsmosGMWxSR8CciaennJf",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150955 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150935 -791.pdf",
+"token": "NdLEbAAc9oPMg0xHVnlci6E2nZf",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150935 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150922 -791.pdf",
+"token": "Cv4LbtjOHopknkxHoPDcDr54nyf",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150922 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150907 -791.pdf",
+"token": "Mk5EbUWAqov94rxpLCZcGDn8nAe",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150907 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150906 -791.pdf",
+"token": "F5XQbiFcmoUhvqxr4SHcKVkonxf",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150906 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150902 -791.pdf",
+"token": "W9N0bXdBKoDNVvx6BmYc9bhUnue",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150902 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150871 -791.pdf",
+"token": "MXFKbWt5Tohft9xPtQlcW2bOnZg",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150871 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000735150865 -791.pdf",
+"token": "BfDGb7kyloXSc7x6GCcc3F7WnNh",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000735150865 -791.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129746 -762.pdf",
+"token": "XeJtbaOqioS6WsxdGBGctd4WndT",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129746 -762.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129711 -762.pdf",
+"token": "OMdbbsTEgo8ks8xGnehc3HTWngc",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129711 -762.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129691 -762.pdf",
+"token": "XYsQbqqKao8kfCxTXZBcXTKDnRe",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129691 -762.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129512 -1,330.pdf",
+"token": "R8Jib1YXxo6X6mxSvDicIq83nSg",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129512 -1,330.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129488 -1,330.pdf",
+"token": "VBplb5UDWo7scBxERBtcandgnPb",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129488 -1,330.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-18-2024 上海携程 红冲24317000000731129483 -1,330.pdf",
+"token": "P2MVb8oZwoKN0zxDIp4cbBQQneg",
+"path": "FY-2024/b. 国内发票/11-18-2024 上海携程 红冲24317000000731129483 -1,330.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-17-2024 上海携程 国际交通费 853.pdf",
+"token": "H618bO92Oo1XQPx5sICcOrZ8ndh",
+"path": "FY-2024/b. 国内发票/11-17-2024 上海携程 国际交通费 853.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-15-2024 北京京东 饮用水采购费 96.pdf",
+"token": "HVEWbQY1oovESHxz4pycUTcNngI",
+"path": "FY-2024/b. 国内发票/11-15-2024 北京京东 饮用水采购费 96.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 北京沃尔玛 办公室零食费 166.7.pdf",
+"token": "PT4jbx6d9oo8PVxjBr5cTegTnBh",
+"path": "FY-2024/b. 国内发票/11-14-2024 北京沃尔玛 办公室零食费 166.7.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 北京京东 饮用水采购费 64.pdf",
+"token": "QrbBblU9AoLSj0xH0GUc1mwTnOd",
+"path": "FY-2024/b. 国内发票/11-14-2024 北京京东 饮用水采购费 64.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 北京京东 办公室零食费 91.8.pdf",
+"token": "TaEcboMCvo7EVbxL8J1cKoNlnBb",
+"path": "FY-2024/b. 国内发票/11-14-2024 北京京东 办公室零食费 91.8.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 北京京东 办公室零食费 49.9 (2).pdf",
+"token": "VxSrbT45zoiSqYxaWwJcXb0CnUh",
+"path": "FY-2024/b. 国内发票/11-14-2024 北京京东 办公室零食费 49.9 (2).pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 北京京东 办公室零食费 49.9 (1).pdf",
+"token": "CP40b37A5obqmCx1hTscO3CFn6f",
+"path": "FY-2024/b. 国内发票/11-14-2024 北京京东 办公室零食费 49.9 (1).pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-14-2024 中国联合网络通信北分 通信服务费 5136.76.pdf",
+"token": "XHszbJAcvogAhIxSEozcySOPnDc",
+"path": "FY-2024/b. 国内发票/11-14-2024 中国联合网络通信北分 通信服务费 5136.76.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京明森远洋餐饮 餐饮费 6,050.pdf",
+"token": "OT8OboNAhoi64Kxng7McAEKSnug",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京明森远洋餐饮 餐饮费 6,050.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-16",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京京东 饮用水采购费 67.08.pdf",
+"token": "ICRub0gpbo0UwFxwtOccXrx4nvd",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京京东 饮用水采购费 67.08.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京京东 饮用水采购费 29.pdf",
+"token": "Gklwb7jTWoenw4xU4DqclZkQnLd",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京京东 饮用水采购费 29.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京京东 办公用品费 121.08.pdf",
+"token": "EFiMbkl0Lo4JZyx76SbcHGZHnlc",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京京东 办公用品费 121.08.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京京东 办公室零食费 68.8.pdf",
+"token": "KhHtbAYfMouAoAxXYhacBj00ned",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京京东 办公室零食费 68.8.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-12-2024 北京京东 办公室零食费 49.8.pdf",
+"token": "G7MXbqVrlo448qxEAfHccQVan4e",
+"path": "FY-2024/b. 国内发票/11-12-2024 北京京东 办公室零食费 49.8.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-11-2024 融科物业 2024_12房租款 126,900.pdf",
+"token": "WZDxbtRdYots6CxBSqjcr6I1n0g",
+"path": "FY-2024/b. 国内发票/11-11-2024 融科物业 2024_12房租款 126,900.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-10-2024 北京雀巢奈斯派索咖啡 办公室零食费 396.pdf",
+"token": "Y5sRbxEC2oNbFcx9emGcn6h0nQh",
+"path": "FY-2024/b. 国内发票/11-10-2024 北京雀巢奈斯派索咖啡 办公室零食费 396.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-10-2024 北京腾讯云计算 2024_10服务费 200.pdf",
+"token": "ZqHcbT03ZoIZ1rxOlCvcWGuZnTe",
+"path": "FY-2024/b. 国内发票/11-10-2024 北京腾讯云计算 2024_10服务费 200.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-08-2024 第一太平 202411_物业款 9,259.7.pdf",
+"token": "ZSKZbhXRjolksLxrjVucfGfkngc",
+"path": "FY-2024/b. 国内发票/11-08-2024 第一太平 202411_物业款 9,259.7.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-11",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-08-2024 第一太平 202410_水费 8.4.pdf",
+"token": "INRgbVRHkoQyt7xmyDFcNQNPnlb",
+"path": "FY-2024/b. 国内发票/11-08-2024 第一太平 202410_水费 8.4.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-25",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-08-2024 第一太平 202410_水费 10.6.pdf",
+"token": "RXI2bM2syoS1KVxqij2cmUPRnff",
+"path": "FY-2024/b. 国内发票/11-08-2024 第一太平 202410_水费 10.6.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-25",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-08-2024 北京京东世纪 办公室零食费 37.91.pdf",
+"token": "YX8lbyeThox5iBxATjkco0y7nIf",
+"path": "FY-2024/b. 国内发票/11-08-2024 北京京东世纪 办公室零食费 37.91.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-08-2024 北京京东世纪 办公司零食费 52.2.pdf",
+"token": "Emznbm81qoonEnx1GBCcFeFsnkf",
+"path": "FY-2024/b. 国内发票/11-08-2024 北京京东世纪 办公司零食费 52.2.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-07-2024 北京京东世纪 办公室零食费 198.pdf",
+"token": "HxplbDxz7oDX5ZxQvEJcUyo2npb",
+"path": "FY-2024/b. 国内发票/11-07-2024 北京京东世纪 办公室零食费 198.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-07-2024 上海百旺金赋科技 工商代理费 3,000.pdf",
+"token": "VaT5bIrProJwHVxhUBNcsUhGneb",
+"path": "FY-2024/b. 国内发票/11-07-2024 上海百旺金赋科技 工商代理费 3,000.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-06-2024 北京京东世纪 办公用品费 117.33.pdf",
+"token": "LQCjbcMLGoD9IjxyyeGc26NbnSQ",
+"path": "FY-2024/b. 国内发票/11-06-2024 北京京东世纪 办公用品费 117.33.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-06-2024 北京京东世纪 办公室零食费 49.9.pdf",
+"token": "Gt6Cbkv3noA0y7xOz5UcjUQUnce",
+"path": "FY-2024/b. 国内发票/11-06-2024 北京京东世纪 办公室零食费 49.9.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-06-2024 北京万巢众创空间 服务费 1,600.pdf",
+"token": "RSZUbgpH1occRpx6XwSchTLGncg",
+"path": "FY-2024/b. 国内发票/11-06-2024 北京万巢众创空间 服务费 1,600.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-05-2024 滴滴出行 交通费 439.53.pdf",
+"token": "DcfWbvLvWoSDwnxS74fc2kHTnEb",
+"path": "FY-2024/b. 国内发票/11-05-2024 滴滴出行 交通费 439.53.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-05-2024 滴滴出行 交通费 2,843.98.pdf",
+"token": "ZyVebX4ubo6UXsxH0Jzcsx7Snwb",
+"path": "FY-2024/b. 国内发票/11-05-2024 滴滴出行 交通费 2,843.98.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-04-2024 北京华诚邦友劳务服务 保洁费 2,500.pdf",
+"token": "WUQMbiZZfo2VD2x5ITecMi6fnAd",
+"path": "FY-2024/b. 国内发票/11-04-2024 北京华诚邦友劳务服务 保洁费 2,500.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-7",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-03-2024 北京东耳餐饮 红冲24112000000165340212 -1,138.pdf",
+"token": "RgU8bKqtToFuqIxdaSxcWNGrnCg",
+"path": "FY-2024/b. 国内发票/11-03-2024 北京东耳餐饮 红冲24112000000165340212 -1,138.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "12-27-2024 24112000000223498077 11-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"token": "RX9obpwsrohS24xZyBuca1vKnxg",
+"path": "FY-2024/c. 收入增票/12-27-2024 24112000000223498077 11-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-29-2024 24112000000195362317 11-2024技术咨询与商业咨询服务收入 616,525.50.xml",
+"token": "NFx6bJW2ao9HrYxHLbscNNeUnbb",
+"path": "FY-2024/c. 收入增票/11-29-2024 24112000000195362317 11-2024技术咨询与商业咨询服务收入 616,525.50.xml",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "11-29-2024 24112000000195362317 11-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"token": "SuKebHMp1oTq5kxucbJcas4cneb",
+"path": "FY-2024/c. 收入增票/11-29-2024 24112000000195362317 11-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"_origin": "old",
+"target": {
+"period": "202411",
+"vno": "转-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "10-29-2024 24112000000165874434 Q3-2024技术咨询与商业咨询超量服务收入 1,448,122.54.xml",
+"token": "FybEbnVt3oiXuQx9GQYczhunnmg",
+"path": "FY-2024/c. 收入增票/10-29-2024 24112000000165874434 Q3-2024技术咨询与商业咨询超量服务收入 1,448,122.54.xml",
+"_origin": "old",
+"target": {
+"period": "202412",
+"vno": "转-7",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "10-29-2024 24112000000165874434 Q3-2024技术咨询与商业咨询超量服务收入 1,448,122.54.pdf",
+"token": "PUhcbYsJWo0hlKxhKF7cLnpKnjf",
+"path": "FY-2024/c. 收入增票/10-29-2024 24112000000165874434 Q3-2024技术咨询与商业咨询超量服务收入 1,448,122.54.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-43",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "10-29-2024 24112000000165862541 10-2024技术咨询与商业咨询服务收入 616,525.50.xml",
+"token": "M9wSbQ9LVocITLxDLmecGHCunwg",
+"path": "FY-2024/c. 收入增票/10-29-2024 24112000000165862541 10-2024技术咨询与商业咨询服务收入 616,525.50.xml",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-42",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "10-29-2024 24112000000165862541 10-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"token": "Ms5SbPCh4oklpaxiGIBcrB7Cnqd",
+"path": "FY-2024/c. 收入增票/10-29-2024 24112000000165862541 10-2024技术咨询与商业咨询服务收入 616,525.50.pdf",
+"_origin": "old",
+"target": {
+"period": "202410",
+"vno": "转-42",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "09-27-2024 24112000000140745479 09-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"token": "K7Qsb0z1loTAWVxPQlKcKeinn9f",
+"path": "FY-2024/c. 收入增票/09-27-2024 24112000000140745479 09-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "09-27-2024 24112000000140745479 09-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"token": "RniEb5feroYD0uxrLG8cgN6InFf",
+"path": "FY-2024/c. 收入增票/09-27-2024 24112000000140745479 09-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"_origin": "old",
+"target": {
+"period": "202409",
+"vno": "转-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "08-26-2024 24112000000114502445 Q2-2024技术运维及商业咨询超量服务收入 1,375,577.22.xml",
+"token": "BwKlbILUnoMJbNx4tcQcPiOqnaf",
+"path": "FY-2024/c. 收入增票/08-26-2024 24112000000114502445 Q2-2024技术运维及商业咨询超量服务收入 1,375,577.22.xml",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "08-26-2024 24112000000114502445 Q2-2024技术运维及商业咨询超量服务收入 1,375,577.22.pdf",
+"token": "LtXIbfkp8oOvtUxcN0Jc2tn0nfV",
+"path": "FY-2024/c. 收入增票/08-26-2024 24112000000114502445 Q2-2024技术运维及商业咨询超量服务收入 1,375,577.22.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "08-26-2024 24112000000114494295 08-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"token": "XaNobZFKvopv9exYO8hcxoSNnVh",
+"path": "FY-2024/c. 收入增票/08-26-2024 24112000000114494295 08-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-29",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "08-26-2024 24112000000114494295 08-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"token": "TB61bY3gYoU3OdxXp7IcwpAenBh",
+"path": "FY-2024/c. 收入增票/08-26-2024 24112000000114494295 08-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"_origin": "old",
+"target": {
+"period": "202408",
+"vno": "转-29",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "07-29-2024 24112000000094092210 H1-2024 技术运维与商业咨询激励服务收入 812,952.xml",
+"token": "UG1YbKeZfo1G5gxCaUlcOcfjnug",
+"path": "FY-2024/c. 收入增票/07-29-2024 24112000000094092210 H1-2024 技术运维与商业咨询激励服务收入 812,952.xml",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "07-29-2024 24112000000094092210 H1-2024 技术运维与商业咨询激励服务收入 812,952.pdf",
+"token": "Hq0WbYuFqoGy2fxyfBWcAiesnIY",
+"path": "FY-2024/c. 收入增票/07-29-2024 24112000000094092210 H1-2024 技术运维与商业咨询激励服务收入 812,952.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-38",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "07-29-2024 24112000000094000335 07-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"token": "YB35bZXKXo5Rpxx5NswcXD8UnMg",
+"path": "FY-2024/c. 收入增票/07-29-2024 24112000000094000335 07-2024技术咨询与商业咨询服务收入 630,428.10.xml",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-40",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "07-29-2024 24112000000094000335 07-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"token": "Ne4Pbw0L8oxcnqx7lHfcW8omnpg",
+"path": "FY-2024/c. 收入增票/07-29-2024 24112000000094000335 07-2024技术咨询与商业咨询服务收入 630,428.10.pdf",
+"_origin": "old",
+"target": {
+"period": "202407",
+"vno": "转-40",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "06-26-2024 24112000000070113908 06-2024技术咨询与商业咨询服务收入 628,662.pdf",
+"token": "I12xbsgx9oVdPzxcCixcNmYNnP9",
+"path": "FY-2024/c. 收入增票/06-26-2024 24112000000070113908 06-2024技术咨询与商业咨询服务收入 628,662.pdf",
+"_origin": "old",
+"target": {
+"period": "202406",
+"vno": "转-32",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241023 出账水单 磐沄科技 网银手续费 100.pdf",
+"token": "OkzCb8jUNo5m20xjbytcfTfTnVd",
+"path": "NEW-VOUCHER/华美银行对账单及回单/FY 2024/10-2024/20241023 出账水单 磐沄科技 网银手续费 100.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-25",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241023 入账水单 磐沄科技 内部转账款 100.pdf",
+"token": "Ywe3bbj7KolLEyxUw2cc884YnTc",
+"path": "NEW-VOUCHER/华美银行对账单及回单/FY 2024/10-2024/20241023 入账水单 磐沄科技 内部转账款 100.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-24",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241023 入账回单 磐沄科技 内部转账款 100.pdf",
+"token": "EmcsbSB3uopes1xnhpMcCeIqnGc",
+"path": "NEW-VOUCHER/华美银行对账单及回单/FY 2024/10-2024/20241023 入账回单 磐沄科技 内部转账款 100.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-24",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240921 磐沄 浙商 入账水单 利息收入 0.24.pdf",
+"token": "GgFHb7lhSoV9Jbx0MPhcPWzoni2",
+"path": "NEW-VOUCHER/浙商银行对账单及回单/FY 2024/09-2024/20240921 磐沄 浙商 入账水单 利息收入 0.24.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "收-2、转-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240819 磐沄科技 内部转账 766.pdf",
+"token": "ZPDfbnBMUoiVwDx4nM5cnw2Mnwf",
+"path": "NEW-VOUCHER/浙商银行对账单及回单/FY 2024/08-2024/08-2024 磐沄 浙商 银行电子回单（汇出）/20240819 磐沄科技 内部转账 766.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240819 浙商银行 手续费 1.8.pdf",
+"token": "OfYzbCwAkowiPXx4UWLccEExn9c",
+"path": "NEW-VOUCHER/浙商银行对账单及回单/FY 2024/08-2024/08-2024 磐沄 浙商 银行电子回单（汇出）/20240819 浙商银行 手续费 1.8.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240805 浙商银行 手续费 25.pdf",
+"token": "LlVlbgIeCoUFslxyZ4hcsoHXnee",
+"path": "NEW-VOUCHER/浙商银行对账单及回单/FY 2024/08-2024/08-2024 磐沄 浙商 银行电子回单（汇出）/20240805 浙商银行 手续费 25.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240805 浙商银行 手续费 10.pdf",
+"token": "SL7ObwjzVoxjgsxUMJtcsgranFf",
+"path": "NEW-VOUCHER/浙商银行对账单及回单/FY 2024/08-2024/08-2024 磐沄 浙商 银行电子回单（汇出）/20240805 浙商银行 手续费 10.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240626 出账水单 广发银行 汇款费 2.7.pdf",
+"token": "JVJfbMnXnoekEzx5Vq9cbWMvnCc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240626 出账水单 广发银行 汇款费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240626 出账水单 广发银行 汇款费 0.9.pdf",
+"token": "WnUHbwKkNoh9W4xWBv5cEWaBnDg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240626 出账水单 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240626 出账水单 卢地 报销款 1,000.pdf",
+"token": "Ey0NbOMZZoIkjAxIFAAcRKiHnud",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240626 出账水单 卢地 报销款 1,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240626 出账水单 关姗 报销款 9,256.11.pdf",
+"token": "VGudbkxPtovLYKx5fRfc1TMCnAi",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240626 出账水单 关姗 报销款 9,256.11.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 广发银行 租赁费 126,900.pdf",
+"token": "SGpAbHcykolhj7xWxUgclgYEnDf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 广发银行 租赁费 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 广发银行 汇款费 5.pdf",
+"token": "UwJJbadexo3jDoxm0OIc2CTknhd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 广发银行 汇款费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 广发银行 汇款费 0.9.pdf",
+"token": "OhIPboqdboMjVJx32NeczD2vnie",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 广发银行 汇款费 0.9(3).pdf",
+"token": "YqH2bHSXFoEJWVxfqpecakPDnfd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 广发银行 汇款费 0.9(3).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-17",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 广发银行 汇款费 0.9(2).pdf",
+"token": "XzVybXBA4ozTAkxVCg6climHnRg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 广发银行 汇款费 0.9(2).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 华诚邦友 保洁费 2,500.pdf",
+"token": "MlTLbc757oQfrAxaKbCc3JWcnvH",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 华诚邦友 保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240624 出账水单 中国联通 通讯费 5,135.00.pdf",
+"token": "OsbKbvVLpot9BAxVBN0c6HewnBh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240624 出账水单 中国联通 通讯费 5,135.00.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240622 出账水单 第一太平 物业费 9,496.21.pdf",
+"token": "Fb9cbhhcMo6t7Qxy8xccpLVFn3b",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240622 出账水单 第一太平 物业费 9,496.21.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240613 出账水单 苹果电子 39,998.00.pdf",
+"token": "SHRdbHFaKoAgrcx0RxRcvjTunCe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240613 出账水单 苹果电子 39,998.00.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240613 出账水单 第一太平 福利费 9,070.pdf",
+"token": "Y7mwbYZgHoWKrzxEdIhcNvB2nYd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240613 出账水单 第一太平 福利费 9,070.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240613 出账水单 广发银行 汇款费 2.7.pdf",
+"token": "TBe8bKoiaoBxFQxn1vYcwABLndg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240613 出账水单 广发银行 汇款费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240613 出账水单 广发银行 汇款费 0.9(4).pdf",
+"token": "OXWlb4foNoiLFixAqcJcXdLQn1e",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240613 出账水单 广发银行 汇款费 0.9(4).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240612 出账水单 海淀税务 保险费 174,029.52.pdf",
+"token": "PaMxb4wyoofJnvxm5MecYMBdnDb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240612 出账水单 海淀税务 保险费 174,029.52.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240612 出账水单 海淀税务 个人所得税 25,758.69.pdf",
+"token": "TQ90bfScFoKdmhxHnGuc5iCxnme",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240612 出账水单 海淀税务 个人所得税 25,758.69.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240611 出账水单 北京住房公积金管理中心 公积金 112,852.pdf",
+"token": "Xzh9btsMuoiqx5xKWtdc0B8NnDD",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240611 出账水单 北京住房公积金管理中心 公积金 112,852.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240607 出账水单 磐沄科技 工资 341,414.13.pdf",
+"token": "WZaKbVtiDoxilbxvSyRcHpmznGh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240607 出账水单 磐沄科技 工资 341,414.13.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240607 出账水单 广发银行 手续费 32.pdf",
+"token": "TdT1b7TM3oNt77x2FRUc1j7qnyd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240607 出账水单 广发银行 手续费 32.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240605 出账水单 磐曜科技 流动性支持款 350,000.pdf",
+"token": "YjttbVFZeopGbhxz7WMcQOzwnAc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇出）/20240605 出账水单 磐曜科技 流动性支持款 350,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240621 入账水单 磐沄科技 活期利息 150.21.pdf",
+"token": "DBRmbGw2FopqdCxcIRLcUphhnxe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇入）/20240621 入账水单 磐沄科技 活期利息 150.21.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "收-4、转-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240620 入账水单 磐沄科技 网银入账 500,000.pdf",
+"token": "PyURbwCSSoN5l3xhkv2cuWOdnHg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇入）/20240620 入账水单 磐沄科技 网银入账 500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "转-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240606 入账水单 磐沄科技 网银入账 500,000.pdf",
+"token": "Jf9MbvC6boyHE4xnmFlcTUPAnkh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇入）/20240606 入账水单 磐沄科技 网银入账 500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "转-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240605 入账水单 磐沄科技 网银入账 309,500.pdf",
+"token": "ERpkbh4KLoIaFrxmxvgcKZ8tnsd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/06-2024/06-2024 磐沄 广发 银行电子回单（汇入）/20240605 入账水单 磐沄科技 网银入账 309,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "转-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 海淀区税务局 2024Q3_超量技术服务印花税款 195.53.pdf",
+"token": "Ey87bLDCnoSx69x60pCcuQl9nzc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241227 海淀区税务局 2024Q3_超量技术服务印花税款 195.53.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241219 赵萌 202411赵萌报销款 4,069.23.pdf",
+"token": "U7wAbxtL3okjnHxsAcVc94MwnPc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241219 赵萌 202411赵萌报销款 4,069.23.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241219 广发银行 付赵萌报销手续费 0.9.pdf",
+"token": "Q8CSbounEogbUgxbIt4cGPkVnoh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241219 广发银行 付赵萌报销手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 联通北分 202411网络费 5,135.pdf",
+"token": "O7xSb3Afgov4V0x2zsXcecdYnAh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 联通北分 202411网络费 5,135.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 第一太平 202412物业账单款 9516.98.pdf",
+"token": "L6vmbQcgNozQ0HxIABscOuMincf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 第一太平 202412物业账单款 9516.98.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 第一太平 202411福利餐费 6,810.pdf",
+"token": "GHX6bJsFzoYv0mxY6djcgKw9nKg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 第一太平 202411福利餐费 6,810.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 科融物业 202501办公室租赁款 126,900.pdf",
+"token": "WEA9bsxewovKDcxzyS4cHiFcnRb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 科融物业 202501办公室租赁款 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 广发银行 付第一太平手续费 0.9.pdf",
+"token": "DfAXb2yAcoVoQmxE5Fzc1RHDn3f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 广发银行 付第一太平手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 广发银行 付第一太平手续费 0.9 (2).pdf",
+"token": "Q6gJbNCkboBmDHxa3sncOxAincg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 广发银行 付第一太平手续费 0.9 (2).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 广发银行 付科融物业手续费 5.pdf",
+"token": "NMd3bPuOYoBZ9ZxelgVcza7ZnMh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 广发银行 付科融物业手续费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 广发银行 付华诚邦友手续费 0.9.pdf",
+"token": "Xetlbxa1GoEqMKxIPYycPz0CnMb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 广发银行 付华诚邦友手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241216 华诚邦友 202412保洁费 2,500.pdf",
+"token": "NC95be36RoOd8fxoJ9zcMvEsnXd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241216 华诚邦友 202412保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241210 海淀区税务局 代扣代缴个人所得税款 46,071.61.pdf",
+"token": "YPILbRs9RoQmSexajIHc04TFnXe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241210 海淀区税务局 代扣代缴个人所得税款 46,071.61.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241210 海淀区税务局 202411社保款 131,631.72.pdf",
+"token": "S6ZtbT7eloT5NVx6e3ZcODHBnPb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241210 海淀区税务局 202411社保款 131,631.72.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241210 公积金中心 202411公积金款 85,362.pdf",
+"token": "F6Ueb5kzDohPdCxWkt2c7ETVnke",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241210 公积金中心 202411公积金款 85,362.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241209 广发银行 付工资手续费 22.pdf",
+"token": "Vekmb2wtuoDshWx4iaBcWA0CnTe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241209 广发银行 付工资手续费 22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241209 员工 202411工资款 255,599.36.pdf",
+"token": "WsNRbeu7cogTX4xIGo6ccGcXn4f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241209 员工 202411工资款 255,599.36.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 磐曜科技 流动性支付款 440,000.pdf",
+"token": "JhVBbf04qoV8fix6r6ac7zEJnae",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 出账水单/20241206 磐曜科技 流动性支付款 440,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241227 磐沄科技 内部转帐款 60,000.pdf",
+"token": "Z8q4baATvouDRRxQiPvcb9kZnGb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 入账水单/20241227 磐沄科技 内部转帐款 60,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "收-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241221 磐沄科技 活期账户利息收入 113.35.pdf",
+"token": "STsybOD8UooBvGxDZpFcuIa5nig",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 入账水单/20241221 磐沄科技 活期账户利息收入 113.35.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-20、收-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 磐沄科技 内部转帐款 1,000,000.pdf",
+"token": "FYm9bBb7uovhzmx9RVCcYRWXnSd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/12-2024/磐沄 广发 入账水单/20241206 磐沄科技 内部转帐款 1,000,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-惠思琪_Consensus_2024 手续费 0.9.pdf",
+"token": "FCekbddfroVoOoxy71Bclx7anvb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-惠思琪_Consensus_2024 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-惠思琪_Consensus_2024 差旅人身保险费 605.63.pdf",
+"token": "AkqKbbowronlCAxbj0ncaM4QnRv",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-惠思琪_Consensus_2024 差旅人身保险费 605.63.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-卢地_Consensus_2024 手续费 0.9.pdf",
+"token": "MPELbnNWeoaAdGxnnsvc7MzonJJ",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-卢地_Consensus_2024 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-卢地_Consensus_2024 差旅人身保险费 1,041.76.pdf",
+"token": "YEvCbpumVojf6sx664hczk9Knjf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-卢地_Consensus_2024 差旅人身保险费 1,041.76.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-20240831 手续费 0.9.pdf",
+"token": "VfxUbRKoZoX8AKxuSnScfKkpnSh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-20240831 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 赵萌报销-20240831 办公室行政报销款 3,548.33.pdf",
+"token": "FuN2bEnlzocI0Jx1sSmcrR6Lnkh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 赵萌报销-20240831 办公室行政报销款 3,548.33.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 一家文旅-手续费 0.9.pdf",
+"token": "MIRgbHjCsoIrgLxeDWMcp5Hkn5b",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 一家文旅-手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240925 磐沄 广发 出账水单 一家文旅 团建费 7,800.pdf",
+"token": "MraabFt89oajatxxkVHcBYGtnCg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240925 磐沄 广发 出账水单 一家文旅 团建费 7,800.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 融科物业 手续费 5.pdf",
+"token": "RRetbgsMvo2y8yxBRUhclYB2ngh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 融科物业 手续费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 融科物业 办公室租赁款 126,900.pdf",
+"token": "YLgmbqn2coQiqexGpiwcdnftnF3",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 融科物业 办公室租赁款 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 第一太平-福利餐费 手续费 0.9.pdf",
+"token": "U3IabA3owoV5AJx48fWcHO9KnZg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 第一太平-福利餐费 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 第一太平-物业款 手续费 0.9.pdf",
+"token": "PtV4boQpWo2XD5xUgNicg6GHnOg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 第一太平-物业款 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 第一太平 福利餐费 7,030.pdf",
+"token": "BQbFbEZitoq2zQxM7u5cTxHNnO9",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 第一太平 福利餐费 7,030.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 第一太平 物业款 9,580.37.pdf",
+"token": "RESYb2qSKoXoUVxYarUcsusfnch",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 第一太平 物业款 9,580.37.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 华诚邦友 手续费 0.9.pdf",
+"token": "U64Mbbg8Ioda0uxwTDBcn8AenLd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 华诚邦友 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 华诚邦友 保洁费 2,500.pdf",
+"token": "Xkktb5PewoKOyrxXzrkctpCin2b",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 华诚邦友 保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 北京联通 网络费 5,135.pdf",
+"token": "SkU7bO2c1opL1WxdJi0caYWjnVf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 北京联通 网络费 5,135.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240913 磐沄 广发 出账水单 北京联通 手续费 0.9.pdf",
+"token": "KmhCbjA4noq8iuxyt0Ec1XofnYe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240913 磐沄 广发 出账水单 北京联通 手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240912 磐沄 广发 出账水单 海淀税务局 个人所得税款 39,229.67.pdf",
+"token": "Kqvpb95QOoz38qxVbTZcvmqgnpd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240912 磐沄 广发 出账水单 海淀税务局 个人所得税款 39,229.67.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 出账水单 磐曜科技 流动性支持款 400,00.pdf",
+"token": "RTdybWAZgo5y9Vx3YgPcHXBTnYd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240910 磐沄 广发 出账水单 磐曜科技 流动性支持款 400,00.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 出账水单 海淀税务局 社保款 131,631.72.pdf",
+"token": "GZzkbcdYpoNQscxmOa5c1bjInVb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240910 磐沄 广发 出账水单 海淀税务局 社保款 131,631.72.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 出账水单 员工 手续费 22.pdf",
+"token": "G3D9bAmSkoMEE1xb0BWcg2kenqg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240910 磐沄 广发 出账水单 员工 手续费 22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 出账水单 员工 工资款 259,060.77.pdf",
+"token": "TBEDbPbVcoUo1rxloe3c47iQndb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240910 磐沄 广发 出账水单 员工 工资款 259,060.77.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 出账水单 公积金中信 公积金款 85,362.pdf",
+"token": "Ds6obyMQNoL4EyxzWqccUmjynMg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 出账水单/20240910 磐沄 广发 出账水单 公积金中信 公积金款 85,362.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240921 磐沄 广发 入账水单 活期账户利息收入 175.93.pdf",
+"token": "H0M4bkZs1oLimDxExzZcwd8SnKg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 入账水单/20240921 磐沄 广发 入账水单 活期账户利息收入 175.93.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "收-4、转-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 广发 入账水单 内部转账款 1,000,000.pdf",
+"token": "CvIvb4NaeoAXeOxQqPrcfJ7unzh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/09-2024/09-2024 磐沄 广发 入账水单/20240910 磐沄 广发 入账水单 内部转账款 1,000,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "转-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240729 海淀税务 印花税 103.43.pdf",
+"token": "SFXibiC65oHNtZxPZnqcFxSdnA3",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240729 海淀税务 印花税 103.43.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-29",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 腾讯云 云服务费 1,200.pdf",
+"token": "BQPSb2wdtodbipx5nrtcVS81ncg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 腾讯云 云服务费 1,200.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 磐曜 流动性支持款 480,000.pdf",
+"token": "XYncbPU4jo5P4kxuMbFcJyYvnnh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 磐曜 流动性支持款 480,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-27",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 海太欧林德 办公家具款 3,014.pdf",
+"token": "RlOjbiHbzoUgKGx7BGUcFnHun7b",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 海太欧林德 办公家具款 3,014.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 拉钩网络 招聘网站服务费  16,500.pdf",
+"token": "XFahbni70oJxPjxpfCkcbGrsnUg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 拉钩网络 招聘网站服务费  16,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 成都萌想 招聘网站服务费 1,600.pdf",
+"token": "L73obuc0hoa6kkxcixMcQUgUnCe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 成都萌想 招聘网站服务费 1,600.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费 0.9（2）.pdf",
+"token": "RLLybPRVyodUakxFwtCcpHFYnBe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费 0.9（2）.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费 0.9.pdf",
+"token": "JMPqbMcW8o2oUZxQat9cRkukn3g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  6.3.pdf",
+"token": "HMVUbTL3ZozyEdxIryAcjIaynld",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  6.3.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  6.3 (2).pdf",
+"token": "UPtwbqkTYoAGKAxFtbfcr9mwnQd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  6.3 (2).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  2.7.pdf",
+"token": "DqgDbXeTNo4yXGxbDXIcFE7gnPh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  2.7 (4).pdf",
+"token": "M43wbhaI5oFMCQxL86scqjGknpf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  2.7 (4).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  2.7 (3).pdf",
+"token": "Gut0bm0X2o7IA3xNEwccFl3qn2c",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  2.7 (3).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 广发银行 汇款费  2.7 (2).pdf",
+"token": "DUYZbZpy8obAoGxaG9IcxeoBnIb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 广发银行 汇款费  2.7 (2).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 同道精英 招聘网站服务费 19,800.pdf",
+"token": "N0n1bNArKo4jQgxaHapcF9sXnKc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 同道精英 招聘网站服务费 19,800.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 卢地  报销款 27,084.pdf",
+"token": "Va6xbBfFUorR6BxdQhbcvoUBnLf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 卢地  报销款 27,084.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 华品博睿 招聘网站服务费 15,208.pdf",
+"token": "WSCwbIVcFo2LBWxvn6zcEIZ7nad",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 华品博睿 招聘网站服务费 15,208.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 关姗 报销款 18,264.49.pdf",
+"token": "SNLnbGLGiofaZqx6IWzcJ4Jtnzg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240718 关姗 报销款 18,264.49.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 海淀税务 保险费 162,176.68.pdf",
+"token": "Oj1Mbw8gVo8WU7xTJC0coso9nug",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240716 海淀税务 保险费 162,176.68.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240715 海淀税务 个人所得税 85,280.36.pdf",
+"token": "R5JuboNvNokLrdx76b6clB8Vnhb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240715 海淀税务 个人所得税 85,280.36.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240712 海淀税务 企业所得税 10,428.96.pdf",
+"token": "CqK0bccmeoUq0HxqRLJcV6yLnV6",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240712 海淀税务 企业所得税 10,428.96.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 赵萌 备用金款 30,000.pdf",
+"token": "HyP4bZ4xwoVGp8xgJA9cDSrFnlf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 赵萌 备用金款 30,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 融科物业 租赁费 126,900.pdf",
+"token": "LsZvbqnLWoC2pHxSuONcHWsYnIh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 融科物业 租赁费 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 融科物业 物业费 9,484.19.pdf",
+"token": "NlWbbo8HhocxEsxnBmLcIu4rnNe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 融科物业 物业费 9,484.19.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 第一太平 福利餐费  7,940.pdf",
+"token": "XJFibPBq8o7QfDx1ybGcOZwsnSf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 第一太平 福利餐费  7,940.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 盛攀园林 绿植费 1,500.pdf",
+"token": "AkZwbJXsboPwQ5xjTPCc8ZzKnxb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 盛攀园林 绿植费 1,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 海淀税务 税费 2,072.29.pdf",
+"token": "RYAabUPnCoLYrixgd1mcqc6jnE6",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 海淀税务 税费 2,072.29.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 5.pdf",
+"token": "XRhDbm0etorYXyxRu5kcVMd9nxb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 2.7.pdf",
+"token": "XAuDbKWuBoakEvxLhvCclDqEnDb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 0.9（4）.pdf",
+"token": "Ep74bjhlUoRPQIxdQMGcdnTHneb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 0.9（4）.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 0.9（3）.pdf",
+"token": "OHGfbV4FRoNs9Mx8AKWcyCUOnNg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 0.9（3）.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 0.9（2）.pdf",
+"token": "T3rdbborSocT4NxsLq7cdYl6nkd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 0.9（2）.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 0.9.pdf",
+"token": "QkCzbt5SLoYFlVxaxPZcWaGtn2e",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 汇款费 0.9 .pdf",
+"token": "KOiVbMQXCo4gWGxp2iWcE2C1nKZ",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 汇款费 0.9 .pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 广发银行 代发工资 882,179.95.pdf",
+"token": "DtfHb0qjJoJ92OxMChFcxvKcnFf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 广发银行 代发工资 882,179.95.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 华诚邦友 保洁费  2,500.pdf",
+"token": "TFskbtIiQoOf8fxxecycSEuXnah",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 华诚邦友 保洁费  2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 北京住房公积金管理中心 公积金 99,628.pdf",
+"token": "CJOmbX5CjoeuzoxdYNycQjAknHh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 北京住房公积金管理中心 公积金 99,628.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 中国联通 网络通讯费 5,135.pdf",
+"token": "XUkebWNueoyLwpxH1SOcem08nSe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710 中国联通 网络通讯费 5,135.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710  广发银行 手续费 30.pdf",
+"token": "XBOKbLU8ooxUjFxctCscEJwIn4b",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240710  广发银行 手续费 30.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240709 磐曜 流动性支持款  127,000.pdf",
+"token": "JBBQbuB0IooaEUxqGypcQGfSnWe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240709 磐曜 流动性支持款  127,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-5",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240709 海淀税务 税费 140.79.pdf",
+"token": "FhBbb5T6voKYFgxe1e1c15pJndA",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240709 海淀税务 税费 140.79.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 广发银行 汇款费 2.7.pdf",
+"token": "EMvwbkgKOoGGhRxXsuUcea1MnTM",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240703 广发银行 汇款费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-28",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240703 友邦人寿 保险费 16,134.pdf",
+"token": "WQ5wblFRTo8d4UxyTNGcEzQsnBe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240703 友邦人寿 保险费 16,134.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240702 磐曜 流动性支持款 380,000.pdf",
+"token": "EezAboBaCorc4rx8k6Fc7sSMn0e",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇出）/20240702 磐曜 流动性支持款 380,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "付-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240726 关姗 旧电脑回收收入 3,960.pdf",
+"token": "AworbalLwol4Uxxz425cUqYcnnh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240726 关姗 旧电脑回收收入 3,960.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "收-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240718 关姗 收备用金款 8,000.pdf",
+"token": "O8TObHs8LoARN6xOP0ocKAwLn1c",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240718 关姗 收备用金款 8,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "收-3",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240716 磐沄科技 网银入账  300,000.pdf",
+"token": "GmbUbm06yoWGTbxLHIgcAda0nNh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240716 磐沄科技 网银入账  300,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "转-32",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240710 磐沄科技 网银入账 400,000.pdf",
+"token": "Oc5ybNsUroTPEyxSNJwco08Injg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240710 磐沄科技 网银入账 400,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "转-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240709 磐沄科技 网银入账 500,000.pdf",
+"token": "TADzbCn3MoF4c8x5KRxchtmfnuf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240709 磐沄科技 网银入账 500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "转-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240705 磐沄科技 网银入账  500,000.pdf",
+"token": "UthabtTnuoYeQgxkh2NcmaGcngf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240705 磐沄科技 网银入账  500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "转-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240702 磐沄科技 网银入账  500,000.pdf",
+"token": "VwMobh67eo36DIxsiGfcft8QnEe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/07-2024/07-2024 磐沄 广发 银行电子回单（汇入）/20240702 磐沄科技 网银入账  500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "转-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241028 海淀区税务局 2024Q3_超量技术服务印花税款 78.77.pdf",
+"token": "DnBPbqhejoF9vcxQG5kcJ6opnNL",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241028 海淀区税务局 2024Q3_超量技术服务印花税款 78.77.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-26",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 赵萌 202409赵萌报销行政费 8,165.14.pdf",
+"token": "LAkrb6CYmoKGAHxIHNCcqgaMnIh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 赵萌 202409赵萌报销行政费 8,165.14.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-14",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 赵萌 202409赵萌报销-曹阳招聘服务费 88.pdf",
+"token": "RF7nbxBJ6ocooXxyT4ncxEGpnEg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 赵萌 202409赵萌报销-曹阳招聘服务费 88.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-15",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 赵萌 202409赵萌报销-卢地出差费 13,441.63.pdf",
+"token": "DE9PbQeQwo1Az0xFY7ZcVyxOnCb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 赵萌 202409赵萌报销-卢地出差费 13,441.63.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 赵萌 202409赵萌报销-上海出差费 2,674.9.pdf",
+"token": "SUGMbBozOorXEzx08z8cIzlNnyh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 赵萌 202409赵萌报销-上海出差费 2,674.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-16",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 融科物业 202411办公室租赁款 126,900.pdf",
+"token": "S83QbbIChouNj5xYKsnc2Y4Gnpg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 融科物业 202411办公室租赁款 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-21",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 第一太平 202410物业账单款 9,453.58.pdf",
+"token": "APLYbheyeouRr2xcEw7c38jInPU",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 第一太平 202410物业账单款 9,453.58.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-20",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 磐沄科技 内部转账款 100.pdf",
+"token": "VXxiboEoHoKPrqxQ96zcn4UJn6f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 磐沄科技 内部转账款 100.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-24",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 盛攀园林 2024Q3绿植费 1,500.pdf",
+"token": "BpBlb9HQTo5iwrxyTUWcQmClnjh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 盛攀园林 2024Q3绿植费 1,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-19",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 海问律所 律师费 3,710.pdf",
+"token": "Q7XMbcFGhotlNzxGeTRceWDgnnc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 海问律所 律师费 3,710.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-22",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付赵萌报销手续费 0.9.pdf",
+"token": "CzUMbG64toIBybxOrD2cEeW7nTf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付赵萌报销手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付赵萌报销-曹阳手续费 0.9.pdf",
+"token": "FtqVbjNmfoMVmyxMUkqcX2Zmn5d",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付赵萌报销-曹阳手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付赵萌报销-卢地出差手续费 2.7.pdf",
+"token": "Ab8cbkhLIoB3Q9xUdjFcWt7PnVe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付赵萌报销-卢地出差手续费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付赵萌报销-上海出差手续费 0.9.pdf",
+"token": "OqQ8bBoJpoXxHgxjaMucB1hZnbf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付赵萌报销-上海出差手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付融科物业手续费 5.pdf",
+"token": "ISoubm3sjoz1exxED2qcHOQonYr",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付融科物业手续费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付第一太平手续费 0.9.pdf",
+"token": "SVYRbjfhco2flIxZelhcIfaOnpc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付第一太平手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付磐沄科技手续费 2.7.pdf",
+"token": "CzKjbGlwEoby3XxXlojcQAhWngc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付磐沄科技手续费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付盛攀园林手续费 0.9.pdf",
+"token": "IswbbvIcyopo4VxCCZrceO4qn3d",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付盛攀园林手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付海问律所手续费 0.9.pdf",
+"token": "UaElb4Y3NojWdTxs1ktcDr55nhR",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付海问律所手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 广发银行 付中和呈达手续费 0.9.pdf",
+"token": "MW4bboZcvoSRY0x17lDcb7n0nWe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 广发银行 付中和呈达手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-23",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241022 中和呈达 直饮机滤芯费 2,090.pdf",
+"token": "ATzxbYAG7oK9pOx4EPYcLVpmnYc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241022 中和呈达 直饮机滤芯费 2,090.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241011 海淀区税务局 代扣代缴个人所得税款 40.442.81.pdf",
+"token": "LNzHbIKfVopdYTx86HZci9GOn3g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241011 海淀区税务局 代扣代缴个人所得税款 40.442.81.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241011 海淀区税务局 202409社保款 131,631.72.pdf",
+"token": "QPZhbvVrgoVLcKxCKxbc8ZbXnGh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241011 海淀区税务局 202409社保款 131,631.72.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-11",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 联通北分 202409网络费 5,135.55.pdf",
+"token": "Ixh6b5FwMoyPmFxN5TBcodHUn1c",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 联通北分 202409网络费 5,135.55.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-6",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 第一太平 202409福利餐费 6,050.pdf",
+"token": "NLXRbxCxjod6ghx94QKccgzrnsc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 第一太平 202409福利餐费 6,050.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-5",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 牛客科技 招聘服务费 7,150.pdf",
+"token": "MjEQbB6u2ovr1UxS54LcRom9nHf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 牛客科技 招聘服务费 7,150.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-8",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付联通北分手续费 0.9.pdf",
+"token": "CreDb2uM6oHKSBxZDn3cnv6ynBe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付联通北分手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付第一太平手续费 0.9.pdf",
+"token": "VmxJbzlxGoiwFFxlf8Aca72cnaf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付第一太平手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付牛客科技手续费 0.9.pdf",
+"token": "Lf8YblW8uokKuDxRchmc9yMOn7f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付牛客科技手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付工资手续费 22.pdf",
+"token": "Ibdgb7kmNofV4txmw9AcobRSnld",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付工资手续费 22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付嘉仁康健手续费 2.7.pdf",
+"token": "KB9EbyQz1owX8GxhGkdcT7FSnLe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付嘉仁康健手续费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 广发银行 付华诚邦友手续费 0.9.pdf",
+"token": "ADrbbK2TKoaB3gxGrH7cv1g9n9c",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 广发银行 付华诚邦友手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 嘉仁康健 体检服务款 12,890.pdf",
+"token": "PA2ibSWgrohFR0xZNrocekvbnC2",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 嘉仁康健 体检服务款 12,890.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 员工 202409工资款 259,349.28.pdf",
+"token": "MDUGb6iJ6oNW9yxdJINcAJSXnCd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 员工 202409工资款 259,349.28.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-3",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 华诚邦友 202410保洁费 2,500.pdf",
+"token": "MRRCbujJIoezAmxtzS8ciOj8n3v",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 华诚邦友 202410保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-7",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241010 公积金中心 202409公积金款 85,362.pdf",
+"token": "NkeibbCIDoU8iex6kG6cWChRn9d",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241010 公积金中心 202409公积金款 85,362.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-4",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241008 磐曜科技 流动性支持款 420,000.pdf",
+"token": "VPuGbfE7fo7tGBxPOz5cqAvbnqb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 出账水单/20241008 磐曜科技 流动性支持款 420,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-1",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 磐沄科技 内部转账款 220,000.pdf",
+"token": "Ae9wbqjtioDXaSxTUiZcQJ9sn1g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 入账水单/20241021 磐沄科技 内部转账款 220,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "转-35",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241008 磐沄科技 内部转账款 1,000,000.pdf",
+"token": "ArAibnO7GogWEaxEeYHc0nhWn8g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/10-2024/磐沄 广发 入账水单/20241008 磐沄科技 内部转账款 1,000,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "转-8",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 赵萌 202410赵萌报销款 5,822.93.pdf",
+"token": "I1a6bXiuMo901sx6DkScUGyUnvb",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 赵萌 202410赵萌报销款 5,822.93.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 赵萌 201410赵萌报销-202409公司团建款 32,350.92.pdf",
+"token": "PKe0bc39ZolZynxRQQBcdYUnnGf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 赵萌 201410赵萌报销-202409公司团建款 32,350.92.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-12",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 第一太平 202411物业账单款 9,278.7.pdf",
+"token": "U7kmbsy43o2k1OxozjacCosVnKw",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 第一太平 202411物业账单款 9,278.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 科融物业 202412办公室租赁款 126,900.pdf",
+"token": "Igj8btp5kotnh3xnCLsc5ZwUnde",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 科融物业 202412办公室租赁款 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-15",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 百旺金赋 202411企业咨询费 3,000.pdf",
+"token": "YSfqbjEPaoRc8zxf3RocQbmunic",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 百旺金赋 202411企业咨询费 3,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-17",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付赵萌报销手续费 0.9.pdf",
+"token": "URs1bBxfzomLMCxEaqNc4F1Dn6e",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付赵萌报销手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付赵萌报销-公司团建手续费 2.7.pdf",
+"token": "H25vbxLeLoAqmjxoVSZcKHQTnFh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付赵萌报销-公司团建手续费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付第一太平手续费 0.9.pdf",
+"token": "U6wPbE9xjop9SxxN9LOcWObanGY",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付第一太平手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付科融物业手续费 5.pdf",
+"token": "POH0bqJ4coYNQVxOuVZcT6yynLh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付科融物业手续费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付百旺金赋手续费 2.7.pdf",
+"token": "X8ipb5DJcoJGybx1uR6cbIAinSV",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付百旺金赋手续费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 广发银行 付万巢众创手续费 0.9.pdf",
+"token": "FK1pb73dhoBC9FxsjoIcwZAznwc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 广发银行 付万巢众创手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241122 万巢众创 202411企业咨询费 1,600.pdf",
+"token": "RpYDblIjGotqIxxXAKPcoz0Bntg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241122 万巢众创 202411企业咨询费 1,600.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-16",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241112 海淀区税务局 代扣代缴个人所得税款 46,824.59.pdf",
+"token": "XcCHbNEcDoRV7cxkcUJcZjPqnpe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241112 海淀区税务局 代扣代缴个人所得税款 46,824.59.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-10",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241112 海淀区税务局 202410社保款 131,631.72.pdf",
+"token": "Ryerbly9Co4Gz6xTmTYcB9c0nDg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241112 海淀区税务局 202410社保款 131,631.72.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-11",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241111 公积金中心 202410公积金款 85,362.pdf",
+"token": "KUg0bNRNRo6HPBxFvkfcWiponRf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241111 公积金中心 202410公积金款 85,362.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-9",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 联通北分 202410网络费 5,136.76.pdf",
+"token": "NzV2bGMm2oKhGAxxomjc88LRnrg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 联通北分 202410网络费 5,136.76.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-6",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 第一太平 202410福利餐费 6,020.pdf",
+"token": "BECsbDOVKoDBDBxbBXGcnqIlnyf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 第一太平 202410福利餐费 6,020.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 广发银行 付联通北分手续费 0.9.pdf",
+"token": "HbHDbHTrzo28gBxFxMkccUJunvk",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 广发银行 付联通北分手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 广发银行 付第一太平手续费 0.9.pdf",
+"token": "AbQpbYzdioyDyYxrfxYcGZern9f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 广发银行 付第一太平手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 广发银行 付华诚邦友手续费 0.9.pdf",
+"token": "V9q4bSEo7ok1C7xEi3Wcgr06nLf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 广发银行 付华诚邦友手续费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241108 华诚邦友 202411保洁费 2,500.pdf",
+"token": "OIs5bMSfao3r3pxJzjLcJjCgnwK",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241108 华诚邦友 202411保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241107 广发银行 付工资手续费 22.pdf",
+"token": "H02RbI1B7oivYjxxg3UcbPownlc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241107 广发银行 付工资手续费 22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-18",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241107 员工 202410工资款 290,109.08.pdf",
+"token": "PBzMbnEcEo2bfLxtcURcfO0yn2e",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241107 员工 202410工资款 290,109.08.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-5",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241106 海淀区税务局 2024Q3_超量技术服务印花税款 59.16.pdf",
+"token": "HjuxbMCrHoXOksxkDAocsOuenzt",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241106 海淀区税务局 2024Q3_超量技术服务印花税款 59.16.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241105 磐曜科技 流动性支付款 440,000.pdf",
+"token": "LbCSbQMVXoBDcwxFJlOcbIpxnZc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/11-2024/磐沄 广发 出账水单/20241105 磐曜科技 流动性支付款 440,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-3",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 赵萌 行政部备用金款 30,000.pdf",
+"token": "FP3bbBpktotjoCxi8Iec1ujAnAf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 赵萌 行政部备用金款 30,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 赵萌 报销款 7,586.66.pdf",
+"token": "Hc5QbGPTQoGUBxxXYmRc3xJanxd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 赵萌 报销款 7,586.66.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 新荣记 团队聚餐费 8,146.pdf",
+"token": "YFa6bxpBAoMZlvxMjJ2c6k45n9g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 新荣记 团队聚餐费 8,146.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-23",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 广发银行 汇款费 2.7.pdf",
+"token": "BzFPbQt1jou0obxw8T1czOwPn1d",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 广发银行 汇款费 2.7.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 广发银行 汇款费 2.7(1).pdf",
+"token": "OrVqbMppRoT9cZxdzCtcyJoTnmh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 广发银行 汇款费 2.7(1).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 广发银行 汇款费 0.9.pdf",
+"token": "RHPKbQ9xlo2pvWx0eWfcpN1vn7g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 广发银行 汇款费 0.9(1).pdf",
+"token": "GBeIbjcbzozfetxVHWocuCwunxf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 广发银行 汇款费 0.9(1).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-26",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240830 一家文旅 团建费 44,625.pdf",
+"token": "TNDabbecXoXCiDxVvficqn3Hn6w",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240830 一家文旅 团建费 44,625.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-22",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 震旦北分 维修费 500.pdf",
+"token": "F23oba1JioMprTxQD3IcqiwXnDg",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 震旦北分 维修费 500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-13",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 赵萌 报销款 2,356.5.pdf",
+"token": "XH0ibIV79oq7qwx4rP3c8cqNnnh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 赵萌 报销款 2,356.5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-18",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 融科物业 租赁费 126,900.pdf",
+"token": "Z6sKbDWNioxaM3xbufhcpuOen8f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 融科物业 租赁费 126,900.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 融科物业 物业费 9,747.6.pdf",
+"token": "DFv1bj3CEoADe6xM3Hgc2PoKnjf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 融科物业 物业费 9,747.6.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-15",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 第一太平 福利餐费 7,370.pdf",
+"token": "TCrHbwMRzoK3sbxSP1mczT9Nnoh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 第一太平 福利餐费 7,370.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-17",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 磐曜 流动性支持款 50,000.pdf",
+"token": "UHwjblJKho5YGgx4OcKcX5Nwngf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 磐曜 流动性支持款 50,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-19",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 海淀税务 保险费 161,851.98.pdf",
+"token": "PFDWbiekbo9Yb3xkTFhctqlEn4g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 海淀税务 保险费 161,851.98.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 5.pdf",
+"token": "FcINbtKk8ob52Lxup6Wcsq2anbc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9.pdf",
+"token": "O8SIb0NUOokTi0xFIAJc3xLrnAf",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9(5).pdf",
+"token": "DymybN7cwov7x3xAw2ncURwknWc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9(5).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9(4).pdf",
+"token": "EXiZbw5zSozq4TxL9D6cF8jCnKd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9(4).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9(3).pdf",
+"token": "AXi0bn1FZosCWLx67FockNd0nbd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9(3).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9(2).pdf",
+"token": "O2mdbCjoooFo19xyqTZcITrRnce",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9(2).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 广发银行 汇款费 0.9(1).pdf",
+"token": "IaAFbKY8uoRtCTx7ElUcxekcnzh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 广发银行 汇款费 0.9(1).pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-20",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815 中国联通 通讯费 5,135.22.pdf",
+"token": "QsxbbazkQo8GiQxTnWkctpblnAd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815 中国联通 通讯费 5,135.22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240815  华诚邦友 保洁费 2,500.pdf",
+"token": "EBeMb6RA2oNO6hx8K5AcU76TnKD",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240815  华诚邦友 保洁费 2,500.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-14",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240813 海淀税务 印花税 155.43.pdf",
+"token": "W4jwb30FGozb1exDNiPcltW7nzd",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240813 海淀税务 印花税 155.43.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240812 海淀税务 个人所得税 44,071.39.pdf",
+"token": "B6GpbtDIXorGHixK5ulcw6qqn9f",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240812 海淀税务 个人所得税 44,071.39.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240812 北京住房公积金管理中心 公积金 104,958.pdf",
+"token": "ToodbagmEoV6zjxfrkJcvhEsnYA",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240812 北京住房公积金管理中心 公积金 104,958.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-8",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240810 广发银行 手续费 28.pdf",
+"token": "Fijib62n8o3ma5x0z3scMJL7nmh",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240810 广发银行 手续费 28.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-7",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240810 广发银行 代发工资 317,957.47.pdf",
+"token": "PrYnbMiU5oW7wWxQu23cL1dKnUF",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240810 广发银行 代发工资 317,957.47.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-6",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240807 海淀税务 税费 81.5.pdf",
+"token": "F5m2b1aXXoqhKtxpc9scZ1FAn3g",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇出）/20240807 海淀税务 税费 81.5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "付-4",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240819 磐沄科技 网银入账 766.pdf",
+"token": "ZNHhbJLrzoy371xBos3cRgmhnsc",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇入）/20240819 磐沄科技 网银入账 766.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-24",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240809 磐沄科技 网银入账 500,000.pdf",
+"token": "M2XwbSFwUoZjYQxYVGZc8lVQnBe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇入）/20240809 磐沄科技 网银入账 500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-16",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240806 磐沄科技 网银入账 500,000.pdf",
+"token": "Q8CTbO8NuoDbvpxKKvTc8E8InZe",
+"path": "NEW-VOUCHER/广发银行对账单及回单/FY-2024/08-2024/08-2024 磐沄 广发 银行电子回单（汇入）/20240806 磐沄科技 网银入账 500,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241105 华夏银行 内部转账手续费 14.pdf",
+"token": "QkRbbRslsosQX4xWieHciW5PnWf",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202411/20241130 付款水单 磐沄科技/20241105 华夏银行 内部转账手续费 14.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-2",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241104 华夏银行 内部转账手续费 10.5.pdf",
+"token": "CdNzbC6fwomaPZxL8OKccgf4nag",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202411/20241130 付款水单 磐沄科技/20241104 华夏银行 内部转账手续费 10.5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202411",
+"vno": "付-1",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240709 结汇单 华夏银行 812,952.pdf",
+"token": "Kx9IbzFQmoWn0TxlGdKch6N4nNg",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202407/20240709 结汇单 华夏银行 812,952.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202407",
+"vno": "收-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240801 结汇单 华夏银行 1,375,577.22.pdf",
+"token": "LWefbqVf2oKcbhxJGMScIrasnRf",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202408/20240801 结汇单 华夏银行 1,375,577.22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240801 入账水单 华夏银行 1,375,577.22.pdf",
+"token": "A8mjbyadSoLqzyxXZEQc7tBInug",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202408/20240801 入账水单 华夏银行 1,375,577.22.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202408",
+"vno": "转-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 华夏银行 出账水单 手续费 14.pdf",
+"token": "YiGwbZOkyoUZn1xVfXEc0M1snge",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202409/20240930 磐沄科技 华夏银行 出账水单/20240910 磐沄 华夏银行 出账水单 手续费 14.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "付-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240910 磐沄 华夏银行 出账水单 内部转账款 1,000,000.pdf",
+"token": "Qv0PbGXSxoQXrexrlvIcLoYqnuc",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202409/20240930 磐沄科技 华夏银行 出账水单/20240910 磐沄 华夏银行 出账水单 内部转账款 1,000,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "转-12",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240921 磐沄 华夏银行 入账水单 活期账户利息收入 308.39.pdf",
+"token": "XDcUbiABmouGEkx6WEjcxXTunvc",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202409/20240930 磐沄科技 华夏银行 入账水单/20240921 磐沄 华夏银行 入账水单 活期账户利息收入 308.39.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "收-3、转-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240905 磐沄 华夏银行 入账水单 内部结转款 1,849,576.50.pdf",
+"token": "YkDRbs7RcooZFGxV5P9cPBKbnpc",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202409/20240930 磐沄科技 华夏银行 入账水单/20240905 磐沄 华夏银行 入账水单 内部结转款 1,849,576.50.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "转-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240905 结汇单 华夏银行 1,849,576.50.pdf",
+"token": "Rc0dbX9f9oOQoWxy49scEoSfnlf",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202409/20240905 结汇单 华夏银行 1,849,576.50.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202409",
+"vno": "转-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240620 结汇单 华夏银行 1,891,284.30.pdf",
+"token": "AQU2bh7dhohsgnxmCX6c41zCnxc",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202406/20240630 外汇单据/20240620 结汇单 华夏银行 1,891,284.30.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "转-21",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240604 结汇单 华夏银行 809,447.43.pdf",
+"token": "P3WxbgYFkosoIyxEQZScnGXAnI0",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202406/20240630 外汇单据/20240604 结汇单 华夏银行 809,447.43.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "转-9",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20240621 结息单 华夏银行 USD6.94.pdf",
+"token": "AE2Ib2eF6oYJ9Rxar5ucR8TenCf",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202406/20240621 结息单 华夏银行 USD6.94.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202406",
+"vno": "收-5、转-25",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241021 付款水单 华夏银行 手续费 10.5.pdf",
+"token": "QZZZb74tZoYGshx6DtWca19DnMe",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202410/磐沄 华夏 付款水单/20241021 付款水单 华夏银行 手续费 10.5.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-13",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241008 华夏银行 付内部转账手续费 14.pdf",
+"token": "KUZWbNdi0oa8yaxEmvqcLocsnHb",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202410/磐沄 华夏 付款水单/20241008 华夏银行 付内部转账手续费 14.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "付-2",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241025 结汇单 华夏银行 1,448,122.54.pdf",
+"token": "Jk61bEpg1oAD3RxmV9ecdRQDnCe",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202410/20241025 结汇单 华夏银行 1,448,122.54.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "转-39",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241025 收汇单 华夏银行 INF2024008 2024Q3_超额咨询服务费 USD203,771.50.pdf",
+"token": "Qbe6bAv17oB1tNxBm8Kc6Vxan3c",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202410/20241025 收汇单 华夏银行 INF2024008 2024Q3_超额咨询服务费 USD203,771.50.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202410",
+"vno": "收-2",
+"status": "未审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 磐沄 华夏银行 出账水单 内部转账款 1,000,000.pdf",
+"token": "AnMcbb0Ovo8vv1xuhNGcC1nlnLh",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202412/20241231 磐沄科技 华夏银行 出账水单/20241206 磐沄 华夏银行 出账水单 内部转账款 1,000,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-11",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241221 磐沄 华夏银行 入账水单 活期账户利息收入 181.11.pdf",
+"token": "MkP0bThJHoJa7zxdzRVcFcn2nkc",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202412/20241231 磐沄科技 华夏银行 入账水单/20241221 磐沄 华夏银行 入账水单 活期账户利息收入 181.11.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-20、收-2",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 磐沄 华夏银行 入账水单 内部结转款 1,890,109.80.pdf",
+"token": "VL8LbaIIGoryGJxu1zfctNcgntg",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202412/20241231 磐沄科技 华夏银行 入账水单/20241206 磐沄 华夏银行 入账水单 内部结转款 1,890,109.80.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 结汇单 华夏银行 1,890,109.80.pdf",
+"token": "VqT5byO0Kon5h6xWhmhc2BPhnGh",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202412/20241206 结汇单 华夏银行 1,890,109.80.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "转-10",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+},
+{
+"name": "20241206 收汇单 华夏银行 INF2024009 2025Q1_基础咨询服务收入 USD261,000.pdf",
+"token": "RZ9pb8O4pownWDxhyE1civkmnyF",
+"path": "NEW-VOUCHER/华夏银行对账单及回单/FY-2024/202412/20241206 收汇单 华夏银行 INF2024009 2025Q1_基础咨询服务收入 USD261,000.pdf",
+"type": "file",
+"_origin": "new",
+"target": {
+"period": "202412",
+"vno": "收-1",
+"status": "已审核"
+},
+"mode": "exact",
+"srcTable": "entry"
+}
+]
