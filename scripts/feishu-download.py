@@ -28,8 +28,11 @@ spec.loader.exec_module(U)
 def tmp_download(token, file_token):
     """签名 CDN URL 下载。返回 (bytes|None, diag)。"""
     url = f"{U.FEISHU_BASE}/drive/v1/medias/batch_get_tmp_download_url"
-    r = U.feishu_request("POST", url, headers=U.get_headers(token),
-                         json={"file_tokens": [file_token]})
+    # raw requests 直打，排除 feishu_request 封装干扰
+    import requests as _rq
+    r = _rq.post(url, headers={**U.get_headers(token), "Content-Type": "application/json"},
+                 json={"file_tokens": [file_token]}, timeout=30)
+    print(f"[debug] POST {url}\n[debug] status={r.status_code} body={r.text[:300]}", file=sys.stderr)
     diag = f"tmp_urls status={r.status_code}"
     try:
         body = r.json()
