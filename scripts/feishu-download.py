@@ -27,7 +27,7 @@ spec.loader.exec_module(U)
 
 def tmp_download(token, file_token):
     """签名 CDN URL 下载。返回 (bytes|None, diag)。"""
-    url = f"{U.FEISHU_BASE}/drive/v1/medias/batch_get_tmp_download_urls"
+    url = f"{U.FEISHU_BASE}/drive/v1/medias/batch_get_tmp_download_url"
     r = U.feishu_request("POST", url, headers=U.get_headers(token),
                          json={"file_tokens": [file_token]})
     diag = f"tmp_urls status={r.status_code}"
