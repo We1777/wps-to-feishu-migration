@@ -13,6 +13,7 @@ gen-archive-report.py — 磐沄 FY-2024 归档报告（实测飞书 + 交叉比
   - 实拉归档库该月所有「凭证号夹 + 内含文件」（飞书 live，= 归档真相）
   - 凭证列表「附件」注明张数（/tmp/panyun-2024-voucher.json，idx6）
   - match2 的 path 字段（各附件归档前所在原类别夹）（/tmp/panyun-2024-match2.json）
+  - 08-18 发票影像补归批移动记录（源=FY-2024/b. 国内发票）（/tmp/fiona-fapiao-apply-ckpt.jsonl）
 
 模式：
   收集：python3 gen-archive-report.py --month 06 [--fy 2024]
@@ -39,6 +40,11 @@ DOMAIN = "lcnzfxq3rlhh.feishu.cn"
 VOUCHER_FILE = Path("/tmp/panyun-2024-voucher.json")
 MATCH_FILE = Path("/tmp/panyun-2024-match2.json")
 SOURCE_FILE = Path("/tmp/panyun-2024-source2.json")
+# 08-18 发票影像补归批的移动记录（392 AUTO + 2 manual）。该批源 =
+# 归档库 FY-2024/b. 国内发票（用户 08-17 前后把发票影像传入此夹，08-12 的
+# source2 盘点早于上传，故该批不在 source2 里，不补会被报成「未知」）。
+INBOX_CKPT = Path("/tmp/fiona-fapiao-apply-ckpt.jsonl")
+INBOX_LABEL = "b. 国内发票"
 
 
 def find_month_folder(token, month, year):
@@ -80,12 +86,21 @@ def load_stated_attach(period):
 
 
 def load_orig_folder():
-    """{filename: 原类别夹名}。match2 优先（权威），source2 兜底。"""
+    """{filename: 原类别夹名}。match2 优先（权威），08-18 补归批记录次之，source2 兜底。"""
     out = {}
     if MATCH_FILE.exists():
         for x in json.load(open(MATCH_FILE, encoding="utf-8"))["newRes"]["auto"]:
             parts = x.get("path", "").split("/")
             out[x["name"]] = parts[1] if len(parts) > 1 else ""
+    if INBOX_CKPT.exists():
+        for line in INBOX_CKPT.read_text(encoding="utf-8").splitlines():
+            try:
+                x = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            nm = x.get("name")
+            if x.get("status") == "success" and nm and nm not in out:
+                out[nm] = INBOX_LABEL
     if SOURCE_FILE.exists():
         for x in json.load(open(SOURCE_FILE, encoding="utf-8")):
             nm = x.get("name")
