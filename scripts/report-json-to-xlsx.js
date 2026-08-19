@@ -24,16 +24,18 @@ const summary = [
   ['月份夹', rep.month_folder],
   [],
   ['指标', '数值'],
-  ['凭证号夹数', rep.stats.voucher_folders],
+  ['凭证总数', rep.stats.voucher_folders],
   ['归档附件总数', rep.stats.archived_attachments],
-  ['注明张数·匹配', rep.stats.matched],
+  ['全部匹配', rep.stats.full],
+  ['部分匹配', rep.stats.partial],
+  ['缺件', rep.stats.missing],
   ['超额', rep.stats.over],
-  ['缺件', rep.stats.under],
+  ['无附件（未注明张数）', rep.stats.no_stated],
   ['凭证列表无该号', rep.stats.not_in_list],
 ];
 
 // Sheet 2: 凭证汇总（每凭证一行）
-const vrows = [['凭证号', '归档附件数', '凭证注明张数', '是否匹配', '归档附件清单']];
+const vrows = [['凭证号', '归档附件数', '凭证注明张数', '匹配状态', '归档附件清单']];
 for (const v of rep.vouchers) {
   vrows.push([
     v.vno,

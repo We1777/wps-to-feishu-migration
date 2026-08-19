@@ -3,8 +3,11 @@
 """
 gen-archive-report.py — 磐沄 FY-2024 归档报告（实测飞书 + 交叉比对）
 
-每个批次归档完后跑一次，输出含 5 字段的归档报告：
+每个批次归档完后跑一次，输出含 5 字段的归档报告（标准格式，2026-08-19 用户定稿）：
   凭证号 / 凭证归档的附件名 / 附件数 / 是否匹配凭证上的附件数 / 归档附件的原文件夹
+  - 必须包含该期凭证列表里的全部凭证（不止已归档的）
+  - 匹配状态三类：全部匹配 / 部分匹配（缺X件）/ 缺件；边缘：超额 / 无附件（未注明张数）
+  - 凭证汇总按凭证号顺序排序（付→收→转，数字递增）
 
 数据来源：
   - 实拉归档库该月所有「凭证号夹 + 内含文件」（飞书 live，= 归档真相）
@@ -93,8 +96,42 @@ def load_orig_folder():
     return out
 
 
-def is_voucher_pdf(name):
-    """记账凭证 PDF（凭证本身，非原始凭证附件）——不计入附件数。"""
+def parse_voucher_no(vno):
+    """解析凭证号为可排序元组 (类型序, 数字)。付>收>转，数字递增。"""
+    if not vno:
+        return (99, 0)
+    parts = vno.split("-")
+    if len(parts) != 2:
+        return (99, 0)
+    typ, num = parts
+    type_order = {"付": 1, "收": 2, "转": 3}
+    try:
+        return (type_order.get(typ, 99), int(num))
+    except ValueError:
+        return (99, 0)
+
+
+def classify_match(archived_n, stated_n):
+    """匹配状态分类（用户 2026-08-19 定稿口径）：
+    全部匹配 / 部分匹配（缺X件）/ 缺件 为主三类；
+    超额、无附件（未注明张数）为边缘信号。"""
+    if stated_n is None:
+        return "无附件（未注明张数）" if archived_n == 0 else f"凭证列表无附件数（档{archived_n}）"
+    if archived_n == stated_n:
+        return "全部匹配"
+    if archived_n > stated_n:
+        return f"超额（多{archived_n - stated_n}件）"
+    if archived_n > 0:
+        return f"部分匹配（缺{stated_n - archived_n}件）"
+    return "缺件"
+
+
+def is_voucher_pdf(name, vno=None):
+    """记账凭证 PDF（凭证本身，非原始凭证附件）——不计入附件数。
+    新命名约定（用户 2026-08-14）：记账凭证就叫凭证号，如 付-1.pdf；
+    兼容旧命名（含"记账凭证"字样）。"""
+    if vno is not None and name == f"{vno}.pdf":
+        return True
     return "记账凭证" in name
 
 
@@ -111,43 +148,93 @@ def collect(month, year):
     stated = load_stated_attach(period)
     orig = load_orig_folder()
 
-    vfolders = sorted(
-        (c for c in U.list_folder_live(token, mf["token"]) if c.get("type") == "folder"),
-        key=lambda c: c.get("name", ""),
-    )
+    # 从凭证列表中提取该期的所有凭证号（全集）
+    all_vouchers_in_period = {}
+    if VOUCHER_FILE.exists():
+        for r in json.load(open(VOUCHER_FILE, encoding="utf-8")):
+            if len(r) < 7:
+                continue
+            date, vno = r[0], r[1]
+            if not date or not vno:
+                continue
+            ds = str(date)[:7]
+            if not re.match(r"\d{4}-\d{2}", ds):
+                continue
+            p = ds.replace("-", "")
+            if p == period and vno not in all_vouchers_in_period:
+                # 从 stated 中获取注明附件数
+                stated_n = stated.get((period, vno))
+                all_vouchers_in_period[vno] = stated_n
+
+    # 扫描归档库中的凭证文件夹
+    vfolders = {
+        c["name"]: c
+        for c in U.list_folder_live(token, mf["token"])
+        if c.get("type") == "folder"
+    }
 
     vouchers = []
-    for vf in vfolders:
-        vno = vf["name"]
+    # 先处理凭证列表中的所有凭证（按凭证号排序）
+    for vno in sorted(all_vouchers_in_period.keys(), key=parse_voucher_no):
+        stated_n = all_vouchers_in_period[vno]
+        vf = vfolders.get(vno)
+
+        if vf:
+            # 归档库中有该凭证
+            files = sorted(
+                (c for c in U.list_folder_live(token, vf["token"]) if c.get("type") == "file"),
+                key=lambda c: c.get("name", ""),
+            )
+            atts = [f for f in files if not is_voucher_pdf(f["name"], vno)]
+            vpdfs = [f["name"] for f in files if is_voucher_pdf(f["name"], vno)]
+            archived_n = len(atts)
+            match = classify_match(archived_n, stated_n)
+            vouchers.append({
+                "vno": vno,
+                "archived_count": archived_n,
+                "stated_count": stated_n,
+                "match": match,
+                "attachments": [{"name": f["name"], "orig_folder": orig.get(f["name"], "未知")}
+                                for f in atts],
+                "voucher_pdfs": vpdfs,
+            })
+        else:
+            # 归档库中没有该凭证文件夹
+            vouchers.append({
+                "vno": vno,
+                "archived_count": 0,
+                "stated_count": stated_n,
+                "match": classify_match(0, stated_n),
+                "attachments": [],
+                "voucher_pdfs": [],
+            })
+
+    # 再处理归档库中有但凭证列表中没有的凭证
+    remaining_folders = set(vfolders.keys()) - set(all_vouchers_in_period.keys())
+    for vno in sorted(remaining_folders, key=parse_voucher_no):
+        vf = vfolders[vno]
         files = sorted(
             (c for c in U.list_folder_live(token, vf["token"]) if c.get("type") == "file"),
             key=lambda c: c.get("name", ""),
         )
-        atts = [f for f in files if not is_voucher_pdf(f["name"])]
-        vpdfs = [f["name"] for f in files if is_voucher_pdf(f["name"])]
+        atts = [f for f in files if not is_voucher_pdf(f["name"], vno)]
+        vpdfs = [f["name"] for f in files if is_voucher_pdf(f["name"], vno)]
         archived_n = len(atts)
-        stated_n = stated.get((period, vno))
-        if stated_n is None:
-            match = "凭证列表无该号"
-        elif archived_n == stated_n:
-            match = "匹配"
-        elif archived_n > stated_n:
-            match = f"超额{archived_n - stated_n}"
-        else:
-            match = f"缺件{stated_n - archived_n}"
         vouchers.append({
             "vno": vno,
             "archived_count": archived_n,
-            "stated_count": stated_n,
-            "match": match,
+            "stated_count": None,
+            "match": "凭证列表无该号",
             "attachments": [{"name": f["name"], "orig_folder": orig.get(f["name"], "未知")}
                             for f in atts],
             "voucher_pdfs": vpdfs,
         })
 
-    fully = [v for v in vouchers if v["match"] == "匹配"]
+    fully = [v for v in vouchers if v["match"] == "全部匹配"]
+    partial = [v for v in vouchers if v["match"].startswith("部分匹配")]
+    missing = [v for v in vouchers if v["match"] == "缺件"]
     over = [v for v in vouchers if v["match"].startswith("超额")]
-    under = [v for v in vouchers if v["match"].startswith("缺件")]
+    nostated = [v for v in vouchers if v["match"].startswith("无附件") or v["match"].startswith("凭证列表无附件数")]
     nomap = [v for v in vouchers if v["match"] == "凭证列表无该号"]
 
     report = {
@@ -156,8 +243,8 @@ def collect(month, year):
         "stats": {
             "voucher_folders": len(vouchers),
             "archived_attachments": sum(v["archived_count"] for v in vouchers),
-            "matched": len(fully), "over": len(over),
-            "under": len(under), "not_in_list": len(nomap),
+            "full": len(fully), "partial": len(partial), "missing": len(missing),
+            "over": len(over), "no_stated": len(nostated), "not_in_list": len(nomap),
         },
         "vouchers": vouchers,
     }
@@ -165,7 +252,7 @@ def collect(month, year):
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(json.dumps(report["stats"], ensure_ascii=False, indent=2))
-    for tag, lst in (("超额", over), ("缺件", under), ("凭证列表无", nomap)):
+    for tag, lst in (("部分匹配", partial), ("缺件", missing), ("超额", over), ("凭证列表无", nomap)):
         if lst:
             print(f"[{tag}] " + ", ".join(
                 f'{v["vno"]}(档{v["archived_count"]}/注{v["stated_count"]})' for v in lst),
@@ -225,18 +312,37 @@ def upload(xlsx_path):
         sys.exit(f"上传失败：{r}")
 
 
+def delete_file(file_token):
+    """删除待定事项夹内的过时报告件（仅限 REPORT_FOLDER 里的文件，防误删）。"""
+    token = U.get_tenant_access_token()
+    if not token:
+        sys.exit("拿不到 tenant token")
+    names = {c.get("token"): c.get("name") for c in U.list_folder_live(token, REPORT_FOLDER)}
+    if file_token not in names:
+        sys.exit(f"token {file_token} 不在待定事项夹内，拒绝删除")
+    url = f"{U.FEISHU_BASE}/drive/v1/files/{file_token}"
+    r = U.feishu_request("DELETE", url, headers=U.get_headers(token), params={"type": "file"})
+    ok = r.status_code == 200
+    print(f"删除 {names[file_token]} ({file_token}): {'OK' if ok else r.text[:200]}")
+    if not ok:
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="磐沄归档报告生成器")
     ap.add_argument("--month", help="月份，如 06")
     ap.add_argument("--fy", default="2024", help="财年，默认 2024")
     ap.add_argument("--upload", help="上传指定 xlsx 到飞书待定事项")
+    ap.add_argument("--delete-file", help="删除待定事项夹内指定 token 的过时报告件")
     ap.add_argument("--rename-month", action="store_true", help="把月份夹改名为 MM-YYYY（实测飞书支持否）")
     a = ap.parse_args()
     if a.upload:
         upload(a.upload)
+    elif a.delete_file:
+        delete_file(a.delete_file)
     elif a.rename_month and a.month:
         rename_month(a.month, a.fy)
     elif a.month:
         collect(a.month, a.fy)
     else:
-        ap.error("需要 --month 或 --upload")
+        ap.error("需要 --month 或 --upload 或 --delete-file")
