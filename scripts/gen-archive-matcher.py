@@ -95,18 +95,31 @@ def month_label(period):
 
 
 _FN_DATE_RE = re.compile(r"\d{1,2}-\d{1,2}-20\d{2}|20\d{2}\d{2}\d{2}")
+# 年月类 token：YYYYMM / MM-YYYY / YYYY年MM月 / YYYY年 / Qn-YYYY 的数字段——一律不是金额
+_FN_PERIOD_RE = re.compile(r"(?<!\d)(?:20\d{2}(?:0[1-9]|1[0-2])|(?:0?[1-9]|1[0-2])-20\d{2}"
+                           r"|20\d{2}年(?:0?[1-9]|1[0-2])月?|20\d{2}年)(?!\d)")
 _FN_AMT_RE = re.compile(r"(\d[\d,]*\.\d{2})(?!\d)")
-_FN_INT_RE = re.compile(r"(?<![\d.])(\d{4,6})(?![\d.])")
+# 千分位分组整数（不限位数）：1,000,000 / 126,900 —— 七位数以上金额全靠它
+_FN_GROUP_RE = re.compile(r"(?<![\d.,])(\d{1,3}(?:,\d{3})+)(?![\d,])")
+# 裸整数兜底：相邻不得是字母数字（防 INF2024007 合同号段被抠走当金额）
+_FN_INT_RE = re.compile(r"(?<![\w.])(\d{4,9})(?![\w.])")
 
 
 def amount_from_filename(name):
-    """从附件名提取金额：先抠日期，再找两位小数，再找 4-6 位整数（千分位逗号一并处理）。"""
+    """从附件名提取金额：先抠日期与年月 token（防「202412办公室租赁款」的 202412
+    被当金额取走、真金额反而漏掉），再找两位小数，再找千分位分组整数（不限位数，
+    2026-08-26 修 1,000,000 提不出），最后 4-9 位裸整数兜底（相邻须为非字母数字，
+    防 INF2024007 合同号段误入）。"""
     s = _FN_DATE_RE.sub(" ", str(name or ""))
+    s = _FN_PERIOD_RE.sub(" ", s)
     stem = Path(s).stem if "." in s else s
     m = _FN_AMT_RE.search(stem)
     if m:
         return float(m.group(1).replace(",", ""))
-    m = _FN_INT_RE.search(stem.replace(",", ""))
+    m = _FN_GROUP_RE.search(stem)
+    if m:
+        return float(m.group(1).replace(",", ""))
+    m = _FN_INT_RE.search(stem)
     if m:
         return float(m.group(1))
     return None
