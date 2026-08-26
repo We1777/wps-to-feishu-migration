@@ -6,7 +6,9 @@ test-archive-matcher.py — gen-archive-matcher.py 回归测试（FINCHN-710 sco
 以磐沄 FY-2024 实际发现的 6 处错放为 fixture（餐费明细表 7,940/7,030/6,050/7,370/6,020、
 利息计算表 2,213.08，凭证行数据取自当期真实凭证列表），断言按位配对后不再错放；
 另覆盖：长度不一致禁兜底、凭证不存在/月份超范围、金额摘要双不吻合、同名冲突、
-同月多证合条、跨月补挂清单、缺件报告。全部自造 mini 输入（/tmp），不依赖线上数据。
+同月多证合条、跨月补挂清单、缺件报告、别名同源判定收紧（09/收-1 华夏收汇单
+INF2024007 vs INF2024004 误判案，2026-08-26 用户裁定）。全部自造 mini 输入（/tmp），
+不依赖线上数据。
 """
 import json, subprocess, sys, tempfile
 from pathlib import Path
@@ -72,6 +74,9 @@ def build_inputs(tmp):
         entry_row("20241221 磐沄 华夏银行 入账水单 活期账户利息收入 181.11.pdf", 181.11,
                   "转-20、收-2", "202412、202412"),                                              # 同月多证→合一条
         entry_row("20241115 池中缺件测试 餐费 900.pdf", 900, "转-13", "202410"),                # 影像池无此文件→缺件
+        # 别名同源判定收紧（09/收-1 华夏收汇单案）：入账表名=合同号开头，池内文件=日期开头
+        entry_row("INF2024007 收汇单 华夏银行 INF2024007 Q4-2024 基础咨询服务费 USD 261,000.pdf",
+                  None, "收-1", "202409"),
         entry_row("20240710 无凭证号行 附件.pdf", 50, None, None),                               # 无凭证号→noVoucherRows
     ]
     (tmp / "entry.json").write_text(json.dumps({"e1": HDR3 + rows}, ensure_ascii=False), encoding="utf-8")
@@ -87,6 +92,9 @@ def build_inputs(tmp):
         "20241231 月份超范围测试 餐费 300.pdf", "20240815 无关附件名 500.pdf",
         "20240825 同名冲突A 餐费 400.pdf", "20241221 磐沄 华夏银行 入账水单 活期账户利息收入 181.11.pdf",
         "20240710 池外多余文件 餐费 77.pdf",
+        # 别名池文件：日期开头同款收汇单（合同号一致，应提示同源）+ 撞形异合同号发票（禁判同源）
+        "20240905 收汇单 华夏银行 INF2024007 Q4-2024 基础咨询服务费 USD 261,000.pdf",
+        "INF2024004 Q3-2024 基础咨询服务费发票 USD 261,000.pdf",
     ]
     pool = [{"name": n, "token": f"tok{i:03d}", "path": f"FY-2024/x/{n}"} for i, n in enumerate(names)]
     (tmp / "pool.json").write_text(json.dumps(pool, ensure_ascii=False), encoding="utf-8")
@@ -178,6 +186,36 @@ def main():
         check(s["suspects"] == len(rep["suspect"]), "suspects 数一致")
         expect_plan = 6 * 2 + 1  # 6 案例各 2 目标条 + 同月多证 1 条
         check(len(plan) == expect_plan, f"plan 条数 {len(plan)} == 期望 {expect_plan}")
+
+        print("\n== 用例9：别名同源判定收紧（09/收-1 华夏收汇单案，FINCHN-710 f）==")
+        inf_name = "INF2024007 收汇单 华夏银行 INF2024007 Q4-2024 基础咨询服务费 USD 261,000.pdf"
+        pool_ok = "20240905 收汇单 华夏银行 INF2024007 Q4-2024 基础咨询服务费 USD 261,000.pdf"
+        pool_bad = "INF2024004 Q3-2024 基础咨询服务费发票 USD 261,000.pdf"
+        check(any(m["name"] == inf_name for m in rep["missingAttachments"]),
+              "合同号开头的入账名→缺件（exact 不命中）")
+        pairs = {(h["name"], h["pool_name"]) for h in rep["aliasHints"]}
+        check((inf_name, pool_ok) in pairs, "同合同号+同额的日期开头池文件→aliasHints 提示同源")
+        check(all(pool_bad not in pn for _, pn in pairs),
+              "INF2024004 撞形发票（USD 261,000 相同）→ 禁判同源，不进 aliasHints")
+        check(all(h["name"] != "20241115 池中缺件测试 餐费 900.pdf"
+                  or h["pool_name"] != pool_bad for h in rep["aliasHints"]),
+              "其他缺件行也不与撞形异合同号文件配对")
+        # 单元级：same_source 四象限
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location("matcher", MATCHER)
+        _m = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_m)
+        ok, ev = _m.same_source(inf_name, pool_ok)
+        check(ok, f"合同号一致+金额一致 → 同源（{ev}）")
+        ok, ev = _m.same_source(inf_name, pool_bad)
+        check(not ok and ev.startswith("contract-mismatch"),
+              f"合同号不一致 → 不同源，即便金额同为 261,000（{ev}）")
+        ok, _ = _m.same_source("收汇单 INF2024007 USD 261,000.pdf", "收汇单 USD 261,000.pdf")
+        check(not ok, "单侧有合同号 → 不判同源（拿不出合同证据）")
+        ok, _ = _m.same_source("餐费明细表.pdf", "20240801 磐沄餐费明细表 7,940.pdf")
+        check(not ok, "双侧无合同号且仅关键词命中 → 不判同源（弱证据防泛滥）")
+        ok, ev = _m.same_source("20240831 磐沄餐费明细表 7,030.pdf", "餐费明细表 20240831 7,030.pdf")
+        check(ok, "双侧无合同号 → 同日+同额方判同源")
 
     print()
     if fails:

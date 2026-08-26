@@ -11,13 +11,18 @@ copy 挂错月。根因在 /tmp 一次性匹配脚本（未入库、无校验、
   闸2 归前校验：每个目标（月,凭证号）回查凭证列表——凭证须存在于该月；且金额或摘要与附件
      吻合（金额=任一明细行或借/贷合计与附件金额差≤0.02；摘要=关键词在附件名与凭证摘要/科目
      双侧命中）。不吻合 → 存疑，不落盘
+别名同源判定（2026-08-26 用户裁定「合同号不一致禁判同源」，FINCHN-710 f 项）：缺件行与池内
+未匹配文件做同源提示时，任一侧含合同号 → 两侧合同号集合必须完全一致，否则一律不同源——
+固定金额撞形也拦（起因：09/收-1 华夏收汇单被旧别名判定误指 INF2024004 Q3 发票，同为
+USD 261,000）。aliasHints 仅进 report 供人工审阅，绝不自动落盘。
 
 输出：
   --out    归档计划 JSON：[{token,name,target{period,vno}}]，archive-panyun-vouchers.py
            直接消费的格式。同月多凭证号合并为一条（vno 顿号连接，执行脚本原生 copy）；
            跨月一附多证拆成每月一条（同 token 多条，plan 里每月的目标都为真）
   --report 匹配报告 JSON：crossMonthCopies（跨月补挂清单）/ suspect（存疑）/ missingAttachments
-           （入账表有、影像池无）/ unmatchedPool（影像池有、入账表无）/ 逐目标校验证据 / 统计
+           （入账表有、影像池无）/ unmatchedPool（影像池有、入账表无）/ aliasHints（缺件行的
+           同源别名提示，review-only 绝不自动落盘）/ 逐目标校验证据 / 统计
 
 用法（全显式路径，不猜默认）：
   python3 scripts/gen-archive-matcher.py \
@@ -247,6 +252,42 @@ def validate_target(period, vno, attach_name, attach_amount, vidx, vrng):
     return True, None, ev
 
 
+# ── 别名同源判定（收紧版：合同号不一致禁判同源，review-only）────────────────
+_CONTRACT_RE = re.compile(r"\b(?:INF|CONT|CTR|HT)[-_]?\d{3,}\b", re.IGNORECASE)
+
+
+def contract_tokens(name):
+    """附件名中的合同号集合：INF2024007 / CONT-001 / CTR-2024 等（大写归一、去连字符）。"""
+    return frozenset(m.group(0).upper().replace("-", "").replace("_", "")
+                     for m in _CONTRACT_RE.finditer(str(name or "")))
+
+
+def same_source(name_a, name_b):
+    """两附件名是否判「同源别名」→ (ok, evidence)。
+    硬条件（用户裁定 2026-08-26）：任一侧含合同号 → 两侧合同号集合必须完全一致，
+    否则一律不同源——固定金额撞形也拦（INF2024007 收汇单 ≠ INF2024004 Q3 发票，
+    即便都是 USD 261,000）。单侧有合同号同样不放行（拿不出合同证据不判同源）。
+    合同号一致后还需金额一致或双侧关键词命中；双侧均无合同号时须同日+同额
+    （08-25 全量扫实证口径），纯关键词命中不判同源（弱证据对会笛卡尔式泛滥）。"""
+    ca, cb = contract_tokens(name_a), contract_tokens(name_b)
+    aa, ab = amount_from_filename(name_a), amount_from_filename(name_b)
+    amt_eq = aa is not None and ab is not None and abs(aa - ab) <= 0.02
+    if ca or cb:
+        if ca != cb:
+            return False, f"contract-mismatch({sorted(ca)}≠{sorted(cb)})"
+        if amt_eq:
+            return True, f"contract+amount:{aa:g}"
+        common = [k for k in KEYWORDS if k in str(name_a) and k in str(name_b)]
+        if common:
+            return True, f"contract+kw:{common[0]}"
+        return False, "no-evidence"
+    da = _FN_DATE_RE.findall(str(name_a or ""))
+    db = _FN_DATE_RE.findall(str(name_b or ""))
+    if amt_eq and da and db and sorted(da) == sorted(db):
+        return True, f"same-day+amount:{aa:g}"
+    return False, "no-evidence"
+
+
 # ── 主匹配流程 ──────────────────────────────────────────────────────────────
 def run_match(args):
     entry_rows = load_entry_rows(args.entry)
@@ -344,19 +385,34 @@ def run_match(args):
     matched_pool = {f["name"] for f in pool_files if f["name"] in matched_names}
     unmatched_pool = [f for f in pool_files if f["name"] not in matched_names]
 
+    # 别名同源提示（review-only）：缺件行 × 池内未匹配文件，收紧判据=合同号必须一致。
+    # 只提示不落盘——是否采纳由人工审阅 report.aliasHints 决定；每行封顶 5 条防弱证据泛滥。
+    alias_hints = []
+    for m in missing:
+        n_this = 0
+        for f in unmatched_pool:
+            ok, ev = same_source(m["name"], f["name"])
+            if ok:
+                alias_hints.append({"name": m["name"], "pool_name": f["name"],
+                                    "pool_token": f.get("token"), "evidence": ev})
+                n_this += 1
+                if n_this >= 5:
+                    break
+
     report = {
         "stats": {
             "entry_rows": len(entry_rows), "plan_entries": len(plan),
             "unique_names": len(by_name_rows), "matched_names": len(matched_names),
             "suspects": len(suspects), "missing_attachments": len(missing),
             "unmatched_pool": len(unmatched_pool), "no_voucher_rows": len(no_voucher_rows),
-            "cross_month_files": len(cross_copies),
+            "cross_month_files": len(cross_copies), "alias_hints": len(alias_hints),
         },
         "by_month": {},
         "suspect": suspects, "missingAttachments": missing,
         "unmatchedPool": [f["name"] for f in unmatched_pool][:500],
         "noVoucherRows": no_voucher_rows,
         "crossMonthCopies": cross_copies,
+        "aliasHints": alias_hints,
         "targetValidation": validated_evidence,
         "voucher_list_range": list(vrng),
         "inputs": {"entry": args.entry, "invoice_entry": args.invoice_entry,
@@ -377,6 +433,8 @@ def run_match(args):
     print(f"plan {s['plan_entries']} 条 → {args.out}")
     print(f"  存疑 {s['suspects']} | 池中缺件 {s['missing_attachments']} | "
           f"池未匹配 {s['unmatched_pool']} | 无凭证号行 {s['no_voucher_rows']}")
+    if alias_hints:
+        print(f"  别名同源提示 {len(alias_hints)} 条（report.aliasHints，人工审阅，不自动落盘）")
     print(f"  跨月一附多证 {s['cross_month_files']} 文件（补挂清单在 report.crossMonthCopies）")
     for ml in sorted(report["by_month"]):
         print(f"    {ml}: {report['by_month'][ml]} 条")
